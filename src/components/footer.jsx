@@ -8,6 +8,10 @@ const Footer = () => {
         marginTop: "50px",
         backgroundColor: "#f5f5f5",
         padding: "20px 0",
+        position: "fixed",
+        left: 0,
+        right: 0,
+        bottom: 0,
       }}
     >
       <Container maxWidth="md">

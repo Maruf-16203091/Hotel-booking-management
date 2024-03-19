@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#2196f3" }}>
+    <AppBar
+      position="fixed"
+      sx={{ backgroundColor: "#003B95", width: "100%", height: "70px" }}
+    >
       <Toolbar>
         <Typography
           variant="h6"
-          component="div"
+          component={Link}
+          to="/"
           sx={{
             flexGrow: 1,
             color: "white",
@@ -16,7 +20,7 @@ const Header = () => {
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
           }}
         >
-          Hotel Booking System
+          Booking
         </Typography>
         <Button
           component={Link}
