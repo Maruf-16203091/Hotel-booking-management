@@ -1,23 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Header from "./components/header";
 import Footer from "./components/Footer";
 import LandingPage from "./pages/landing/LandingPage";
 import About from "./pages/about/About";
+import Contact from "./pages/contact/contact";
 import Services from "./pages/services/index";
-import Contact from "./pages/contact/Contact";
 
 const App = () => {
   return (
     <Router>
       <div>
         <Header />
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<LandingPage />} exact />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
