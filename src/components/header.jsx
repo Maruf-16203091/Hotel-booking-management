@@ -1,7 +1,14 @@
 import React from "react";
-import { AppBar, Toolbar, Button, Box, Typography } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Box,
+  BottomNavigation,
+  BottomNavigationAction,
+  Typography,
+} from "@mui/material";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png"; // Import your logo image
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   return (
@@ -11,7 +18,7 @@ const Header = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          paddingX: "20px",
+          padding: 0, // Remove padding
         }}
       >
         <Box>
@@ -22,56 +29,43 @@ const Header = () => {
               style={{ width: "120px", height: "auto", marginTop: "15px" }}
             />
           </Link>
-        </Box>
-        <Box>
-          <Button
-            component={Link}
-            to="/about"
-            color="inherit"
-            sx={{
-              color: "#2a2a2e",
-              fontWeight: "bold",
-              marginLeft: "10px",
-              "&:hover": {
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-                color: "#2a2a2e",
-              },
-            }}
-          >
-            About
-          </Button>
-          <Button
-            component={Link}
-            to="/services"
-            color="inherit"
-            sx={{
-              color: "#2a2a2e",
-              fontWeight: "bold",
-              marginLeft: "10px",
-              "&:hover": {
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-                color: "#2a2a2e",
-              },
-            }}
-          >
-            Services
-          </Button>
-          <Button
-            component={Link}
-            to="/contact"
-            color="inherit"
-            sx={{
-              color: "#2a2a2e",
-              fontWeight: "bold",
-              marginLeft: "10px",
-              "&:hover": {
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-                color: "#2a2a2e",
-              },
-            }}
-          >
-            Contact
-          </Button>
+
+          <BottomNavigation showLabels>
+            <BottomNavigationAction
+              component={Link}
+              to="/"
+              label={
+                <Typography sx={{ fontWeight: "bold" }}>Hotels</Typography>
+              }
+              sx={{ color: "#2a2a2e", padding: 0 }} // Remove padding
+            />
+            <BottomNavigationAction
+              component={Link}
+              to="/about"
+              label={
+                <Typography sx={{ fontWeight: "bold" }}>Transport</Typography>
+              }
+              sx={{ color: "#2a2a2e", padding: 0 }} // Remove padding
+            />
+            <BottomNavigationAction
+              component={Link}
+              to="/services"
+              label={
+                <Typography sx={{ fontWeight: "bold" }}>
+                  Coupons & Deals
+                </Typography>
+              }
+              sx={{ color: "#2a2a2e", padding: 0 }} // Remove padding
+            />
+            <BottomNavigationAction
+              component={Link}
+              to="/contact"
+              label={
+                <Typography sx={{ fontWeight: "bold" }}>Apartments</Typography>
+              }
+              sx={{ color: "#2a2a2e", padding: 0 }} // Remove padding
+            />
+          </BottomNavigation>
         </Box>
       </Toolbar>
     </AppBar>
