@@ -9,6 +9,8 @@ import LandingPage from "./pages/landing/LandingPage";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/contact";
 import Services from "./pages/services/index";
+import Hotel from "./pages/hotels/SingleHotel";
+import Attraction from "./pages/attractions/index";
 
 const App = () => {
   return (
@@ -35,6 +37,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/hotels" element={<Hotel />} />
+            <Route path="/attraction" element={<Attraction />} />
           </Routes>
         </div>
         <Footer />
