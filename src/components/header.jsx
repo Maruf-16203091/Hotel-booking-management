@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#003B95", width: "100%" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#07784b", width: "100%" }}>
       <Toolbar
         sx={{
           paddingLeft: "20px",

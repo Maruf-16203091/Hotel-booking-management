@@ -5,7 +5,7 @@ const HeroPage = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#003B95",
+        backgroundColor: "#07784b",
         color: "white",
         textAlign: "center",
         paddingTop: "100px",

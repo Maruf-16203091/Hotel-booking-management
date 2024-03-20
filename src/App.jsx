@@ -14,12 +14,23 @@ const App = () => {
   return (
     <Router>
       <div
-        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh", // Same background color
+        }}
       >
         <Header />
         <SubHead />
         <Hero />
-        <div style={{ flexGrow: 1, padding: "20px" }}>
+        <div
+          style={{
+            flexGrow: 1,
+            padding: "20px",
+            margin: "0 auto", // Center the content horizontally
+            maxWidth: "1200px", // Limit maximum width
+          }}
+        >
           <Routes>
             <Route path="/" element={<LandingPage />} exact />
             <Route path="/about" element={<About />} />
