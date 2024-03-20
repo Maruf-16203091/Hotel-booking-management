@@ -85,7 +85,7 @@ const Header = () => {
             <BottomNavigationAction
               onClick={handleClick}
               label={
-                <>
+                <div>
                   <Typography
                     sx={{
                       fontWeight: "bold",
@@ -96,7 +96,7 @@ const Header = () => {
                     Transport
                   </Typography>
                   <ArrowDropDownIcon />
-                </>
+                </div>
               }
               sx={{
                 color: "#2a2a2e",
