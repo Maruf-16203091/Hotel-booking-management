@@ -1,38 +1,39 @@
-import React from 'react';
-import { Container, Typography, TextField, Button, Grid } from '@mui/material';
+import React from "react";
+import { Box, Button, Grid, TextField } from "@mui/material";
 
-const LandingPage = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add logic for handling search
-  };
-
+const AdvanceSearchPage = () => {
   return (
-    <Container maxWidth="lg" style={{ marginTop: '50px' }}>
-      <Typography variant="h4" align="center" gutterBottom>
-        Welcome to our Hotel Booking System
-      </Typography>
-      <form onSubmit={handleSubmit}>
-        <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Search for Hotels"
-              variant="outlined"
-              fullWidth
-              // Add onChange handler for search input
-            />
-          </Grid>
-          <Grid item xs={12} sm={3}>
-            <Button variant="contained" color="primary" fullWidth type="submit">
-              Search
-            </Button>
-          </Grid>
+    <Box
+      sx={{
+        maxWidth: "800px",
+        margin: "0 auto",
+        padding: "40px",
+      }}
+    >
+      <Grid container spacing={2}>
+        <Grid item xs={4}>
+          <TextField label="Where to go?" variant="outlined" fullWidth />
         </Grid>
-      </form>
-      {/* Add Advanced Search component */}
-      {/* Example: <AdvancedSearch /> */}
-    </Container>
+        <Grid item xs={4}>
+          <TextField label="Stay Dates" variant="outlined" fullWidth />
+        </Grid>
+        <Grid item xs={4}>
+          <TextField label="Number of Persons" variant="outlined" fullWidth />
+        </Grid>
+      </Grid>
+      <Button
+        variant="contained"
+        color="primary"
+        sx={{
+          position: "absolute",
+          top: "20px",
+          right: "20px",
+        }}
+      >
+        Submit
+      </Button>
+    </Box>
   );
 };
 
-export default LandingPage;
+export default AdvanceSearchPage;

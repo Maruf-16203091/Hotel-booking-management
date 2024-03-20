@@ -3,6 +3,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import DriveEtaIcon from "@mui/icons-material/DriveEta";
+import AttractionsIcon from "@mui/icons-material/LocalPlay";
 
 const SubheadSection = () => {
   return (
@@ -13,19 +14,18 @@ const SubheadSection = () => {
         textAlign: "center",
       }}
     >
-      <Typography
-        variant="h4"
-        sx={{ color: "white", marginTop: "40px", marginBottom: "20px" }}
+      <Grid
+        container
+        spacing={2}
+        justifyContent="center"
+        sx={{ color: "white", marginTop: "40px"}}
       >
-        Explore Options
-      </Typography>
-      <Grid container spacing={2} justifyContent="center">
         <Grid item>
           <Button
             variant="contained"
             color="primary"
             startIcon={<HotelIcon />}
-            sx={{ borderRadius: "50px" }} // Round shape
+            sx={{ borderRadius: "50px" }}
           >
             Stays
           </Button>
@@ -35,7 +35,7 @@ const SubheadSection = () => {
             variant="contained"
             color="primary"
             startIcon={<FlightIcon />}
-            sx={{ borderRadius: "50px" }} // Round shape
+            sx={{ borderRadius: "50px" }}
           >
             Flights
           </Button>
@@ -45,9 +45,19 @@ const SubheadSection = () => {
             variant="contained"
             color="primary"
             startIcon={<DriveEtaIcon />}
-            sx={{ borderRadius: "50px" }} // Round shape
+            sx={{ borderRadius: "50px" }}
           >
             Car Rental
+          </Button>
+        </Grid>
+        <Grid item>
+          <Button
+            variant="contained"
+            color="primary"
+            startIcon={<AttractionsIcon />}
+            sx={{ borderRadius: "50px" }}
+          >
+            Attractions
           </Button>
         </Grid>
       </Grid>
