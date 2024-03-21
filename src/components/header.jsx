@@ -20,6 +20,7 @@ import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBoatIcon from "@mui/icons-material/DirectionsBoat";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -33,20 +34,31 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#ffffff", width: "100%" }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        width: "100%",
+        paddingX: "16px",
+        backgroundColor: "#ffffff",
+      }}
+    >
       <Toolbar
         sx={{
           display: "flex",
           justifyContent: "space-between",
+          flexDirection: "row",
           alignItems: "center",
-          paddingX: "10px", // Adjust horizontal padding
-          height: "0px", // Set a fixed height to maintain consistent spacing
+          paddingX: "0px 16px",
+
+          color: "#2a2a2e",
+          flex: "1 1 0px",
         }}
       >
         <Box
           sx={{
+            padding: "0px 16px",
             display: "flex",
-            alignItems: "center", // Adjust margin to create space around items
+            flex: "0 0 auto",
           }}
         >
           <Link to="/">
@@ -228,11 +240,14 @@ const Header = () => {
 
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center", // Adjust margin to create space around items
+            position: "relative",
+            justifyContent: "flex-end",
+            display: "inline-flex",
+            flex: "1 1 0%",
+            minWidth: "unset",
           }}
         >
-          <BottomNavigation showLabels>
+          <BottomNavigation showLabels sx={{ flex: 1 }}>
             <BottomNavigationAction
               component={Link}
               to="/hotels"
@@ -242,7 +257,7 @@ const Header = () => {
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-serif", // Apply Mallory font
                     border: "1px solid rgb(255, 86, 125)", // Set border to 1px solid rgb(255, 86, 125)
-                    borderRadius: "5px", // Add border radius for rounded corners
+                    borderRadius: "4px", // Add border radius for rounded corners
                     padding: "8px 12px", // Add padding for better appearance
                     color: "rgb(255, 86, 125)", // Set text color to rgb(255, 86, 125)
                     transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
@@ -259,29 +274,8 @@ const Header = () => {
               sx={{
                 color: "#2a2a2e",
                 padding: 0, // Set width to auto
-                marginX: "0px", // Adjust margin for consistent spacing
+                marginX: "4px", // Adjust margin for consistent spacing
                 whiteSpace: "nowrap",
-              }}
-            />
-            <BottomNavigationAction
-              onClick={handleClick}
-              label={
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
-                      // Adjust margin to align with "Hotels" label
-                    }}
-                  >
-                    Flag
-                  </Typography>
-                </div>
-              }
-              sx={{
-                color: "#2a2a2e",
-                padding: 0,
-                // Set width to auto
-                marginX: "0px", // Adjust margin for consistent spacing
               }}
             />
 
@@ -300,26 +294,38 @@ const Header = () => {
               sx={{
                 color: "#2a2a2e",
                 padding: 0, // Set width to auto
-                marginX: "0px", // Adjust margin for consistent spacing
+                marginX: "4px", // Adjust margin for consistent spacing
                 whiteSpace: "nowrap", // Prevent line breaks
               }}
             />
             <BottomNavigationAction
               component={Link}
-              to="/contact"
+              to="/hotels"
               label={
                 <Typography
                   sx={{
-                    fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif", // Apply Mallory font
+
+                    borderRadius: "4px", // Add border radius for rounded corners
+                    padding: "8px 12px", // Add padding for better appearance
+                    color: "rgb(83, 146, 249)", // Set text color to red
+                    transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
+                    "&:hover": {
+                      borderColor: "rgb(83, 146, 249)",
+                      backgroundColor: "rgb(83, 146, 249)", // Change border color to red on hover
+                      color: "white", // Change text color to white on hover
+                    },
                   }}
                 >
                   Sign in
                 </Typography>
               }
               sx={{
-                color: "rgb(83, 146, 249)",
+                color: "#2a2a2e",
                 padding: 0, // Set width to auto
-                marginX: "0px", // Adjust margin for consistent spacing
+                marginX: "4px", // Adjust margin for consistent spacing
+                whiteSpace: "nowrap",
               }}
             />
             <BottomNavigationAction
@@ -331,7 +337,7 @@ const Header = () => {
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-serif", // Apply Mallory font
                     border: "1px solid rgb(83, 146, 249)", // Set border to 1px solid red
-                    borderRadius: "5px", // Add border radius for rounded corners
+                    borderRadius: "4px", // Add border radius for rounded corners
                     padding: "8px 12px", // Add padding for better appearance
                     color: "rgb(83, 146, 249)", // Set text color to red
                     transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
@@ -348,13 +354,13 @@ const Header = () => {
               sx={{
                 color: "#2a2a2e",
                 padding: 0, // Set width to auto
-                marginX: "0px", // Adjust margin for consistent spacing
+                marginX: "4px", // Adjust margin for consistent spacing
                 whiteSpace: "nowrap",
               }}
             />
           </BottomNavigation>
-          <AddShoppingCartIcon />
         </Box>
+        <MenuIcon />
       </Toolbar>
     </AppBar>
   );
