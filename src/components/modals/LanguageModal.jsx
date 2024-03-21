@@ -113,16 +113,15 @@ function Component() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          fontFamily: "Montserrat, sans-serif",
         }}
       >
         <div
           style={{
-            margin: "10px",
-            width: "40%",
-            height: "500px", // Fixed height for the modal
+            width: "820px",
+            height: "520px", // Fixed height for the modal
             backgroundColor: "#FFF",
-            padding: "12px",
-            borderRadius: "8px",
+            borderRadius: "4px",
             position: "relative",
             overflow: "hidden",
           }}
@@ -133,7 +132,7 @@ function Component() {
             style={{
               position: "fixed",
               top: "150px",
-              right: "550px",
+              right: "530px",
               backgroundColor: "transparent",
               color: "white",
               zIndex: 999, // Ensure the button is above the modal content
@@ -144,28 +143,62 @@ function Component() {
           {/* Selected Language */}
           <div
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.05)",
-              padding: "10px",
-              marginBottom: "10px",
-              borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
+              backgroundColor: "#e9ebee",
+              padding: "12px",
+              marginBottom: "0", // Remove bottom margin
             }}
           >
-            <Typography variant="h6" style={{ flexGrow: 1 }}>
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
               Selected Language
             </Typography>
+          </div>
+
+          <div
+            style={{
+              padding: "10px",
+              display: "flex",
+              alignItems: "center",
+              border: "2px solid #e3edff",
+              backgroundColor: "#e3edff",
+              borderRadius: "4px",
+              margin: "10px",
+              boxSizing: "border-box",
+            }}
+          >
             <img
               src={GermanyFlagIcon}
               alt="Germany Flag"
               style={{ height: "24px", width: "24px", marginRight: "10px" }}
             />
-            <Typography variant="body1">German</Typography>
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              German
+            </Typography>
+          </div>
+          <div
+            style={{
+              backgroundColor: "#e9ebee",
+              padding: "12px",
+              alignItems: "center",
+            }}
+          >
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              All Languages
+            </Typography>
           </div>
           {/* All Languages */}
           <div
             style={{
               display: "flex",
+              padding: "12px",
               flexDirection: "row",
               overflowY: "auto",
               maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
@@ -187,7 +220,7 @@ function Component() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBottom: "8px",
+                      marginBottom: "18px",
                     }}
                   >
                     <img
@@ -199,7 +232,12 @@ function Component() {
                         marginRight: "10px",
                       }}
                     />
-                    <Typography variant="body1">{language.name}</Typography>
+                    <Typography
+                      variant="body2"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                    >
+                      {language.name}
+                    </Typography>
                   </div>
                 ))}
               </div>
