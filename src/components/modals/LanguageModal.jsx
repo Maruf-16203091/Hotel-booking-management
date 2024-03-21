@@ -5,7 +5,6 @@ import GermanyFlagIcon from "../../assets/germany.png"; // Import the Germany fl
 import FranceFlagIcon from "../../assets/france.png"; // Import the France flag image
 import SpainFlagIcon from "../../assets/spain.png"; // Import the Spain flag image
 import ItalyFlagIcon from "../../assets/italy.png"; // Import the Italy flag image
-// Import more flag images as needed
 
 function Component() {
   const [openModal, setOpenModal] = useState(false);
@@ -19,10 +18,67 @@ function Component() {
     { name: "French", flag: FranceFlagIcon },
     { name: "Spanish", flag: SpainFlagIcon },
     { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
+    { name: "German", flag: GermanyFlagIcon },
+    { name: "French", flag: FranceFlagIcon },
+    { name: "Spanish", flag: SpainFlagIcon },
+    { name: "Italian", flag: ItalyFlagIcon },
     // Add more languages with their respective flag icons
+    // Add as many languages as needed
   ];
 
-  // Function to chunk the languages array into arrays of 3 elements
+  // Function to chunk the languages array into arrays of 10 elements
   const chunkArray = (arr, size) => {
     const chunkedArr = [];
     for (let i = 0; i < arr.length; i += size) {
@@ -31,8 +87,11 @@ function Component() {
     return chunkedArr;
   };
 
-  // Chunk the languages array into arrays of 3 elements
-  const chunkedLanguages = chunkArray(languages, 3);
+  // Chunk the languages array into arrays of 10 elements
+  const chunkedLanguages = chunkArray(
+    languages,
+    Math.ceil(languages.length / 3)
+  );
 
   return (
     <>
@@ -59,8 +118,8 @@ function Component() {
         <div
           style={{
             margin: "10px",
-            width: "60%",
-            maxHeight: "70%",
+            width: "40%",
+            height: "500px", // Fixed height for the modal
             backgroundColor: "#FFF",
             padding: "12px",
             borderRadius: "8px",
@@ -72,14 +131,15 @@ function Component() {
           <IconButton
             onClick={handleClose}
             style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
+              position: "fixed",
+              top: "150px",
+              right: "550px",
               backgroundColor: "transparent",
-              zIndex: 1, // Ensure the button is above the modal content
+              color: "white",
+              zIndex: 999, // Ensure the button is above the modal content
             }}
           >
-            <CloseIcon fontSize="large" />
+            <CloseIcon style={{ fontSize: 50 }} />
           </IconButton>
           {/* Selected Language */}
           <div
@@ -106,14 +166,22 @@ function Component() {
           <div
             style={{
               display: "flex",
-              flexWrap: "wrap",
+              flexDirection: "row",
               overflowY: "auto",
-              maxHeight: "calc(100% - 100px)", // Adjust max height based on your need
+              maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
             }}
           >
-            {chunkedLanguages.map((chunk, index) => (
-              <div key={index} style={{ flex: 1, marginRight: "10px" }}>
-                {chunk.map((language, idx) => (
+            {chunkedLanguages.map((column, index) => (
+              <div
+                key={index}
+                style={{
+                  flex: 1,
+                  marginRight: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                {column.map((language, idx) => (
                   <div
                     key={idx}
                     style={{
