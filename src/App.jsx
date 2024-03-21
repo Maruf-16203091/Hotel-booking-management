@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Header from "./components/header";
-import SubHead from "./components/SubHead";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import Header from "./components/header/header";
+import Footer from "./components/footer/Footer";
+import Hero from "./components/hero/Hero";
 import LandingPage from "./pages/landing/LandingPage";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/contact";

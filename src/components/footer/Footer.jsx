@@ -16,7 +16,7 @@ const Footer = () => {
     >
       <Container maxWidth="md">
         <Typography variant="body1" align="center" color="textSecondary">
-          &copy; 2024 Hotel Booking System. All rights reserved.
+          &copy; 2024 StayGo. All rights reserved.
         </Typography>
       </Container>
     </footer>
