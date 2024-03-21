@@ -6,8 +6,9 @@ import {
   Typography,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import LanguageModal from "../modals/LanguageModal";
 
-const FooterBottomNavigation = () => {
+const RightNavBar = () => {
   return (
     <Box
       sx={{
@@ -69,6 +70,7 @@ const FooterBottomNavigation = () => {
             whiteSpace: "nowrap", // Prevent line breaks
           }}
         />
+        <LanguageModal />
         <BottomNavigationAction
           component={Link}
           to="/hotels"
@@ -133,4 +135,4 @@ const FooterBottomNavigation = () => {
   );
 };
 
-export default FooterBottomNavigation;
+export default RightNavBar;
