@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import LanguageModal from "../modals/LanguageModal";
+import CurrencyModal from "../modals/CurrencyModal";
 
 const RightNavBar = () => {
   return (
@@ -51,25 +52,7 @@ const RightNavBar = () => {
           }}
         />
 
-        <BottomNavigationAction
-          component={Link}
-          to="/services"
-          label={
-            <Typography
-              sx={{
-                fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
-              }}
-            >
-              Euro
-            </Typography>
-          }
-          sx={{
-            color: "#2a2a2e",
-            padding: 0, // Set width to auto
-            marginX: "4px", // Adjust margin for consistent spacing
-            whiteSpace: "nowrap", // Prevent line breaks
-          }}
-        />
+        <CurrencyModal />
         <LanguageModal />
         <BottomNavigationAction
           component={Link}
