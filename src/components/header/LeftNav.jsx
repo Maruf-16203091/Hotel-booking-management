@@ -58,6 +58,9 @@ const HeaderBottomNavigation = () => {
             <Typography
               sx={{
                 fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+
+                fontSize: "14px",
+                fontWeight: "500",
               }}
             >
               Hotels
@@ -78,6 +81,9 @@ const HeaderBottomNavigation = () => {
                 sx={{
                   fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
                   marginLeft: "-10px", // Adjust margin to align with "Hotels" label
+
+                  fontSize: "14px",
+                  fontWeight: "500",
                 }}
               >
                 Transport
@@ -89,7 +95,8 @@ const HeaderBottomNavigation = () => {
             color: "#2a2a2e",
             padding: 0,
             width: "auto", // Set width to auto
-            marginX: "20px", // Adjust margin for consistent spacing
+            marginX: "30px",
+            // Adjust margin for consistent spacing
           }}
         />
         <Popover
@@ -115,25 +122,60 @@ const HeaderBottomNavigation = () => {
               <ListItemIcon>
                 <FlightIcon />
               </ListItemIcon>
-              <ListItemText primary="Flights" />
+              <ListItemText
+                primary="Flights"
+                primaryTypographyProps={{
+                  sx: {
+                    fontSize: "14px", // Adjust the font size here as needed
+                    fontWeight: "500",
+                  },
+                }}
+              />
             </ListItem>
+
             <ListItem button component={Link} to="/bus" onClick={handleClose}>
               <ListItemIcon>
                 <DirectionsBusIcon />
               </ListItemIcon>
-              <ListItemText primary="Bus" />
+              <ListItemText
+                primary="Bus"
+                primaryTypographyProps={{
+                  sx: {
+                    fontSize: "14px", // Adjust the font size here as needed
+                    fontWeight: "500",
+                  },
+                }}
+              />
             </ListItem>
+
             <ListItem button component={Link} to="/train" onClick={handleClose}>
               <ListItemIcon>
                 <TrainIcon />
               </ListItemIcon>
-              <ListItemText primary="Train" />
+              <ListItemText
+                primary="Train"
+                primaryTypographyProps={{
+                  sx: {
+                    fontSize: "14px", // Adjust the font size here as needed
+                    fontWeight: "500",
+                  },
+                }}
+              />
             </ListItem>
+
             <ListItem button component={Link} to="/boats" onClick={handleClose}>
               <ListItemIcon>
                 <DirectionsBoatIcon />
               </ListItemIcon>
-              <ListItemText primary="Boats" />
+              <ListItemText
+                primary="Boats"
+                primaryTypographyProps={{
+                  sx: {
+                    fontSize: "14px", // Adjust the font size here as needed
+                    fontWeight: "500",
+                  },
+                }}
+              />
             </ListItem>
           </List>
         </Popover>
@@ -144,7 +186,9 @@ const HeaderBottomNavigation = () => {
           label={
             <Typography
               sx={{
-                fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "14px",
+                fontWeight: "500",
               }}
             >
               Coupons & Deals
@@ -154,7 +198,7 @@ const HeaderBottomNavigation = () => {
             color: "#2a2a2e",
             padding: 0,
             width: "auto", // Set width to auto
-            marginX: "10px", // Adjust margin for consistent spacing
+            marginRight: "10px", // Adjust margin for consistent spacing
             whiteSpace: "nowrap", // Prevent line breaks
           }}
         />
@@ -165,6 +209,8 @@ const HeaderBottomNavigation = () => {
             <Typography
               sx={{
                 fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+                fontSize: "14px",
+                fontWeight: "500",
               }}
             >
               Apartments
@@ -184,6 +230,8 @@ const HeaderBottomNavigation = () => {
             <Typography
               sx={{
                 fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+                fontSize: "14px",
+                fontWeight: "500",
               }}
             >
               Attractions

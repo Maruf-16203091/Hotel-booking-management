@@ -34,10 +34,11 @@ const RightNavBar = () => {
                 padding: "8px 12px", // Add padding for better appearance
                 color: "rgb(255, 86, 125)", // Set text color to rgb(255, 86, 125)
                 transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
+                fontSize: "12px",
                 "&:hover": {
                   borderColor: "rgb(255, 86, 125)",
                   backgroundColor: "rgb(255, 86, 125)", // Change border color to red on hover
-                  color: "white", // Change text color to white on hover
+                  color: "white",
                 },
               }}
             >
@@ -66,6 +67,7 @@ const RightNavBar = () => {
                 padding: "8px 12px", // Add padding for better appearance
                 color: "rgb(83, 146, 249)", // Set text color to red
                 transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
+                fontSize: "12px",
                 "&:hover": {
                   borderColor: "rgb(83, 146, 249)",
                   backgroundColor: "rgb(83, 146, 249)", // Change border color to red on hover
@@ -96,6 +98,7 @@ const RightNavBar = () => {
                 padding: "8px 12px", // Add padding for better appearance
                 color: "rgb(83, 146, 249)", // Set text color to red
                 transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
+                fontSize: "12px",
                 "&:hover": {
                   borderColor: "rgb(83, 146, 249)",
                   backgroundColor: "rgb(83, 146, 249)", // Change border color to red on hover

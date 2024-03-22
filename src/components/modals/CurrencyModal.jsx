@@ -82,9 +82,9 @@ function CurrencyModal() {
         fontSize="small"
         style={{
           cursor: "pointer",
-          marginTop: "20px",
-          paddingRight: "35px", // Adjust padding as needed
-          fontWeight: "normal", // Set font weight to normal
+          padding: "16px 32px", // Adjust padding as needed
+          height: "20px",
+          width: "20px",
         }}
       />
 

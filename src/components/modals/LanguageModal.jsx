@@ -102,7 +102,7 @@ function LanguageModal() {
           height: "40px",
           width: "40px",
           cursor: "pointer",
-          marginTop: "10px",
+          padding: "8px 12px",
         }}
         onClick={() => setOpenModal(true)}
       />
