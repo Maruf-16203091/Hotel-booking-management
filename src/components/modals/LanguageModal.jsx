@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, Typography, IconButton } from "@mui/material";
+import { Modal, Typography, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import GermanyFlagIcon from "../../assets/germany.png"; // Import the Germany flag image
 import FranceFlagIcon from "../../assets/france.png"; // Import the France flag image
@@ -8,40 +8,18 @@ import ItalyFlagIcon from "../../assets/italy.png"; // Import the Italy flag ima
 
 function LanguageModal() {
   const [openModal, setOpenModal] = useState(false);
+  const [selectedLanguageIndex, setSelectedLanguageIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleClose = () => {
     setOpenModal(false);
   };
+  const handleLanguageClick = (index) => {
+    setSelectedLanguageIndex(index);
+    setOpenModal(false); // Close modal after selecting a language (you may want to remove this line if you want to keep the modal open after selection)
+  };
 
   const languages = [
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
-    { name: "German", flag: GermanyFlagIcon },
-    { name: "French", flag: FranceFlagIcon },
-    { name: "Spanish", flag: SpainFlagIcon },
-    { name: "Italian", flag: ItalyFlagIcon },
     { name: "German", flag: GermanyFlagIcon },
     { name: "French", flag: FranceFlagIcon },
     { name: "Spanish", flag: SpainFlagIcon },
@@ -78,7 +56,7 @@ function LanguageModal() {
     // Add as many languages as needed
   ];
 
-  // Function to chunk the languages array into arrays of 10 elements
+  // Function to chunk the languages array into arrays of 3 elements
   const chunkArray = (arr, size) => {
     const chunkedArr = [];
     for (let i = 0; i < arr.length; i += size) {
@@ -188,7 +166,7 @@ function LanguageModal() {
             }}
           >
             <Typography
-              variant="h8"
+              variant="body2"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               All Languages
@@ -204,9 +182,9 @@ function LanguageModal() {
               maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
             }}
           >
-            {chunkedLanguages.map((column, index) => (
+            {chunkedLanguages.map((column, colIndex) => (
               <div
-                key={index}
+                key={colIndex}
                 style={{
                   flex: 1,
                   marginRight: "10px",
@@ -214,14 +192,30 @@ function LanguageModal() {
                   flexDirection: "column",
                 }}
               >
-                {column.map((language, idx) => (
+                {column.map((language, langIndex) => (
                   <div
-                    key={idx}
+                    key={langIndex}
                     style={{
                       display: "flex",
                       alignItems: "center",
                       marginBottom: "18px",
+
+                      borderRadius: "4px", // Add border radius
+                      padding: "8px", // Add padding
+                      cursor: "pointer", // Change cursor to pointer
+                      transition: "border-color 0.3s ease", // Add transition for smooth effect
+                      backgroundColor:
+                        hoveredIndex === colIndex * 3 + langIndex
+                          ? "#e3edff"
+                          : "transparent", // Apply background color based on hovered index
                     }}
+                    onMouseEnter={() =>
+                      setHoveredIndex(colIndex * 3 + langIndex)
+                    }
+                    onMouseLeave={() => setHoveredIndex(null)}
+                    onClick={() =>
+                      handleLanguageClick(colIndex * 3 + langIndex)
+                    } // Add onClick handler to select language
                   >
                     <img
                       src={language.flag}
@@ -234,7 +228,10 @@ function LanguageModal() {
                     />
                     <Typography
                       variant="body2"
-                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                      style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "14px",
+                      }}
                     >
                       {language.name}
                     </Typography>
