@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { AppBar, Toolbar } from "@mui/material";
 
-import MenuIcon from "@mui/icons-material/Menu";
 import LeftNavBar from "../header/LeftNav";
 import RightNavBar from "../header/RightNav";
 
@@ -38,7 +37,6 @@ const Header = () => {
       >
         <LeftNavBar />
         <RightNavBar />
-        <MenuIcon />
       </Toolbar>
     </AppBar>
   );

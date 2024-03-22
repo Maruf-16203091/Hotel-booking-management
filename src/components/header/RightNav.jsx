@@ -8,6 +8,8 @@ import {
 import { Link } from "react-router-dom";
 import LanguageModal from "../modals/LanguageModal";
 import CurrencyModal from "../modals/CurrencyModal";
+import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const RightNavBar = () => {
   return (
@@ -19,7 +21,7 @@ const RightNavBar = () => {
         flex: "1 1 0%",
         minWidth: "unset",
         marginLeft: "550px",
-        padding:"30px"
+        padding: "30px",
       }}
     >
       <BottomNavigation showLabels sx={{ flex: 1 }}>
@@ -116,6 +118,22 @@ const RightNavBar = () => {
             padding: 0, // Set width to auto
             marginX: "4px", // Adjust margin for consistent spacing
             whiteSpace: "nowrap",
+          }}
+        />
+        <AddShoppingCartOutlinedIcon
+          style={{
+            cursor: "pointer",
+            padding: "16px 32px", // Adjust padding as needed
+            height: "20px",
+            width: "20px",
+          }}
+        />
+        <MenuIcon
+          style={{
+            cursor: "pointer",
+            padding: "16px 0px", // Adjust padding as needed
+            height: "20px",
+            width: "20px",
           }}
         />
       </BottomNavigation>
