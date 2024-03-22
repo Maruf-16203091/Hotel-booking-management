@@ -18,6 +18,8 @@ const RightNavBar = () => {
         display: "inline-flex",
         flex: "1 1 0%",
         minWidth: "unset",
+        marginLeft: "550px",
+        padding:"30px"
       }}
     >
       <BottomNavigation showLabels sx={{ flex: 1 }}>
@@ -31,10 +33,10 @@ const RightNavBar = () => {
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-serif", // Apply Mallory font
                 border: "1px solid rgb(255, 86, 125)", // Set border to 1px solid rgb(255, 86, 125)
                 borderRadius: "4px", // Add border radius for rounded corners
-                padding: "8px 12px", // Add padding for better appearance
+                padding: "12px 16px", // Add padding for better appearance
                 color: "rgb(255, 86, 125)", // Set text color to rgb(255, 86, 125)
                 transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
-                fontSize: "12px",
+                fontSize: "14px",
                 "&:hover": {
                   borderColor: "rgb(255, 86, 125)",
                   backgroundColor: "rgb(255, 86, 125)", // Change border color to red on hover
@@ -64,10 +66,10 @@ const RightNavBar = () => {
                 fontFamily:
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-serif", // Apply Mallory font
                 borderRadius: "4px", // Add border radius for rounded corners
-                padding: "8px 12px", // Add padding for better appearance
+                padding: "12px 16px", // Add padding for better appearance
                 color: "rgb(83, 146, 249)", // Set text color to red
                 transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
-                fontSize: "12px",
+                fontSize: "14px",
                 "&:hover": {
                   borderColor: "rgb(83, 146, 249)",
                   backgroundColor: "rgb(83, 146, 249)", // Change border color to red on hover
@@ -95,10 +97,10 @@ const RightNavBar = () => {
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-serif", // Apply Mallory font
                 border: "1px solid rgb(83, 146, 249)", // Set border to 1px solid red
                 borderRadius: "4px", // Add border radius for rounded corners
-                padding: "8px 12px", // Add padding for better appearance
+                padding: "12px 16px", // Add padding for better appearance
                 color: "rgb(83, 146, 249)", // Set text color to red
                 transition: "all 0.15s ease-in-out 0s", // Add transition for smooth effect
-                fontSize: "12px",
+                fontSize: "14px",
                 "&:hover": {
                   borderColor: "rgb(83, 146, 249)",
                   backgroundColor: "rgb(83, 146, 249)", // Change border color to red on hover
