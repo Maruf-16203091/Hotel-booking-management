@@ -6,7 +6,7 @@ import FranceFlagIcon from "../../assets/france.png"; // Import the France flag 
 import SpainFlagIcon from "../../assets/spain.png"; // Import the Spain flag image
 import ItalyFlagIcon from "../../assets/italy.png"; // Import the Italy flag image
 
-function Component() {
+function LanguageModal() {
   const [openModal, setOpenModal] = useState(false);
 
   const handleClose = () => {
@@ -249,4 +249,4 @@ function Component() {
   );
 }
 
-export default Component;
+export default LanguageModal;

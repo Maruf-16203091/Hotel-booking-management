@@ -16,6 +16,46 @@ function CurrencyModal() {
     { name: "US Dollar", symbol: <AttachMoneyIcon /> },
     { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
     { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
+    { name: "Euro", symbol: <EuroSymbolIcon /> },
+    { name: "US Dollar", symbol: <AttachMoneyIcon /> },
+    { name: "Indian Rupee", symbol: <AttachMoneyIcon /> },
+    { name: "Bangladeshi Taka", symbol: <AttachMoneyIcon /> },
     // Add more currencies with their respective symbols
     // Example: { name: "Currency Name", symbol: <CurrencySymbolComponent /> },
   ];
@@ -30,7 +70,10 @@ function CurrencyModal() {
   };
 
   // Chunk the currencies array into arrays of 10 elements
-  const chunkedCurrencies = chunkArray(currencies, 10);
+  const chunkedCurrencies = chunkArray(
+    currencies,
+    Math.ceil(currencies.length / 3)
+  );
 
   return (
     <>
@@ -52,16 +95,16 @@ function CurrencyModal() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+
+          fontFamily: "Montserrat, sans-serif",
         }}
       >
         <div
           style={{
-            margin: "10px",
-            width: "40%",
-            height: "500px", // Fixed height for the modal
+            width: "820px",
+            height: "520px", // Fixed height for the modal
             backgroundColor: "#FFF",
-            padding: "12px",
-            borderRadius: "8px",
+            borderRadius: "4px",
             position: "relative",
             overflow: "hidden",
           }}
@@ -72,7 +115,7 @@ function CurrencyModal() {
             style={{
               position: "fixed",
               top: "150px",
-              right: "550px",
+              right: "530px",
               backgroundColor: "transparent",
               color: "white",
               zIndex: 999, // Ensure the button is above the modal content
@@ -80,29 +123,102 @@ function CurrencyModal() {
           >
             <CloseIcon style={{ fontSize: 50 }} />
           </IconButton>
-          {/* Selected Currency */}
           <div
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.05)",
+              backgroundColor: "#e9ebee",
+              padding: "12px",
+              marginBottom: "0", // Remove bottom margin
+            }}
+          >
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              Selected Currency
+            </Typography>
+          </div>
+          <div
+            style={{
               padding: "10px",
-              marginBottom: "10px",
-              borderRadius: "8px",
               display: "flex",
+              alignItems: "center",
+              border: "2px solid #e3edff",
+              backgroundColor: "#e3edff",
+              borderRadius: "4px",
+              margin: "10px",
+              boxSizing: "border-box",
+            }}
+          >
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              Euro
+            </Typography>
+          </div>
+          <div
+            style={{
+              backgroundColor: "#e9ebee",
+              padding: "12px",
+              marginBottom: "0", // Remove bottom margin
+            }}
+          >
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              Popular Currencies
+            </Typography>
+          </div>
+
+          <div
+            style={{
+              padding: "10px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <Typography
+              variant="body2"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              Euro
+            </Typography>
+            <Typography
+              variant="body2"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              USD Dollar
+            </Typography>
+            <Typography
+              variant="body2"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              Indian Rupee
+            </Typography>
+          </div>
+          <div
+            style={{
+              backgroundColor: "#e9ebee",
+              padding: "12px",
               alignItems: "center",
             }}
           >
-            <Typography variant="h6" style={{ flexGrow: 1 }}>
-              Selected Currency
+            <Typography
+              variant="h8"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              All Currencies
             </Typography>
-
-            <Typography variant="body1">Euro</Typography>
           </div>
           {/* All Currencies */}
           <div
             style={{
               display: "flex",
+              padding: "12px",
               flexDirection: "row",
-              overflowY: "auto",
+              overflowY: "auto", // This property makes the content scrollable vertically
               maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
             }}
           >
@@ -122,11 +238,16 @@ function CurrencyModal() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBottom: "8px",
+                      marginBottom: "18px",
                     }}
                   >
                     {currency.symbol}
-                    <Typography variant="body1">{currency.name}</Typography>
+                    <Typography
+                      variant="body2"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                    >
+                      {currency.name}
+                    </Typography>
                   </div>
                 ))}
               </div>
