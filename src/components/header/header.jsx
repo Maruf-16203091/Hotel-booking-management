@@ -28,7 +28,7 @@ const Header = () => {
       <Toolbar
         sx={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-evenly",
           flexDirection: "row",
           alignItems: "center",
           paddingX: "0px 16px",
