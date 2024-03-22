@@ -46,6 +46,7 @@ const HeaderBottomNavigation = () => {
             height: "auto",
             marginTop: "15px",
             marginRight: "40px",
+            marginLeft: "20px",
           }}
         />
       </Link>

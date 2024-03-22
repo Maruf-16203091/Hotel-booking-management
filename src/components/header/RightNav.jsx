@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   BottomNavigation,
@@ -10,8 +9,18 @@ import LanguageModal from "../modals/LanguageModal";
 import CurrencyModal from "../modals/CurrencyModal";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
+import React, { useState } from "react";
 
 const RightNavBar = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <Box
       sx={{
@@ -128,14 +137,27 @@ const RightNavBar = () => {
             width: "20px",
           }}
         />
-        <MenuIcon
+        <div
           style={{
             cursor: "pointer",
-            padding: "16px 0px", // Adjust padding as needed
+            padding: "16px 12px",
             height: "20px",
             width: "20px",
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transition: "all 0.15s ease-in-out 0s",
+            border: isHovered
+              ? "1px solid rgb(83, 146, 249)"
+              : "1px solid transparent",
+            backgroundColor: isHovered ? "rgb(83, 146, 249)" : "transparent",
+            color: isHovered ? "white" : "initial",
           }}
-        />
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <MenuIcon style={{ fontSize: "35px", color: "black" }} />
+        </div>
       </BottomNavigation>
     </Box>
   );
