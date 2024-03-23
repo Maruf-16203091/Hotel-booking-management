@@ -174,7 +174,6 @@ const RightNavBar = () => {
             transition: "all 0.15s ease-in-out 0s",
             borderRadius: isHovered ? "4px" : "transparent",
             backgroundColor: isHovered ? "#86b1f7" : "transparent",
-            
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -192,11 +191,21 @@ const RightNavBar = () => {
             onClose={handleClose}
             anchorOrigin={{
               vertical: "bottom",
-              horizontal: "left",
+              horizontal: "right",
             }}
             transformOrigin={{
               vertical: "top",
-              horizontal: "left",
+              horizontal: "right",
+            }}
+            PaperProps={{
+              style: {
+                marginTop: "16px",
+                width: "135px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: "4px",
+              },
             }}
           >
             <List>
@@ -206,11 +215,8 @@ const RightNavBar = () => {
                 to="/flights"
                 onClick={handleClose}
               >
-                <ListItemIcon>
-                  <FlightIcon />
-                </ListItemIcon>
                 <ListItemText
-                  primary="Flights"
+                  primary="Booking"
                   primaryTypographyProps={{
                     sx: {
                       fontWeight: "400",
@@ -224,11 +230,8 @@ const RightNavBar = () => {
               </ListItem>
 
               <ListItem button component={Link} to="/bus" onClick={handleClose}>
-                <ListItemIcon>
-                  <DirectionsBusIcon />
-                </ListItemIcon>
                 <ListItemText
-                  primary="Bus"
+                  primary="Sign in"
                   primaryTypographyProps={{
                     sx: {
                       fontWeight: "400",
@@ -247,11 +250,8 @@ const RightNavBar = () => {
                 to="/train"
                 onClick={handleClose}
               >
-                <ListItemIcon>
-                  <TrainIcon />
-                </ListItemIcon>
                 <ListItemText
-                  primary="Train"
+                  primary="SETTINGS"
                   primaryTypographyProps={{
                     sx: {
                       fontWeight: "400",
@@ -270,11 +270,8 @@ const RightNavBar = () => {
                 to="/boats"
                 onClick={handleClose}
               >
-                <ListItemIcon>
-                  <DirectionsBoatIcon />
-                </ListItemIcon>
                 <ListItemText
-                  primary="Boats"
+                  primary="List your place"
                   primaryTypographyProps={{
                     sx: {
                       fontFamily:
