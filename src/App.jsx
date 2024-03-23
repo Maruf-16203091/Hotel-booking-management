@@ -18,7 +18,7 @@ const App = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "100vh", // Same background color
+          minHeight: "100vh",
         }}
       >
         <Header />

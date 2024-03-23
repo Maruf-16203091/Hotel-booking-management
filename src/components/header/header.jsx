@@ -3,6 +3,7 @@ import { AppBar, Toolbar } from "@mui/material";
 
 import LeftNavBar from "../header/LeftNav";
 import RightNavBar from "../header/RightNav";
+import "../header/Header.css";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -16,25 +17,8 @@ const Header = () => {
   };
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        width: "100%",
-        paddingX: "16px",
-        backgroundColor: "#ffffff",
-      }}
-    >
-      <Toolbar
-        sx={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          flexDirection: "row",
-          alignItems: "center",
-          paddingX: "0px 16px",
-          color: "#2a2a2e",
-          flex: "1 1 0px",
-        }}
-      >
+    <AppBar position="fixed" className="appbar-styles">
+      <Toolbar className="toolbar-styles">
         <LeftNavBar />
         <RightNavBar />
       </Toolbar>
