@@ -17,7 +17,7 @@ import FlightIcon from "@mui/icons-material/Flight";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBoatIcon from "@mui/icons-material/DirectionsBoat";
-import "../header/Header.css";
+
 const HeaderBottomNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -30,27 +30,79 @@ const HeaderBottomNavigation = () => {
   };
 
   return (
-    <Box className="left-box-styles">
+    <Box
+      sx={{
+        padding: "0px 16px",
+        display: "flex",
+        flex: "0 0 auto",
+      }}
+    >
       <Link to="/">
-        <img src={Logo} alt="Logo" className="logo-styles" />
+        <img
+          src={Logo}
+          alt="Logo"
+          style={{
+            width: "120px",
+            height: "auto",
+            marginTop: "15px",
+            marginRight: "40px",
+            marginLeft: "20px",
+          }}
+        />
       </Link>
 
       <BottomNavigation showLabels>
         <BottomNavigationAction
           component={Link}
           to="/hotels"
-          label={<Typography className="text-styles">Hotels</Typography>}
-          className="bottom-nav-action-styles-hotels"
+          label={
+            <Typography
+              sx={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
+              }}
+            >
+              Hotels
+            </Typography>
+          }
+          sx={{
+            color: "#2a2a2e",
+            padding: 0,
+            width: "auto", // Set width to auto
+            marginX: "-20px", // Adjust margin for consistent spacing
+          }}
         />
         <BottomNavigationAction
           onClick={handleClick}
           label={
             <div style={{ display: "flex", alignItems: "center" }}>
-              <Typography className="text-styles">Transport</Typography>
+              <Typography
+                sx={{
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                  marginLeft: "-10px", // Adjust margin to align with "Hotels" label
+
+                  fontWeight: "400",
+                  lineHeight: "1.42857",
+                  fontSize: "13px",
+                }}
+              >
+                Transport
+              </Typography>
               <ArrowDropDownIcon />
             </div>
           }
-          className="bottom-nav-action-styles-transport"
+          sx={{
+            color: "#2a2a2e",
+            padding: 0,
+            width: "auto", // Set width to auto
+            marginX: "30px",
+            // Adjust margin for consistent spacing
+          }}
         />
         <Popover
           open={Boolean(anchorEl)}
@@ -77,7 +129,15 @@ const HeaderBottomNavigation = () => {
               </ListItemIcon>
               <ListItemText
                 primary="Flights"
-                primaryTypographyProps={{ className: "list-item-text-styles" }}
+                primaryTypographyProps={{
+                  sx: {
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  },
+                }}
               />
             </ListItem>
 
@@ -87,7 +147,15 @@ const HeaderBottomNavigation = () => {
               </ListItemIcon>
               <ListItemText
                 primary="Bus"
-                primaryTypographyProps={{ className: "list-item-text-styles" }}
+                primaryTypographyProps={{
+                  sx: {
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  },
+                }}
               />
             </ListItem>
 
@@ -97,7 +165,15 @@ const HeaderBottomNavigation = () => {
               </ListItemIcon>
               <ListItemText
                 primary="Train"
-                primaryTypographyProps={{ className: "list-item-text-styles" }}
+                primaryTypographyProps={{
+                  sx: {
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  },
+                }}
               />
             </ListItem>
 
@@ -125,21 +201,71 @@ const HeaderBottomNavigation = () => {
           component={Link}
           to="/services"
           label={
-            <Typography className="text-styles">Coupons & Deals</Typography>
+            <Typography
+              sx={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
+              }}
+            >
+              Coupons & Deals
+            </Typography>
           }
-          className="bottom-nav-action-styles-coupons"
+          sx={{
+            color: "#2a2a2e",
+            padding: 0,
+            width: "auto", // Set width to auto
+            marginRight: "10px", // Adjust margin for consistent spacing
+            whiteSpace: "nowrap", // Prevent line breaks
+          }}
         />
         <BottomNavigationAction
           component={Link}
           to="/contact"
-          label={<Typography className="text-styles">Apartments</Typography>}
-          className="bottom-nav-action-styles-apartments"
+          label={
+            <Typography
+              sx={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
+              }}
+            >
+              Apartments
+            </Typography>
+          }
+          sx={{
+            color: "#2a2a2e",
+            padding: 0,
+            width: "auto", // Set width to auto
+            marginX: "20px", // Adjust margin for consistent spacing
+          }}
         />
         <BottomNavigationAction
           component={Link}
           to="/attraction"
-          label={<Typography className="text-styles">Attractions</Typography>}
-          className="bottom-nav-action-styles-atractions"
+          label={
+            <Typography
+              sx={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
+              }}
+            >
+              Attractions
+            </Typography>
+          }
+          sx={{
+            color: "#2a2a2e",
+            padding: 0,
+            width: "auto", // Set width to auto
+            marginX: "-10px", // Adjust margin for consistent spacing
+          }}
         />
       </BottomNavigation>
     </Box>

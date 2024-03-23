@@ -1,3 +1,4 @@
+/* CSS for header */
 .appbar-styles {
   width: 100%;
   padding: 0 16px;
@@ -10,10 +11,11 @@
   flex-direction: row;
   align-items: center;
   padding: 0 16px;
-  /* or padding: 0px 16px; */
   color: #2a2a2e;
   flex: 1 1 0px;
 }
+
+/* CSS for left header */
 
 .left-box-styles {
   padding: 0px 16px;
@@ -21,6 +23,7 @@
   flex: 0 0 auto;
 }
 
+/* CSS for logo */
 .logo-styles {
   width: 120px;
   height: auto;
@@ -29,6 +32,7 @@
   margin-left: 20px;
 }
 
+/* CSS for text */
 .text-styles {
   font-family: mallory, "Helvetica Neue", Helvetica, Arial, sans-sarif;
   /* Apply Montserrat font */
@@ -37,12 +41,12 @@
   font-size: 13px;
 }
 
+/* CSS for nav-action */
 .bottom-nav-action-styles-atractions {
   color: #2a2a2e;
   padding: 0;
   width: auto;
   margin-left: -10px;
-  /* Adjust margin for consistent spacing */
   white-space: nowrap;
 }
 
@@ -59,7 +63,6 @@
   padding: 0;
   width: auto;
   margin-right: 10px;
-  /* Adjust margin for consistent spacing */
   white-space: nowrap;
 }
 
@@ -81,9 +84,158 @@
   white-space: nowrap;
 }
 
+/* CSS for left list item*/
 .list-item-text-styles {
   font-weight: 400;
   line-height: 1.42857;
   font-size: 13px;
   font-family: mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* CSS for Right header */
+.right-box-styles {
+  position: relative;
+  justify-content: flex-end;
+  display: inline-flex;
+  flex: 1 1 0%;
+  min-width: unset;
+  margin-left: 500px;
+  padding: 30px;
+}
+
+.right-typography-styles {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(255, 86, 125);
+  border-radius: 4px;
+  padding: 12px 16px;
+  color: rgb(255, 86, 125);
+  transition: all 0.15s ease-in-out 0s;
+  font-size: 14px;
+}
+
+.right-typography-styles:hover {
+  border-color: rgb(255, 86, 125);
+  background-color: rgb(255, 86, 125);
+  color: white;
+}
+
+.right-typography-custom-styles {
+  color: #2a2a2e;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  /* Adjust margin for consistent spacing */
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+.custom-button-sign-in {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border-radius: 4px;
+  padding: 12px 16px;
+  color: rgb(83, 146, 249);
+  transition: all 0.15s ease-in-out 0s;
+  font-size: 14px;
+}
+
+.custom-button-sign-in:hover {
+  border-color: rgb(83, 146, 249);
+  background-color: rgb(83, 146, 249);
+  color: white;
+}
+
+.custom-typography-styles-sign-in {
+  color: #2a2a2e;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+.custom-button-create {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(83, 146, 249);
+  border-radius: 4px;
+  padding: 12px 16px;
+  color: rgb(83, 146, 249);
+  font-size: 14px;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.custom-button-create:hover {
+  border-color: rgb(83, 146, 249);
+  background-color: rgb(83, 146, 249);
+  color: white;
+}
+
+.custom-typography-create {
+  color: #2a2a2e;
+  padding: 0;
+  margin: 0 4px; /* Adjust margin for consistent spacing */
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+
+
+.custom-icon-cart {
+  cursor: pointer;
+  padding: 16px 32px;
+  height: 20px;
+  width: 20px;
+}
+
+.custom-div-cart {
+  cursor: pointer;
+  padding: 20px 12px;
+  height: 13px;
+  width: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.custom-div-cart:hover {
+  border-radius: 4px;
+  background-color: #86b1f7;
+}
+
+.custom-icon-menu {
+  font-size: 30px;
+  color: black;
+}
+
+.custom-icon-menu:hover {
+  color: white;
+}
+
+.popover-paper-right {
+  margin-top: 16px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.list-item-right {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-sarif;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+.list-item-text-right {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-sarif;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
 }
