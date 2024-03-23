@@ -97,7 +97,8 @@ function LanguageModal() {
         <div
           style={{
             width: "820px",
-            height: "520px", // Fixed height for the modal
+            height: "620px", // Fixed height for the modal
+            border: "1px solid #a7c5fa",
             backgroundColor: "#FFF",
             borderRadius: "4px",
             position: "relative",
@@ -109,7 +110,7 @@ function LanguageModal() {
             onClick={handleClose}
             style={{
               position: "fixed",
-              top: "150px",
+              top: "95px",
               right: "530px",
               backgroundColor: "transparent",
               color: "white",
@@ -130,7 +131,7 @@ function LanguageModal() {
               variant="h8"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
-              Selected Language
+              Selected language
             </Typography>
           </div>
 
@@ -149,10 +150,10 @@ function LanguageModal() {
             <img
               src={GermanyFlagIcon}
               alt="Germany Flag"
-              style={{ height: "24px", width: "24px", marginRight: "10px" }}
+              style={{ height: "20px", width: "20px", marginRight: "10px" }}
             />
             <Typography
-              variant="h8"
+              variant="body2"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               German
@@ -169,7 +170,7 @@ function LanguageModal() {
               variant="body2"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
-              All Languages
+              All languages
             </Typography>
           </div>
           {/* All Languages */}
@@ -198,10 +199,9 @@ function LanguageModal() {
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBottom: "18px",
 
                       borderRadius: "4px", // Add border radius
-                      padding: "8px", // Add padding
+                      padding: "20px", // Add padding
                       cursor: "pointer", // Change cursor to pointer
                       transition: "border-color 0.3s ease", // Add transition for smooth effect
                       backgroundColor:
@@ -221,16 +221,16 @@ function LanguageModal() {
                       src={language.flag}
                       alt={`${language.name} Flag`}
                       style={{
-                        height: "24px",
-                        width: "24px",
-                        marginRight: "10px",
+                        height: "20px",
+                        width: "20px",
+                        marginRight: "15px",
                       }}
                     />
                     <Typography
                       variant="body2"
                       style={{
                         fontFamily: "Montserrat, sans-serif",
-                        fontSize: "14px",
+                        fontSize: "10px",
                       }}
                     >
                       {language.name}

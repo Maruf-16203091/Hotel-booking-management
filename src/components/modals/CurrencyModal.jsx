@@ -6,9 +6,21 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney"; // Import the cur
 
 function CurrencyModal() {
   const [openModal, setOpenModal] = useState(false);
+  const [SelectedCurrencyIndex, setSelectedCurrencyIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [PopularHoveredIndex, setPopularHoveredIndex] = useState(null);
+  const [selectedPopularIndex, setSelectedPopularIndex] = useState(null);
 
   const handleClose = () => {
     setOpenModal(false);
+  };
+  const handlePopularClick = (index) => {
+    setSelectedPopularIndex(index);
+    setOpenModal(false);
+  };
+  const handleCurrencyClick = (index) => {
+    setSelectedCurrencyIndex(index);
+    setOpenModal(false); // Close modal after selecting a language (you may want to remove this line if you want to keep the modal open after selection)
   };
 
   const currencies = [
@@ -60,6 +72,8 @@ function CurrencyModal() {
     // Example: { name: "Currency Name", symbol: <CurrencySymbolComponent /> },
   ];
 
+  const popularCurrencies = [{ name: "USD" }, { name: "EUR" }, { name: "GBP" }];
+
   // Function to chunk the currencies array into arrays of 10 elements
   const chunkArray = (arr, size) => {
     const chunkedArr = [];
@@ -73,6 +87,10 @@ function CurrencyModal() {
   const chunkedCurrencies = chunkArray(
     currencies,
     Math.ceil(currencies.length / 3)
+  );
+  const chunkedPopularCurrencies = chunkArray(
+    popularCurrencies,
+    Math.ceil(popularCurrencies.length / 3)
   );
 
   return (
@@ -102,8 +120,9 @@ function CurrencyModal() {
         <div
           style={{
             width: "820px",
-            height: "520px", // Fixed height for the modal
+            height: "685px", // Fixed height for the modal
             backgroundColor: "#FFF",
+            border: "1px solid #a7c5fa",
             borderRadius: "4px",
             position: "relative",
             overflow: "hidden",
@@ -114,7 +133,7 @@ function CurrencyModal() {
             onClick={handleClose}
             style={{
               position: "fixed",
-              top: "150px",
+              top: "65px",
               right: "530px",
               backgroundColor: "transparent",
               color: "white",
@@ -150,7 +169,7 @@ function CurrencyModal() {
             }}
           >
             <Typography
-              variant="h8"
+              variant="body2"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Euro
@@ -173,30 +192,64 @@ function CurrencyModal() {
 
           <div
             style={{
-              padding: "10px",
               display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
+              padding: "12px",
+              flexDirection: "row",
+              overflowY: "auto",
+              maxHeight: "calc(100% - 70px)",
             }}
           >
-            <Typography
-              variant="body2"
-              style={{ fontFamily: "Montserrat, sans-serif" }}
-            >
-              Euro
-            </Typography>
-            <Typography
-              variant="body2"
-              style={{ fontFamily: "Montserrat, sans-serif" }}
-            >
-              USD Dollar
-            </Typography>
-            <Typography
-              variant="body2"
-              style={{ fontFamily: "Montserrat, sans-serif" }}
-            >
-              Indian Rupee
-            </Typography>
+            {chunkedPopularCurrencies.map((column, colIndex) => (
+              <div
+                key={colIndex}
+                style={{
+                  flex: 1,
+                  marginRight: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                {column.map((popular, popularIndex) => (
+                  <div
+                    key={popularIndex}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+
+                      borderRadius: "4px", // Add border radius
+                      padding: "8px", // Add padding
+                      cursor: "pointer", // Change cursor to pointer
+                      transition: "border-color 0.3s ease", // Add transition for smooth effect
+                      color:
+                        PopularHoveredIndex === colIndex * 3 + popularIndex
+                          ? "#528efa"
+                          : "inherit",
+                      backgroundColor:
+                        PopularHoveredIndex === colIndex * 3 + popularIndex
+                          ? "#e3edff"
+                          : "transparent", // Apply background color based on hovered index
+                    }}
+                    onMouseEnter={() =>
+                      setPopularHoveredIndex(colIndex * 3 + popularIndex)
+                    }
+                    onMouseLeave={() => setPopularHoveredIndex(null)}
+                    onClick={() =>
+                      handlePopularClick(colIndex * 3 + popularIndex)
+                    } // Add onClick handler to select language
+                  >
+                    <Typography
+                      variant="body2"
+                      style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "12px",
+                      }}
+                    >
+                      {popular.name}
+                    </Typography>
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
           <div
             style={{
@@ -222,9 +275,9 @@ function CurrencyModal() {
               maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
             }}
           >
-            {chunkedCurrencies.map((column, index) => (
+            {chunkedCurrencies.map((column, colIndex) => (
               <div
-                key={index}
+                key={colIndex}
                 style={{
                   flex: 1,
                   marginRight: "10px",
@@ -232,19 +285,40 @@ function CurrencyModal() {
                   flexDirection: "column",
                 }}
               >
-                {column.map((currency, idx) => (
+                {column.map((currency, currencyIndex) => (
                   <div
-                    key={idx}
+                    key={currencyIndex}
                     style={{
                       display: "flex",
                       alignItems: "center",
-                      marginBottom: "18px",
+                      borderRadius: "4px", // Add border radius
+                      padding: "15px", // Add padding
+                      cursor: "pointer", // Change cursor to pointer
+                      transition: "border-color 0.3s ease", // Add transition for smooth effect
+                      color:
+                        hoveredIndex === colIndex * 3 + currencyIndex
+                          ? "#528efa"
+                          : "inherit",
+                      backgroundColor:
+                        hoveredIndex === colIndex * 3 + currencyIndex
+                          ? "#e3edff"
+                          : "transparent", // Apply background color based on hovered index
                     }}
+                    onMouseEnter={() =>
+                      setHoveredIndex(colIndex * 3 + currencyIndex)
+                    }
+                    onMouseLeave={() => setHoveredIndex(null)}
+                    onClick={() =>
+                      handleCurrencyClick(colIndex * 3 + currencyIndex)
+                    } // Add onClick handler to select language
                   >
                     {currency.symbol}
                     <Typography
                       variant="body2"
-                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                      style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "10px",
+                      }}
                     >
                       {currency.name}
                     </Typography>

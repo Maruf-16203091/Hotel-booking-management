@@ -58,10 +58,12 @@ const HeaderBottomNavigation = () => {
           label={
             <Typography
               sx={{
-                fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
 
-                fontSize: "14px",
-                fontWeight: "500",
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
               }}
             >
               Hotels
@@ -80,11 +82,13 @@ const HeaderBottomNavigation = () => {
             <div style={{ display: "flex", alignItems: "center" }}>
               <Typography
                 sx={{
-                  fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
                   marginLeft: "-10px", // Adjust margin to align with "Hotels" label
 
-                  fontSize: "14px",
-                  fontWeight: "500",
+                  fontWeight: "400",
+                  lineHeight: "1.42857",
+                  fontSize: "13px",
                 }}
               >
                 Transport
@@ -127,8 +131,11 @@ const HeaderBottomNavigation = () => {
                 primary="Flights"
                 primaryTypographyProps={{
                   sx: {
-                    fontSize: "14px", // Adjust the font size here as needed
-                    fontWeight: "500",
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                   },
                 }}
               />
@@ -142,8 +149,11 @@ const HeaderBottomNavigation = () => {
                 primary="Bus"
                 primaryTypographyProps={{
                   sx: {
-                    fontSize: "14px", // Adjust the font size here as needed
-                    fontWeight: "500",
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                   },
                 }}
               />
@@ -157,8 +167,11 @@ const HeaderBottomNavigation = () => {
                 primary="Train"
                 primaryTypographyProps={{
                   sx: {
-                    fontSize: "14px", // Adjust the font size here as needed
-                    fontWeight: "500",
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                   },
                 }}
               />
@@ -172,8 +185,11 @@ const HeaderBottomNavigation = () => {
                 primary="Boats"
                 primaryTypographyProps={{
                   sx: {
-                    fontSize: "14px", // Adjust the font size here as needed
-                    fontWeight: "500",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
                   },
                 }}
               />
@@ -187,9 +203,11 @@ const HeaderBottomNavigation = () => {
           label={
             <Typography
               sx={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "14px",
-                fontWeight: "500",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
               }}
             >
               Coupons & Deals
@@ -209,9 +227,11 @@ const HeaderBottomNavigation = () => {
           label={
             <Typography
               sx={{
-                fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
-                fontSize: "14px",
-                fontWeight: "500",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
               }}
             >
               Apartments
@@ -230,9 +250,11 @@ const HeaderBottomNavigation = () => {
           label={
             <Typography
               sx={{
-                fontFamily: "Montserrat, sans-serif", // Apply Montserrat font
-                fontSize: "14px",
-                fontWeight: "500",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                fontWeight: "400",
+                lineHeight: "1.42857",
+                fontSize: "13px",
               }}
             >
               Attractions

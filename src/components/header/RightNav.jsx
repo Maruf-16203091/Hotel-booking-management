@@ -63,6 +63,9 @@ const RightNavBar = () => {
             padding: 0, // Set width to auto
             marginX: "4px", // Adjust margin for consistent spacing
             whiteSpace: "nowrap",
+            fontWeight: "400",
+            lineHeight: "1.42857",
+            fontSize: "13px",
           }}
         />
 
@@ -96,6 +99,9 @@ const RightNavBar = () => {
             padding: 0, // Set width to auto
             marginX: "4px", // Adjust margin for consistent spacing
             whiteSpace: "nowrap",
+            fontWeight: "400",
+            lineHeight: "1.42857",
+            fontSize: "13px",
           }}
         />
         <BottomNavigationAction
@@ -127,6 +133,9 @@ const RightNavBar = () => {
             padding: 0, // Set width to auto
             marginX: "4px", // Adjust margin for consistent spacing
             whiteSpace: "nowrap",
+            fontWeight: "400",
+            lineHeight: "1.42857",
+            fontSize: "13px",
           }}
         />
         <AddShoppingCartOutlinedIcon
