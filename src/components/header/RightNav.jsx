@@ -3,17 +3,33 @@ import {
   BottomNavigation,
   BottomNavigationAction,
   Typography,
+  Popover,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import LanguageModal from "../modals/LanguageModal";
 import CurrencyModal from "../modals/CurrencyModal";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
+import FlightIcon from "@mui/icons-material/Flight";
+import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
+import TrainIcon from "@mui/icons-material/Train";
+import DirectionsBoatIcon from "@mui/icons-material/DirectionsBoat";
 import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
 
 const RightNavBar = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -150,22 +166,125 @@ const RightNavBar = () => {
           style={{
             cursor: "pointer",
             padding: "16px 12px",
-            height: "20px",
+            height: "15px",
             width: "20px",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
             transition: "all 0.15s ease-in-out 0s",
-            border: isHovered
-              ? "1px solid rgb(83, 146, 249)"
-              : "1px solid transparent",
+
             backgroundColor: isHovered ? "rgb(83, 146, 249)" : "transparent",
             color: isHovered ? "white" : "initial",
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <MenuIcon style={{ fontSize: "35px", color: "black" }} />
+          <MenuIcon
+            onClick={handleClick}
+            style={{ fontSize: "35px", color: "black" }}
+          />
+          <Popover
+            open={Boolean(anchorEl)}
+            anchorEl={anchorEl}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+          >
+            <List>
+              <ListItem
+                button
+                component={Link}
+                to="/flights"
+                onClick={handleClose}
+              >
+                <ListItemIcon>
+                  <FlightIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Flights"
+                  primaryTypographyProps={{
+                    sx: {
+                      fontWeight: "400",
+                      lineHeight: "1.42857",
+                      fontSize: "13px",
+                      fontFamily:
+                        "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    },
+                  }}
+                />
+              </ListItem>
+
+              <ListItem button component={Link} to="/bus" onClick={handleClose}>
+                <ListItemIcon>
+                  <DirectionsBusIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Bus"
+                  primaryTypographyProps={{
+                    sx: {
+                      fontWeight: "400",
+                      lineHeight: "1.42857",
+                      fontSize: "13px",
+                      fontFamily:
+                        "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    },
+                  }}
+                />
+              </ListItem>
+
+              <ListItem
+                button
+                component={Link}
+                to="/train"
+                onClick={handleClose}
+              >
+                <ListItemIcon>
+                  <TrainIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Train"
+                  primaryTypographyProps={{
+                    sx: {
+                      fontWeight: "400",
+                      lineHeight: "1.42857",
+                      fontSize: "13px",
+                      fontFamily:
+                        "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    },
+                  }}
+                />
+              </ListItem>
+
+              <ListItem
+                button
+                component={Link}
+                to="/boats"
+                onClick={handleClose}
+              >
+                <ListItemIcon>
+                  <DirectionsBoatIcon />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Boats"
+                  primaryTypographyProps={{
+                    sx: {
+                      fontFamily:
+                        "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                      fontWeight: "400",
+                      lineHeight: "1.42857",
+                      fontSize: "13px",
+                    },
+                  }}
+                />
+              </ListItem>
+            </List>
+          </Popover>
         </div>
       </BottomNavigation>
     </Box>
