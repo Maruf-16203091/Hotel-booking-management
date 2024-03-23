@@ -45,7 +45,7 @@ const RightNavBar = () => {
         display: "inline-flex",
         flex: "1 1 0%",
         minWidth: "unset",
-        marginLeft: "550px",
+        marginLeft: "500px",
         padding: "30px",
       }}
     >
@@ -165,23 +165,26 @@ const RightNavBar = () => {
         <div
           style={{
             cursor: "pointer",
-            padding: "16px 12px",
-            height: "15px",
-            width: "20px",
+            padding: "20px 12px",
+            height: "13px",
+            width: "23px",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
             transition: "all 0.15s ease-in-out 0s",
-
-            backgroundColor: isHovered ? "rgb(83, 146, 249)" : "transparent",
-            color: isHovered ? "white" : "initial",
+            borderRadius: isHovered ? "4px" : "transparent",
+            backgroundColor: isHovered ? "#86b1f7" : "transparent",
+            
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           <MenuIcon
             onClick={handleClick}
-            style={{ fontSize: "35px", color: "black" }}
+            style={{
+              fontSize: "30px",
+              color: isHovered ? "white" : "black",
+            }}
           />
           <Popover
             open={Boolean(anchorEl)}
