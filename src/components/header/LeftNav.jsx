@@ -248,17 +248,35 @@ const HeaderBottomNavigation = () => {
           component={Link}
           to="/attraction"
           label={
-            <Typography
-              sx={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
-                fontWeight: "400",
-                lineHeight: "1.42857",
-                fontSize: "13px",
-              }}
-            >
-              Attractions
-            </Typography>
+            // Include the badge within the label
+            <Box sx={{ position: "relative" }}>
+              <Typography
+                sx={{
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                  fontWeight: "400",
+                  lineHeight: "1.42857",
+                  fontSize: "13px",
+                }}
+              >
+                Attractions
+              </Typography>
+              {/* Badge for "New" */}
+              <Typography
+                variant="body2"
+                sx={{
+                  position: "absolute", // Position absolute for positioning within the parent
+                  top: "-10px", // Adjust position from the top
+                  right: "-10px", // Adjust position from the right
+                  backgroundColor: "#ff0000", // Red background color for the badge
+                  color: "#ffffff", // White text color for the badge
+                  padding: "4px 8px", // Padding for the badge content
+                  borderRadius: "4px", // Square border radius
+                }}
+              >
+                New
+              </Typography>
+            </Box>
           }
           sx={{
             color: "#2a2a2e",
