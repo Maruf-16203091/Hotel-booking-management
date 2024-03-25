@@ -21,7 +21,7 @@ const HeroPage = () => {
         padding: "0 20px",
       }}
     >
-      <Box sx={{ maxWidth: "800px", width: "100%" }}>
+      <Box sx={{ maxWidth: "1200px", width: "100%" }}>
         <Typography
           variant="body2"
           sx={{ fontWeight: "bold", marginBottom: "20px" }}
