@@ -76,8 +76,8 @@ const HeaderBottomNavigation = () => {
           sx={{
             color: "#2a2a2e",
             padding: 0,
-            width: "auto", // Set width to auto
-            marginX: "-20px", // Adjust margin for consistent spacing
+            width: "auto",
+            marginX: "-20px",
           }}
         />
         <BottomNavigationAction
@@ -88,9 +88,8 @@ const HeaderBottomNavigation = () => {
                 <Typography
                   sx={{
                     fontFamily:
-                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
-                    marginLeft: "-10px", // Adjust margin to align with "Hotels" label
-
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    marginLeft: "-10px",
                     fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
@@ -107,9 +106,8 @@ const HeaderBottomNavigation = () => {
           sx={{
             color: "#2a2a2e",
             padding: 0,
-            width: "auto", // Set width to auto
+            width: "auto",
             marginX: "30px",
-            // Adjust margin for consistent spacing
           }}
         />
         <Popover
@@ -124,8 +122,8 @@ const HeaderBottomNavigation = () => {
             vertical: "top",
             horizontal: "left",
           }}
-          TransitionComponent={Fade} // Add TransitionComponent prop and specify Fade effect
-          transitionDuration={500} // Optionally, specify the transition duration in milliseconds
+          TransitionComponent={Fade}
+          transitionDuration={500}
         >
           <List>
             <ListItem

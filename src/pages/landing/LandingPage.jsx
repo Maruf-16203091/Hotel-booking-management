@@ -10,17 +10,7 @@ const AdvanceSearchPage = () => {
         padding: "40px",
       }}
     >
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <TextField label="Where to go?" variant="outlined" fullWidth />
-        </Grid>
-        <Grid item xs={4}>
-          <TextField label="Stay Dates" variant="outlined" fullWidth />
-        </Grid>
-        <Grid item xs={4}>
-          <TextField label="Number of Persons" variant="outlined" fullWidth />
-        </Grid>
-      </Grid>
+      <Grid container spacing={2}></Grid>
       <Button
         variant="contained"
         color="primary"

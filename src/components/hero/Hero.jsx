@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
+import AdvanceSearch from "../hero/search/Search";
 
 const HeroPage = () => {
   return (
@@ -22,11 +23,12 @@ const HeroPage = () => {
     >
       <Box sx={{ maxWidth: "800px", width: "100%" }}>
         <Typography
-          variant="h2"
+          variant="body2"
           sx={{ fontWeight: "bold", marginBottom: "20px" }}
         >
           Where to next, Hosen?
         </Typography>
+        <AdvanceSearch />
       </Box>
     </Box>
   );
