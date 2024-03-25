@@ -14,7 +14,6 @@ import CurrencyModal from "../../../modals/currencyModal/CurrencyModal";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
-import "./RightNav.css";
 
 const RightNavBar = () => {
   const [isHovered, setIsHovered] = useState(false);
