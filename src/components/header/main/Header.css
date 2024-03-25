@@ -1,0 +1,94 @@
+/* CSS for header */
+.appbar-styles {
+  width: 100%;
+  padding: 0 16px;
+  background-color: #ffffff;
+}
+
+.toolbar-styles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  color: #2a2a2e;
+  flex: 1 1 0px;
+}
+
+/* CSS for left header */
+
+.left-box-styles {
+  padding: 0px 16px;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+/* CSS for logo */
+.logo-styles {
+  width: 120px;
+  height: auto;
+  margin-top: 15px;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+/* CSS for text */
+.text-styles {
+  font-family: mallory, "Helvetica Neue", Helvetica, Arial, sans-sarif;
+  /* Apply Montserrat font */
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+/* CSS for nav-action */
+.bottom-nav-action-styles-atractions {
+  color: #2a2a2e;
+  padding: 0;
+  width: auto;
+  margin-left: -10px;
+  white-space: nowrap;
+}
+
+.bottom-nav-action-styles-apartments {
+  color: #2a2a2e;
+  padding: 0;
+  width: auto;
+  margin: 20px;
+  white-space: nowrap;
+}
+
+.bottom-nav-action-styles-coupons {
+  color: #2a2a2e;
+  padding: 0;
+  width: auto;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.bottom-nav-action-styles-transport {
+  color: #2a2a2e;
+  padding: 0;
+  width: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
+.bottom-nav-action-styles-hotels {
+  color: #2a2a2e;
+  padding: 0;
+  width: auto;
+  margin-left: -20px;
+  margin-right: -20px;
+  white-space: nowrap;
+}
+
+/* CSS for left list item*/
+.list-item-text-styles {
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+  font-family: mallory, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+

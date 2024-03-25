@@ -271,8 +271,9 @@ function CurrencyModal() {
               display: "flex",
               padding: "12px",
               flexDirection: "row",
-              overflowY: "auto", // This property makes the content scrollable vertically
-              maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
+              overflowY: "auto",
+              maxHeight: "calc(100% - 70px)",
+              scrollbarWidth: "thin",
             }}
           >
             {chunkedCurrencies.map((column, colIndex) => (

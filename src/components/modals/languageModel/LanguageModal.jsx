@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Modal, Typography, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import GermanyFlagIcon from "../../assets/germany.png"; // Import the Germany flag image
-import FranceFlagIcon from "../../assets/france.png"; // Import the France flag image
-import SpainFlagIcon from "../../assets/spain.png"; // Import the Spain flag image
-import ItalyFlagIcon from "../../assets/italy.png"; // Import the Italy flag image
+import GermanyFlagIcon from "../../../assets/germany.png";
+import FranceFlagIcon from "../../../assets/france.png";
+import SpainFlagIcon from "../../../assets/spain.png";
+import ItalyFlagIcon from "../../../assets/italy.png";
+import "./LanguageModal.css";
 
 function LanguageModal() {
   const [openModal, setOpenModal] = useState(false);
@@ -180,7 +181,9 @@ function LanguageModal() {
               padding: "12px",
               flexDirection: "row",
               overflowY: "auto",
-              maxHeight: "calc(100% - 70px)", // Adjust max height based on your need
+              maxHeight: "calc(100% - 70px)",
+              scrollbarWidth: "thin",
+              scrollbarHeight: "thin",
             }}
           >
             {chunkedLanguages.map((column, colIndex) => (

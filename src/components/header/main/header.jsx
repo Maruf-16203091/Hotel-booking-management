@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { AppBar, Toolbar } from "@mui/material";
 
-import LeftNavBar from "../header/LeftNav";
-import RightNavBar from "../header/RightNav";
-
+import LeftNavBar from "../navBar/leftNav/LeftNav";
+import RightNavBar from "../navBar/rightNav/RightNav";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
