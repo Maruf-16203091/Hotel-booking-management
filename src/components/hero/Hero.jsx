@@ -23,10 +23,10 @@ const HeroPage = () => {
     >
       <Box sx={{ maxWidth: "1200px", width: "100%" }}>
         <Typography
-          variant="body2"
-          sx={{ fontWeight: "bold", marginBottom: "20px" }}
+          variant="h6"
+          sx={{ fontWeight: "bold", marginBottom: "45px",marginLeft: "60px", color:"#0b2b61",fontSize: "1.5em", }}
         >
-          Where to next, Hosen?
+          EXPLORE MORE, SPEND LESS
         </Typography>
         <AdvanceSearch />
       </Box>
