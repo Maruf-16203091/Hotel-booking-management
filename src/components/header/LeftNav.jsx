@@ -17,6 +17,7 @@ import FlightIcon from "@mui/icons-material/Flight";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBoatIcon from "@mui/icons-material/DirectionsBoat";
+import NewBadge from "./badges/NewBadge";
 
 const HeaderBottomNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -79,22 +80,25 @@ const HeaderBottomNavigation = () => {
         <BottomNavigationAction
           onClick={handleClick}
           label={
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <Typography
-                sx={{
-                  fontFamily:
-                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
-                  marginLeft: "-10px", // Adjust margin to align with "Hotels" label
+            <Box sx={{ position: "relative" }}>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <Typography
+                  sx={{
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                    marginLeft: "-10px", // Adjust margin to align with "Hotels" label
 
-                  fontWeight: "400",
-                  lineHeight: "1.42857",
-                  fontSize: "13px",
-                }}
-              >
-                Transport
-              </Typography>
-              <ArrowDropDownIcon />
-            </div>
+                    fontWeight: "400",
+                    lineHeight: "1.42857",
+                    fontSize: "13px",
+                  }}
+                >
+                  Transport
+                </Typography>
+
+                <ArrowDropDownIcon />
+              </div>
+            </Box>
           }
           sx={{
             color: "#2a2a2e",
@@ -201,17 +205,20 @@ const HeaderBottomNavigation = () => {
           component={Link}
           to="/services"
           label={
-            <Typography
-              sx={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "400",
-                lineHeight: "1.42857",
-                fontSize: "13px",
-              }}
-            >
-              Coupons & Deals
-            </Typography>
+            <Box sx={{ position: "relative" }}>
+              <Typography
+                sx={{
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  fontWeight: "400",
+                  lineHeight: "1.42857",
+                  fontSize: "13px",
+                }}
+              >
+                Coupons & Deals
+              </Typography>
+              <NewBadge />
+            </Box>
           }
           sx={{
             color: "#2a2a2e",
@@ -225,17 +232,19 @@ const HeaderBottomNavigation = () => {
           component={Link}
           to="/contact"
           label={
-            <Typography
-              sx={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
-                fontWeight: "400",
-                lineHeight: "1.42857",
-                fontSize: "13px",
-              }}
-            >
-              Apartments
-            </Typography>
+            <Box sx={{ position: "relative" }}>
+              <Typography
+                sx={{
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
+                  fontWeight: "400",
+                  lineHeight: "1.42857",
+                  fontSize: "13px",
+                }}
+              >
+                Apartments
+              </Typography>
+            </Box>
           }
           sx={{
             color: "#2a2a2e",
@@ -262,20 +271,7 @@ const HeaderBottomNavigation = () => {
                 Attractions
               </Typography>
               {/* Badge for "New" */}
-              <Typography
-                variant="body2"
-                sx={{
-                  position: "absolute", // Position absolute for positioning within the parent
-                  top: "-10px", // Adjust position from the top
-                  right: "-10px", // Adjust position from the right
-                  backgroundColor: "#ff0000", // Red background color for the badge
-                  color: "#ffffff", // White text color for the badge
-                  padding: "4px 8px", // Padding for the badge content
-                  borderRadius: "4px", // Square border radius
-                }}
-              >
-                New
-              </Typography>
+              <NewBadge />
             </Box>
           }
           sx={{
