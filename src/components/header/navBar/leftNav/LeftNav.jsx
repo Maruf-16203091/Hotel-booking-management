@@ -36,6 +36,7 @@ const HeaderBottomNavigation = () => {
         padding: "0px 16px",
         display: "flex",
         flex: "0 0 auto",
+        marginTop: "10px",
       }}
     >
       <Link to="/">
@@ -65,6 +66,7 @@ const HeaderBottomNavigation = () => {
                 fontWeight: "400",
                 lineHeight: "1.42857",
                 fontSize: "13px",
+                fontWeight: "700",
               }}
             >
               Hotels
@@ -91,6 +93,7 @@ const HeaderBottomNavigation = () => {
                     fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
+                    fontWeight: "700",
                   }}
                 >
                   Transport
@@ -138,6 +141,7 @@ const HeaderBottomNavigation = () => {
                     fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
+                    fontWeight: "700",
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                   },
@@ -156,6 +160,7 @@ const HeaderBottomNavigation = () => {
                     fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
+                    fontWeight: "700",
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                   },
@@ -174,6 +179,7 @@ const HeaderBottomNavigation = () => {
                     fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
+                    fontWeight: "700",
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                   },
@@ -194,6 +200,7 @@ const HeaderBottomNavigation = () => {
                     fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
+                    fontWeight: "700",
                   },
                 }}
               />
@@ -213,6 +220,7 @@ const HeaderBottomNavigation = () => {
                   fontWeight: "400",
                   lineHeight: "1.42857",
                   fontSize: "13px",
+                  fontWeight: "700",
                 }}
               >
                 Coupons & Deals
@@ -240,6 +248,7 @@ const HeaderBottomNavigation = () => {
                   fontWeight: "400",
                   lineHeight: "1.42857",
                   fontSize: "13px",
+                  fontWeight: "700",
                 }}
               >
                 Apartments
@@ -266,6 +275,7 @@ const HeaderBottomNavigation = () => {
                   fontWeight: "400",
                   lineHeight: "1.42857",
                   fontSize: "13px",
+                  fontWeight: "700",
                 }}
               >
                 Attractions

@@ -9,7 +9,7 @@ const NewBadge = () => {
         display: "flex",
         justifyContent: "center",
         position: "absolute",
-        top: "-10px",
+        top: "-12px",
         right: "50%",
         transform: "translate(50%, -50%)",
         padding: "5px",

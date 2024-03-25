@@ -1,148 +1,148 @@
 /* CSS for Right navbar */
 .right-box-styles {
-    position: relative;
-    justify-content: flex-end;
-    display: inline-flex;
-    flex: 1 1 0%;
-    min-width: unset;
-    margin-left: 500px;
-    padding: 30px;
-  }
-  
-  .right-typography-styles {
-    font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
-    border: 1px solid rgb(255, 86, 125);
-    border-radius: 4px;
-    padding: 10px 10px;
-    color: rgb(255, 86, 125);
-    transition: all 0.15s ease-in-out 0s;
-    font-size: 13px;
-  }
-  
-  .right-typography-styles:hover {
-    border-color: rgb(255, 86, 125);
-    background-color: rgb(255, 86, 125);
-    color: white;
-  }
-  
-  .right-typography-custom-styles {
-    color: #2a2a2e;
-    padding: 0;
-    margin-left: 4px;
-    margin-right: 4px;
-    /* Adjust margin for consistent spacing */
-    white-space: nowrap;
-    font-weight: 400;
-    line-height: 1.42857;
-    font-size: 13px;
-  }
-  
-  .custom-button-sign-in {
-    font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
-    border-radius: 4px;
-    padding: 10px 10px;
-    color: rgb(83, 146, 249);
-    transition: all 0.15s ease-in-out 0s;
-    font-size: 14px;
-  }
-  
-  .custom-button-sign-in:hover {
-    border-color: rgb(83, 146, 249);
-    background-color: rgb(83, 146, 249);
-    color: white;
-  }
-  
-  .custom-typography-styles-sign-in {
-    color: #2a2a2e;
-    padding: 0;
-    margin-left: 4px;
-    margin-right: 4px;
-    white-space: nowrap;
-    font-weight: 400;
-    line-height: 1.42857;
-    font-size: 13px;
-  }
-  
-  .custom-button-create {
-    font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
-    border: 1px solid rgb(83, 146, 249);
-    border-radius: 4px;
-    padding: 10px 10px;
-    color: rgb(83, 146, 249);
-    font-size: 14px;
-    transition: all 0.15s ease-in-out 0s;
-  }
-  
-  .custom-button-create:hover {
-    border-color: rgb(83, 146, 249);
-    background-color: rgb(83, 146, 249);
-    color: white;
-  }
-  
-  .custom-typography-create {
-    color: #2a2a2e;
-    padding: 0;
-    margin: 0 4px;
-    /* Adjust margin for consistent spacing */
-    white-space: nowrap;
-    font-weight: 400;
-    line-height: 1.42857;
-    font-size: 13px;
-  }
-  
-  
-  
-  .custom-icon-cart {
-    cursor: pointer;
-    padding: 16px 32px;
-    height: 20px;
-    width: 20px;
-  }
-  
-  .custom-div-cart {
-    cursor: pointer;
-    padding: 20px 12px;
-    height: 13px;
-    width: 23px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.15s ease-in-out 0s;
-  }
-  
-  .custom-div-cart:hover {
-    border-radius: 4px;
-    background-color: #86b1f7;
-  }
-  
-  .custom-icon-menu {
-    font-size: 30px;
-    color: black;
-  }
-  
-  .custom-icon-menu:hover {
-    color: white;
-  }
-  
-  .popover-paper-right {
-    margin-top: 16px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-  }
-  
-  .list-item-right {
-    font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-sarif;
-    font-weight: 400;
-    line-height: 1.42857;
-    font-size: 13px;
-  }
-  
-  .list-item-text-right {
-    font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-sarif;
-    font-weight: 400;
-    line-height: 1.42857;
-    font-size: 13px;
-  }
+  position: relative;
+  justify-content: flex-end;
+  display: inline-flex;
+  flex: 1 1 0%;
+  min-width: unset;
+  margin-left: 500px;
+  padding: 30px;
+}
+
+.right-typography-styles {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(255, 86, 125);
+  border-radius: 4px;
+  padding: 10px 10px;
+  color: rgb(255, 86, 125);
+  transition: all 0.15s ease-in-out 0s;
+  font-size: 13px;
+}
+
+.right-typography-styles:hover {
+  border-color: rgb(255, 86, 125);
+  background-color: rgb(255, 86, 125);
+  color: white;
+}
+
+.right-typography-custom-styles {
+  color: #2a2a2e;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  /* Adjust margin for consistent spacing */
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+.custom-button-sign-in {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border-radius: 4px;
+  padding: 10px 10px;
+  color: rgb(83, 146, 249);
+  transition: all 0.15s ease-in-out 0s;
+  font-size: 14px;
+}
+
+.custom-button-sign-in:hover {
+  border-color: rgb(83, 146, 249);
+  background-color: rgb(83, 146, 249);
+  color: white;
+}
+
+.custom-typography-styles-sign-in {
+  color: #2a2a2e;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+.custom-button-create {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(83, 146, 249);
+  border-radius: 4px;
+  padding: 10px 10px;
+  color: rgb(83, 146, 249);
+  font-size: 14px;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.custom-button-create:hover {
+  border-color: rgb(83, 146, 249);
+  background-color: rgb(83, 146, 249);
+  color: white;
+}
+
+.custom-typography-create {
+  color: #2a2a2e;
+  padding: 0;
+  margin: 0 4px;
+  /* Adjust margin for consistent spacing */
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+
+
+.custom-icon-cart {
+  cursor: pointer;
+  padding: 16px 32px;
+  height: 20px;
+  width: 20px;
+}
+
+.custom-div-cart {
+  cursor: pointer;
+  padding: 20px 12px;
+  height: 13px;
+  width: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.custom-div-cart:hover {
+  border-radius: 4px;
+  background-color: #86b1f7;
+}
+
+.custom-icon-menu {
+  font-size: 30px;
+  color: black;
+}
+
+.custom-icon-menu:hover {
+  color: white;
+}
+
+.popover-paper-right {
+  margin-top: 16px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.list-item-right {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-sarif;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
+
+.list-item-text-right {
+  font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-sarif;
+  font-weight: 400;
+  line-height: 1.42857;
+  font-size: 13px;
+}
