@@ -1,5 +1,5 @@
-import React from 'react';
-import Typography from '@mui/material/Typography';
+import React from "react";
+import Typography from "@mui/material/Typography";
 
 const NewBadge = () => {
   return (
@@ -18,6 +18,7 @@ const NewBadge = () => {
         color: "#ffffff",
         borderRadius: "4px",
         fontSize: "10px",
+        fontWeight: "700",
         width: "30px",
         height: "10px",
       }}

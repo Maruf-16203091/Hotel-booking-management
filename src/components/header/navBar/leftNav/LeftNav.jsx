@@ -18,6 +18,7 @@ import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBoatIcon from "@mui/icons-material/DirectionsBoat";
 import NewBadge from "../../badges/NewBadge";
+import { Fade } from "@mui/material";
 
 const HeaderBottomNavigation = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -123,6 +124,8 @@ const HeaderBottomNavigation = () => {
             vertical: "top",
             horizontal: "left",
           }}
+          TransitionComponent={Fade} // Add TransitionComponent prop and specify Fade effect
+          transitionDuration={500} // Optionally, specify the transition duration in milliseconds
         >
           <List>
             <ListItem
