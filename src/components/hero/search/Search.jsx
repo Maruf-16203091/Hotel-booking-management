@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, TextField, InputAdornment } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 const AdvanceSearchPage = () => {
   return (
@@ -40,15 +41,45 @@ const AdvanceSearchPage = () => {
       <Box
         sx={{
           width: "900px",
+          height: "65px",
           backgroundColor: "#FFFFFF",
           marginLeft: "195px",
           marginRight: "30px",
-          borderRadius: "8px",
+          borderRadius: "12px",
           marginTop: "15px",
+          display: "flex",
+          alignItems: "center", // Center vertically
         }}
       >
-        <TextField label="Where to go?" fullWidth />
+        <TextField
+          fullWidth
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon sx={{ fontSize: 48 }} />
+              </InputAdornment>
+            ),
+          }}
+          label="Enter a destination or property"
+          sx={{
+            "& .MuiInputLabel-root": {
+              position: "absolute",
+              left: "55px",
+              color: "#929292",
+              marginTop: "20px",
+              fontSize: "24px",
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+            },
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                border: "none",
+              },
+            },
+          }}
+        />
       </Box>
+      ;
     </>
   );
 };
