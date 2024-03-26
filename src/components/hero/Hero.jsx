@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box } from "@mui/material";
+import {  Box } from "@mui/material";
 import AdvanceSearch from "../hero/search/Search";
 import WelcomeMessage from "./welcomeMessage/WelcomeMessage";
 
@@ -22,8 +22,15 @@ const HeroPage = () => {
         padding: "0 20px",
       }}
     >
-      <Box sx={{ maxWidth: "1200px", width: "100%" }}>
-        <WelcomeMessage />
+      <WelcomeMessage />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          maxWidth: "1200px",
+          width: "100vw",
+        }}
+      >
         <AdvanceSearch />
       </Box>
     </Box>

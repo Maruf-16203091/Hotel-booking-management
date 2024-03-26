@@ -6,9 +6,10 @@ const WelcomeMessage = () => {
     <Typography
       variant="h6"
       sx={{
+        position: "fixed",
         fontWeight: "bold",
-        marginBottom: "55px",
-        marginLeft: "90px",
+        marginLeft: "130px",
+        marginTop: "-150px",
         color: "white",
         fontSize: "1.5em",
       }}
