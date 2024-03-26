@@ -59,6 +59,16 @@ const AdvanceSearchPage = () => {
           zIndex: 998,
         }}
       >
+        <div
+          style={{
+            position: "absolute",
+            right: "120px",
+            top: "25%",
+            transform: "translateY(-50%)",
+          }}
+        >
+          <NewBadge />
+        </div>
         <Tabs
           value={selectedProperty}
           onChange={handlePropertyChange}
@@ -132,7 +142,6 @@ const AdvanceSearchPage = () => {
               <Stack direction="row" spacing={1} alignItems="center">
                 <AirportShuttleIcon />
                 <span>Airport transfer</span>
-                <NewBadge />
               </Stack>
             }
             sx={{
