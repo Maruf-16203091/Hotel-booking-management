@@ -4,8 +4,9 @@ import {
   TextField,
   InputAdornment,
   Button,
-  ToggleButton,
-  ToggleButtonGroup,
+  Tabs,
+  Tab,
+  Stack,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BundleBadge from "../../header/badges/BundleBadge";
@@ -15,12 +16,10 @@ import WorkIcon from "@mui/icons-material/Work";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 
 const AdvanceSearchPage = () => {
-  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [selectedProperty, setSelectedProperty] = useState(0);
 
-  const handlePropertyChange = (event, newProperty) => {
-    if (newProperty !== null) {
-      setSelectedProperty(newProperty);
-    }
+  const handlePropertyChange = (event, newValue) => {
+    setSelectedProperty(newValue);
   };
   return (
     <>
@@ -58,87 +57,83 @@ const AdvanceSearchPage = () => {
           zIndex: 998,
         }}
       >
-        <ToggleButtonGroup
+        <Tabs
           value={selectedProperty}
-          exclusive
           onChange={handlePropertyChange}
-          sx={{
-            width: "100%",
-          }}
+          variant="fullWidth"
+          textColor="primary"
+          indicatorColor="primary"
+          aria-label="Property tabs"
         >
-          <ToggleButton
-            value="hotels"
+          <Tab
+            label={
+              <Stack direction="row" spacing={1} alignItems="center">
+                <HotelIcon />
+                <span>Hotels & Homes</span>
+              </Stack>
+            }
             sx={{
-              flexGrow: 1,
+              fontSize: "12px",
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              fontSize: "12px",
-              fontWeight: "700",
-              color: selectedProperty === "hotels" ? "blue" : "black",
-              "&.Mui-selected": {
-                borderColor: "transparent",
-              },
               whiteSpace: "nowrap",
               textTransform: "none",
+              fontWeight: "bold",
+              color: "#4b535e",
             }}
-          >
-            <HotelIcon sx={{ marginRight: "4px" }} /> Hotels & Homes
-          </ToggleButton>
-          <ToggleButton
-            value="privateStays"
+          />
+          <Tab
+            label={
+              <Stack direction="row" spacing={1} alignItems="center">
+                <HouseIcon />
+                <span>Private stays</span>
+              </Stack>
+            }
             sx={{
-              flexGrow: 1,
+              fontSize: "12px",
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              fontSize: "12px",
-              fontWeight: "700",
-              color: selectedProperty === "privateStays" ? "blue" : "black",
-              "&.Mui-selected": {
-                borderColor: "transparent",
-              },
               whiteSpace: "nowrap",
               textTransform: "none",
+              fontWeight: "bold",
+              color: "#4b535e",
             }}
-          >
-            <HouseIcon sx={{ marginRight: "4px" }} /> Private stays
-          </ToggleButton>
-          <ToggleButton
-            value="longStays"
+          />
+          <Tab
+            label={
+              <Stack direction="row" spacing={1} alignItems="center">
+                <WorkIcon />
+                <span>Long stays</span>
+              </Stack>
+            }
             sx={{
-              flexGrow: 1,
+              fontSize: "12px",
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              fontSize: "12px",
-              fontWeight: "700",
-              color: selectedProperty === "longStays" ? "blue" : "black",
-              "&.Mui-selected": {
-                borderColor: "transparent",
-              },
               whiteSpace: "nowrap",
               textTransform: "none",
+              fontWeight: "bold",
+              color: "#4b535e",
             }}
-          >
-            <WorkIcon sx={{ marginRight: "4px" }} /> Long stays
-          </ToggleButton>
-          <ToggleButton
-            value="airportTransfer"
+          />
+          <Tab
+            label={
+              <Stack direction="row" spacing={1} alignItems="center">
+                <AirportShuttleIcon />
+                <span>Airport transfer</span>
+              </Stack>
+            }
             sx={{
-              flexGrow: 1,
+              fontSize: "12px",
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              fontSize: "12px",
-              fontWeight: "700",
-              color: selectedProperty === "airportTransfer" ? "blue" : "black",
-              "&.Mui-selected": {
-                borderColor: "transparent",
-              },
               whiteSpace: "nowrap",
               textTransform: "none",
+              fontWeight: "bold",
+              color: "#4b535e",
             }}
-          >
-            <AirportShuttleIcon sx={{ marginRight: "4px" }} /> Airport transfer
-          </ToggleButton>
-        </ToggleButtonGroup>
+          />
+        </Tabs>
       </Box>
       <Box
         sx={{
