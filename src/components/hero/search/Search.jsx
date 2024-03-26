@@ -13,6 +13,8 @@ import BundleBadge from "../../header/badges/BundleBadge";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import WorkIcon from "@mui/icons-material/Work";
+import NewBadge from "../../header/badges/NewBadge";
+import Badge from "@mui/material/Badge";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 
 const AdvanceSearchPage = () => {
@@ -64,6 +66,14 @@ const AdvanceSearchPage = () => {
           textColor="primary"
           indicatorColor="primary"
           aria-label="Property tabs"
+          sx={{
+            "& .Mui-selected:focus": {
+              outline: "none",
+            },
+            "& .MuiTabs-indicator": {
+              height: 4,
+            },
+          }}
         >
           <Tab
             label={
@@ -116,11 +126,13 @@ const AdvanceSearchPage = () => {
               color: "#4b535e",
             }}
           />
+
           <Tab
             label={
               <Stack direction="row" spacing={1} alignItems="center">
                 <AirportShuttleIcon />
                 <span>Airport transfer</span>
+                <NewBadge />
               </Stack>
             }
             sx={{
