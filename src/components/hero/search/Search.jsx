@@ -79,7 +79,68 @@ const AdvanceSearchPage = () => {
             },
           }}
         />
-        ;
+      </Box>
+      <Box
+        sx={{
+          width: "900px",
+          height: "65px",
+          backgroundColor: "#F8F7F9",
+          marginLeft: "195px",
+          marginRight: "30px",
+          borderRadius: "12px",
+          marginTop: "15px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <TextField
+          fullWidth
+          placeholder="Field 1"
+          sx={{
+            backgroundColor: "white",
+            borderRadius: "12px",
+            "& .MuiInputLabel-root": {
+              display: "none",
+            },
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                border: "none",
+              },
+              "& input::placeholder": {
+                fontSize: "16px",
+                color: "black",
+                fontWeight: "bold",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              },
+            },
+          }}
+        />
+
+        <TextField
+          fullWidth
+          placeholder="Field 2"
+          sx={{
+            marginLeft: "45px",
+            borderRadius: "12px",
+            backgroundColor: "white",
+            "& .MuiInputLabel-root": {
+              display: "none",
+            },
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                border: "none",
+              },
+              "& input::placeholder": {
+                fontSize: "16px",
+                color: "black",
+                fontWeight: "bold",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              },
+            },
+          }}
+        />
       </Box>
     </>
   );
