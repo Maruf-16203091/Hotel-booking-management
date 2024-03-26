@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, TextField, InputAdornment, Button } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import BundleBadge from "../../header/badges/BundleBadge";
 
 const AdvanceSearchPage = () => {
   return (
@@ -21,6 +22,7 @@ const AdvanceSearchPage = () => {
           height: "190px",
         }}
       ></Box>
+
       <Box
         sx={{
           position: "relative",
@@ -80,6 +82,7 @@ const AdvanceSearchPage = () => {
           }}
         />
       </Box>
+      <BundleBadge />
       <Box
         sx={{
           width: "900px",
@@ -142,6 +145,7 @@ const AdvanceSearchPage = () => {
           }}
         />
       </Box>
+
       <Box
         sx={{
           display: "flex",
@@ -153,7 +157,7 @@ const AdvanceSearchPage = () => {
         <Button
           variant="contained"
           sx={{
-            width: "490px",
+            width: "350px",
             height: "66px",
             position: "relative",
             border: "none",

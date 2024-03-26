@@ -16,6 +16,7 @@ const WelcomeMessage = () => {
     >
       EXPLORE MORE, SPEND LESS
     </Typography>
+    
   );
 };
 
