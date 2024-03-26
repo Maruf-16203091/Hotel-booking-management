@@ -1,9 +1,27 @@
-import React from "react";
-import { Box, TextField, InputAdornment, Button } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Box,
+  TextField,
+  InputAdornment,
+  Button,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BundleBadge from "../../header/badges/BundleBadge";
+import HotelIcon from "@mui/icons-material/Hotel";
+import HouseIcon from "@mui/icons-material/House";
+import WorkIcon from "@mui/icons-material/Work";
+import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 
 const AdvanceSearchPage = () => {
+  const [selectedProperty, setSelectedProperty] = useState(null);
+
+  const handlePropertyChange = (event, newProperty) => {
+    if (newProperty !== null) {
+      setSelectedProperty(newProperty);
+    }
+  };
   return (
     <>
       <Box
@@ -31,15 +49,97 @@ const AdvanceSearchPage = () => {
           paddingLeft: "64px",
           paddingRight: "64px",
           marginTop: "-300px",
-          marginLeft: "350px",
+          marginLeft: "330px",
           backgroundColor: "#FFFFFF",
           borderRadius: "8px",
           boxShadow: "0px 1px 6px 2px rgba(0, 0, 0, 0.1)",
-          width: "40%",
+          width: "45%",
           height: "45px",
           zIndex: 998,
         }}
-      ></Box>
+      >
+        <ToggleButtonGroup
+          value={selectedProperty}
+          exclusive
+          onChange={handlePropertyChange}
+          sx={{
+            width: "100%",
+          }}
+        >
+          <ToggleButton
+            value="hotels"
+            sx={{
+              flexGrow: 1,
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontSize: "12px",
+              fontWeight: "700",
+              color: selectedProperty === "hotels" ? "blue" : "black",
+              "&.Mui-selected": {
+                borderColor: "transparent",
+              },
+              whiteSpace: "nowrap",
+              textTransform: "none",
+            }}
+          >
+            <HotelIcon sx={{ marginRight: "4px" }} /> Hotels & Homes
+          </ToggleButton>
+          <ToggleButton
+            value="privateStays"
+            sx={{
+              flexGrow: 1,
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontSize: "12px",
+              fontWeight: "700",
+              color: selectedProperty === "privateStays" ? "blue" : "black",
+              "&.Mui-selected": {
+                borderColor: "transparent",
+              },
+              whiteSpace: "nowrap",
+              textTransform: "none",
+            }}
+          >
+            <HouseIcon sx={{ marginRight: "4px" }} /> Private stays
+          </ToggleButton>
+          <ToggleButton
+            value="longStays"
+            sx={{
+              flexGrow: 1,
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontSize: "12px",
+              fontWeight: "700",
+              color: selectedProperty === "longStays" ? "blue" : "black",
+              "&.Mui-selected": {
+                borderColor: "transparent",
+              },
+              whiteSpace: "nowrap",
+              textTransform: "none",
+            }}
+          >
+            <WorkIcon sx={{ marginRight: "4px" }} /> Long stays
+          </ToggleButton>
+          <ToggleButton
+            value="airportTransfer"
+            sx={{
+              flexGrow: 1,
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontSize: "12px",
+              fontWeight: "700",
+              color: selectedProperty === "airportTransfer" ? "blue" : "black",
+              "&.Mui-selected": {
+                borderColor: "transparent",
+              },
+              whiteSpace: "nowrap",
+              textTransform: "none",
+            }}
+          >
+            <AirportShuttleIcon sx={{ marginRight: "4px" }} /> Airport transfer
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </Box>
       <Box
         sx={{
           width: "900px",
