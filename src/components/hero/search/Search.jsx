@@ -10,7 +10,7 @@ const AdvanceSearchPage = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "-60px",
+          marginTop: "-10px",
           marginLeft: "150px",
           padding: "32px 48px 48px",
           backgroundColor: "#F8F7F9",
@@ -53,6 +53,7 @@ const AdvanceSearchPage = () => {
       >
         <TextField
           fullWidth
+          placeholder="Enter a destination or property"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -60,26 +61,26 @@ const AdvanceSearchPage = () => {
               </InputAdornment>
             ),
           }}
-          label="Enter a destination or property"
           sx={{
             "& .MuiInputLabel-root": {
-              position: "absolute",
-              left: "55px",
-              color: "#929292",
-              marginTop: "20px",
-              fontSize: "24px",
-              fontFamily:
-                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              display: "none",
             },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
                 border: "none",
               },
+              "& input::placeholder": {
+                fontSize: "16px",
+                color: "black",
+                fontWeight: "bold",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              },
             },
           }}
         />
+        ;
       </Box>
-      ;
     </>
   );
 };

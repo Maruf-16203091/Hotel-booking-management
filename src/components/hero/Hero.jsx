@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
 import AdvanceSearch from "../hero/search/Search";
+import WelcomeMessage from "./welcomeMessage/WelcomeMessage";
 
 const HeroPage = () => {
   return (
@@ -22,12 +23,7 @@ const HeroPage = () => {
       }}
     >
       <Box sx={{ maxWidth: "1200px", width: "100%" }}>
-        <Typography
-          variant="h6"
-          sx={{ fontWeight: "bold", marginBottom: "45px",marginLeft: "60px", color:"#0b2b61",fontSize: "1.5em", }}
-        >
-          EXPLORE MORE, SPEND LESS
-        </Typography>
+        <WelcomeMessage />
         <AdvanceSearch />
       </Box>
     </Box>
