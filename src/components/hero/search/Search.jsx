@@ -14,14 +14,23 @@ import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import WorkIcon from "@mui/icons-material/Work";
 import NewBadge from "../../header/badges/NewBadge";
-import Badge from "@mui/material/Badge";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const AdvanceSearchPage = () => {
   const [selectedProperty, setSelectedProperty] = useState(0);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false); // State to manage calendar modal visibility
 
   const handlePropertyChange = (event, newValue) => {
     setSelectedProperty(newValue);
+  };
+
+  const handleDateSelect = (date) => {
+    setSelectedDate(date);
+    setIsCalendarOpen(false); // Close the calendar modal after date selection
   };
   return (
     <>
@@ -212,10 +221,11 @@ const AdvanceSearchPage = () => {
           alignItems: "center",
         }}
       >
-        <TextField
-          fullWidth
-          placeholder="Field 1"
+        <Box
           sx={{
+            width: "900px",
+            height: "58px",
+            borderRadius: "12px",
             backgroundColor: "white",
             borderRadius: "12px",
             "& .MuiInputLabel-root": {
@@ -225,16 +235,63 @@ const AdvanceSearchPage = () => {
               "& fieldset": {
                 border: "none",
               },
-              "& input::placeholder": {
-                fontSize: "16px",
-                color: "black",
-                fontWeight: "bold",
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              },
             },
+
+            display: "flex",
+            gap: "10px",
           }}
-        />
+        >
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DatePicker
+              label=""
+              value={selectedDate}
+              onChange={(newValue) => setSelectedDate(newValue)}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  fullWidth
+                  sx={{
+                    backgroundColor: "white",
+                    borderRadius: "12px",
+                    "& .MuiInputLabel-root": {
+                      display: "none",
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        border: "none",
+                      },
+                    },
+                  }}
+                />
+              )}
+            />
+          </LocalizationProvider>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DatePicker
+              label=""
+              value={selectedDate}
+              onChange={(newValue) => setSelectedDate(newValue)}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  fullWidth
+                  sx={{
+                    backgroundColor: "white",
+                    borderRadius: "12px",
+                    "& .MuiInputLabel-root": {
+                      display: "none",
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        border: "none",
+                      },
+                    },
+                  }}
+                />
+              )}
+            />
+          </LocalizationProvider>
+        </Box>
 
         <TextField
           fullWidth
