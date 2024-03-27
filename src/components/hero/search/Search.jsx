@@ -7,6 +7,7 @@ import {
   Tabs,
   Tab,
   Stack,
+  Divider,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BundleBadge from "../../header/badges/BundleBadge";
@@ -18,6 +19,7 @@ import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import LoginIcon from "@mui/icons-material/Login";
 
 const AdvanceSearchPage = () => {
   const [selectedProperty, setSelectedProperty] = useState(0);
@@ -30,7 +32,7 @@ const AdvanceSearchPage = () => {
 
   const handleDateSelect = (date) => {
     setSelectedDate(date);
-    setIsCalendarOpen(false); // Close the calendar modal after date selection
+    setIsCalendarOpen(false);
   };
   return (
     <>
@@ -199,7 +201,6 @@ const AdvanceSearchPage = () => {
               "& input::placeholder": {
                 fontSize: "16px",
                 color: "black",
-                fontWeight: "bold",
                 fontFamily:
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               },
@@ -227,7 +228,6 @@ const AdvanceSearchPage = () => {
             height: "58px",
             borderRadius: "12px",
             backgroundColor: "white",
-            borderRadius: "12px",
             "& .MuiInputLabel-root": {
               display: "none",
             },
@@ -246,49 +246,26 @@ const AdvanceSearchPage = () => {
               label=""
               value={selectedDate}
               onChange={(newValue) => setSelectedDate(newValue)}
-              renderInput={(params) => (
-                <TextField
-                  {...params}
-                  fullWidth
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "12px",
-                    "& .MuiInputLabel-root": {
-                      display: "none",
-                    },
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": {
-                        border: "none",
-                      },
-                    },
-                  }}
-                />
-              )}
+              InputProps={{
+                startAdornment: <LoginIcon />,
+              }}
+              components={{
+                TextField: TextField,
+              }}
             />
           </LocalizationProvider>
+          <Divider orientation="vertical" flexItem />
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker
               label=""
               value={selectedDate}
               onChange={(newValue) => setSelectedDate(newValue)}
-              renderInput={(params) => (
-                <TextField
-                  {...params}
-                  fullWidth
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "12px",
-                    "& .MuiInputLabel-root": {
-                      display: "none",
-                    },
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": {
-                        border: "none",
-                      },
-                    },
-                  }}
-                />
-              )}
+              InputProps={{
+                startAdornment: <LoginIcon />,
+              }}
+              components={{
+                TextField: TextField,
+              }}
             />
           </LocalizationProvider>
         </Box>
@@ -310,7 +287,6 @@ const AdvanceSearchPage = () => {
               "& input::placeholder": {
                 fontSize: "16px",
                 color: "black",
-                fontWeight: "bold",
                 fontFamily:
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               },

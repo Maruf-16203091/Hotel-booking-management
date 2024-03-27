@@ -64,7 +64,6 @@ const HeaderBottomNavigation = () => {
                 fontFamily:
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
 
-                fontWeight: "400",
                 lineHeight: "1.42857",
                 fontSize: "13px",
                 fontWeight: "700",
@@ -90,7 +89,7 @@ const HeaderBottomNavigation = () => {
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     marginLeft: "-10px",
-                    fontWeight: "400",
+
                     lineHeight: "1.42857",
                     fontSize: "13px",
                     fontWeight: "700",
@@ -139,7 +138,6 @@ const HeaderBottomNavigation = () => {
                 primary="Flights"
                 primaryTypographyProps={{
                   sx: {
-                    fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
                     fontWeight: "700",
@@ -158,7 +156,6 @@ const HeaderBottomNavigation = () => {
                 primary="Bus"
                 primaryTypographyProps={{
                   sx: {
-                    fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
                     fontWeight: "700",
@@ -177,7 +174,6 @@ const HeaderBottomNavigation = () => {
                 primary="Train"
                 primaryTypographyProps={{
                   sx: {
-                    fontWeight: "400",
                     lineHeight: "1.42857",
                     fontSize: "13px",
                     fontWeight: "700",
@@ -198,7 +194,7 @@ const HeaderBottomNavigation = () => {
                   sx: {
                     fontFamily:
                       "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                    fontWeight: "400",
+
                     lineHeight: "1.42857",
                     fontSize: "13px",
                     fontWeight: "700",
@@ -218,7 +214,7 @@ const HeaderBottomNavigation = () => {
                 sx={{
                   fontFamily:
                     "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                  fontWeight: "400",
+
                   lineHeight: "1.42857",
                   fontSize: "13px",
                   fontWeight: "700",
@@ -246,7 +242,7 @@ const HeaderBottomNavigation = () => {
                 sx={{
                   fontFamily:
                     "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
-                  fontWeight: "400",
+
                   lineHeight: "1.42857",
                   fontSize: "13px",
                   fontWeight: "700",
@@ -273,7 +269,7 @@ const HeaderBottomNavigation = () => {
                 sx={{
                   fontFamily:
                     "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif", // Apply Montserrat font
-                  fontWeight: "400",
+
                   lineHeight: "1.42857",
                   fontSize: "13px",
                   fontWeight: "700",
