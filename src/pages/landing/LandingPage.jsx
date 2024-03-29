@@ -26,7 +26,14 @@ const LandingPage = () => {
         textAlign: "center",
       }}
     >
-      <Typography variant="h5" gutterBottom sx={{ marginBottom: "40px" }}>
+      <Typography
+        variant="h5"
+        gutterBottom
+        sx={{
+          marginBottom: "40px",
+          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+        }}
+      >
         Top Destinations in Germany
       </Typography>
       <Grid container spacing={15}>
@@ -45,15 +52,35 @@ const LandingPage = () => {
                 alt="CardImage1"
                 style={{
                   width: "100%",
-                  height: "100%",
+                  height: "300px",
                   objectFit: "cover",
                 }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    fontSize: "16px",
+                    color: "black",
+                    fontWeight: "700",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  }}
+                >
                   Berlin
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontSize: "14px",
+                    color: "black",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  }}
+                >
                   548 accomodations
                 </Typography>
               </CardContent>
@@ -75,15 +102,35 @@ const LandingPage = () => {
                 alt="CardImage2"
                 style={{
                   width: "100%",
-                  height: "100%",
+                  height: "300px",
                   objectFit: "cover",
                 }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{
+                    fontSize: "16px",
+                    color: "black",
+                    fontWeight: "700",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  }}
+                >
                   Munich
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontSize: "14px",
+                    color: "black",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  }}
+                >
                   809 accomodations
                 </Typography>
               </CardContent>
@@ -105,15 +152,35 @@ const LandingPage = () => {
                 alt="CardImage3"
                 style={{
                   width: "100%",
-                  height: "100%",
+                  height: "300px",
                   objectFit: "cover",
                 }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="body2"
+                  component="div"
+                  sx={{
+                    fontSize: "16px",
+                    color: "black",
+                    fontWeight: "700",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  }}
+                >
                   Frankfurt am Main
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontSize: "14px",
+                    color: "black",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  }}
+                >
                   659 accomodations
                 </Typography>
               </CardContent>
