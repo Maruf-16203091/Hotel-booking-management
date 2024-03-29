@@ -11,7 +11,7 @@ import {
   ListItemIcon,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import Logo from "../../../../assets/logo.png";
+import Logo from "../../../../assets/logo/logo.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import FlightIcon from "@mui/icons-material/Flight";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";

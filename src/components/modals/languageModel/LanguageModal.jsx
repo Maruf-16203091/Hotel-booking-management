@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Modal, Typography, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import GermanyFlagIcon from "../../../assets/germany.png";
-import FranceFlagIcon from "../../../assets/france.png";
-import SpainFlagIcon from "../../../assets/spain.png";
-import ItalyFlagIcon from "../../../assets/italy.png";
+import GermanyFlagIcon from "../../../assets/language/germany.png";
+import FranceFlagIcon from "../../../assets/language/france.png";
+import SpainFlagIcon from "../../../assets/language/spain.png";
+import ItalyFlagIcon from "../../../assets/language/italy.png";
 import "./LanguageModal.css";
 
 function LanguageModal() {
