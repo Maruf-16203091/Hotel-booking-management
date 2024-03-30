@@ -4,9 +4,9 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Description = ({ amount, location, price, currency, rating }) => {
   return (
-    <div style={{ display: "flex", position: "absolute" }}>
+    <div style={{  position: "absolute" }}>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <LocationOnIcon style={{ marginRight: "5px" }} />
+        <LocationOnIcon style={{ marginRight: "2px" }} />
         <Typography variant="body2" color="textSecondary" component="p">
         {location}
         </Typography>
@@ -15,8 +15,9 @@ const Description = ({ amount, location, price, currency, rating }) => {
         {rating}
       </Typography>
       <Typography variant="body2" color="textSecondary" component="p">
-        {price} {currency} {amount}
+        {price} 
       </Typography>
+      {currency} {amount}
     </div>
   );
 };
