@@ -144,7 +144,6 @@ const Featured = () => {
         sx={{
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
           marginBottom: "20px",
-          marginLeft: "180px",
           fontWeight: "700",
           marginBottom: "50px",
           textAlign: "center",
