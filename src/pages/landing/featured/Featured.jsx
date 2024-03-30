@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Typography } from "@mui/material";
+import { Tabs, Tab, Typography, Button } from "@mui/material";
 import SlideImage1 from "../../../assets/promotion/slide1.jpg";
 import SlideImage2 from "../../../assets/promotion/slide2.jpg";
 import SlideImage3 from "../../../assets/promotion/slide3.jpg";
@@ -8,9 +8,15 @@ import RatingBadge from "../../../components/badges/RatingBadges";
 
 const Featured = () => {
   const [tabValue, setTabValue] = useState(0);
+  const [showProperties, setShowProperties] = useState(false);
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
+    setShowProperties(false); // Reset showProperties when tab changes
+  };
+
+  const handleSeeMore = () => {
+    setShowProperties(true);
   };
 
   const tabData = [
@@ -188,6 +194,40 @@ const Featured = () => {
             </div>
           ))}
         </div>
+      </div>
+      {showProperties && (
+        <div>
+          {/* Render properties here */}
+          {tabData[tabValue].descriptions.map((property, index) => (
+            <div key={index}>
+              <Typography variant="h6" gutterBottom>
+                {property.text}
+              </Typography>
+              {/* Render other property details */}
+            </div>
+          ))}
+        </div>
+      )}
+      <div style={{ textAlign: "center", marginTop: "0px" }}>
+        <Button
+          onClick={handleSeeMore}
+          sx={{
+            backgroundColor: "#5392f9",
+            borderRadius: "4px",
+            color: "white",
+            border: "none",
+            padding: "12px",
+            textTransform: "none",
+            marginBottom: "50px",
+            fontSize: "14px",
+            fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+            "&:hover": {
+              backgroundColor: "#87B3FB",
+            },
+          }}
+        >
+          See More ({tabData[tabValue].label}) Properties
+        </Button>
       </div>
     </div>
   );
