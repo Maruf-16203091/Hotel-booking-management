@@ -7,6 +7,7 @@ import { Pagination } from "@mui/material";
 import SlideImage1 from "../../assets/promotion/slide1.jpg";
 import SlideImage2 from "../../assets/promotion/slide2.jpg";
 import SlideImage3 from "../../assets/promotion/slide3.jpg";
+import ViewAllLink from "../../components/links/ViewAll";
 
 const PromotionPage = () => {
   const settings = {
@@ -73,23 +74,29 @@ const PromotionPage = () => {
       style={{
         maxWidth: "900px",
         margin: "auto",
-        marginTop: "100px",
+        marginTop: "50px",
         marginBottom: "150px",
         marginLeft: "100px",
         position: "relative",
         textAlign: "center",
       }}
     >
-      <Typography
-        variant="h5"
-        gutterBottom
-        sx={{
-          marginBottom: "40px",
-          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-        }}
+      <div
+        style={{ display: "flex", alignItems: "center", marginBottom: "40px" }}
       >
-        Accommodation Promotions
-      </Typography>
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{
+            fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+            marginRight: "50px",
+          }}
+        >
+          Accommodation Promotions
+        </Typography>
+        <ViewAllLink />
+      </div>
+
       <Slider {...settings}>
         <div>
           <div style={slideStyles}>

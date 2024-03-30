@@ -33,6 +33,7 @@ const LandingPage = () => {
           gutterBottom
           sx={{
             marginBottom: "40px",
+            marginLeft:"80px",
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
           }}
         >
