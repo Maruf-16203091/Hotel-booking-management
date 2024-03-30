@@ -38,7 +38,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "4",
+          rating: "4.5",
         },
         {
           text: "Description for Berlin Slide 3",
@@ -46,7 +46,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "5",
+          rating: "4.5",
         },
       ],
     },
@@ -195,7 +195,7 @@ const Featured = () => {
           ))}
         </div>
       </div>
-      
+
       <div style={{ textAlign: "center", marginTop: "0px" }}>
         <Button
           onClick={handleSeeMore}
