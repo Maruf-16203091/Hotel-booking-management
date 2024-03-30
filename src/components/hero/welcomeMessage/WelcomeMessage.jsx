@@ -6,7 +6,7 @@ const WelcomeMessage = () => {
     <Typography
       variant="h6"
       sx={{
-        position: "fixed",
+        position: "absolute",
         fontWeight: "bold",
         marginLeft: "130px",
         marginTop: "-150px",
@@ -16,7 +16,6 @@ const WelcomeMessage = () => {
     >
       EXPLORE MORE, SPEND LESS
     </Typography>
-    
   );
 };
 

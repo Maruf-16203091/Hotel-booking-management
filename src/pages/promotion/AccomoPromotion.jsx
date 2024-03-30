@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Typography } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Pagination } from "@mui/material";
@@ -79,6 +80,16 @@ const PromotionPage = () => {
         textAlign: "center",
       }}
     >
+      <Typography
+        variant="h5"
+        gutterBottom
+        sx={{
+          marginBottom: "40px",
+          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+        }}
+      >
+        Accommodation Promotions
+      </Typography>
       <Slider {...settings}>
         <div>
           <div style={slideStyles}>
