@@ -45,7 +45,7 @@ const LandingPage = () => {
               sx={{
                 boxShadow: 3,
                 margin: "auto",
-                width: "300px",
+                width: "320px",
                 height: "400px",
               }}
             >
@@ -95,7 +95,7 @@ const LandingPage = () => {
               sx={{
                 boxShadow: 3,
                 margin: "auto",
-                width: "300px",
+                width: "320px",
                 height: "400px",
               }}
             >
@@ -145,7 +145,7 @@ const LandingPage = () => {
               sx={{
                 boxShadow: 3,
                 margin: "auto",
-                width: "300px",
+                width: "320px",
                 height: "400px",
               }}
             >

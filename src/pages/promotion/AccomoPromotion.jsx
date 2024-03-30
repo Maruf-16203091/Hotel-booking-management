@@ -89,7 +89,7 @@ const PromotionPage = () => {
           gutterBottom
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-            marginRight: "50px",
+            marginRight: "530px",
           }}
         >
           Accommodation Promotions
