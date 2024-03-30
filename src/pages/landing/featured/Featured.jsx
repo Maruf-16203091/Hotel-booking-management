@@ -195,19 +195,7 @@ const Featured = () => {
           ))}
         </div>
       </div>
-      {showProperties && (
-        <div>
-          {/* Render properties here */}
-          {tabData[tabValue].descriptions.map((property, index) => (
-            <div key={index}>
-              <Typography variant="h6" gutterBottom>
-                {property.text}
-              </Typography>
-              {/* Render other property details */}
-            </div>
-          ))}
-        </div>
-      )}
+      
       <div style={{ textAlign: "center", marginTop: "0px" }}>
         <Button
           onClick={handleSeeMore}
