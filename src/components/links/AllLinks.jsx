@@ -45,7 +45,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202" color="#020202">
               Help center
             </Link>
           </Typography>
@@ -57,10 +57,9 @@ const AllLinks = () => {
               fontWeight: "500",
               fontSize: "13px",
               padding: "5px",
-              color: "#B87D34",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               FAQs
             </Link>
           </Typography>
@@ -74,7 +73,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Privacy policy
             </Link>
           </Typography>
@@ -88,7 +87,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Cookie policy
             </Link>
           </Typography>
@@ -102,7 +101,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Terms of use
             </Link>
           </Typography>
@@ -116,7 +115,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Manage cookie settings
             </Link>
           </Typography>
@@ -130,7 +129,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Digital Services Act (EU)
             </Link>
           </Typography>
@@ -158,7 +157,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               About us
             </Link>
           </Typography>
@@ -172,7 +171,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Careers
             </Link>
           </Typography>
@@ -186,7 +185,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Press
             </Link>
           </Typography>
@@ -200,7 +199,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Blog
             </Link>
           </Typography>
@@ -214,7 +213,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               PointsMAX
             </Link>
           </Typography>
@@ -242,7 +241,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Countries/Territories
             </Link>
           </Typography>
@@ -256,7 +255,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Cities
             </Link>
           </Typography>
@@ -284,7 +283,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               YCS partner portal
             </Link>
           </Typography>
@@ -298,7 +297,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Partner Hub
             </Link>
           </Typography>
@@ -312,7 +311,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Advertise on Agoda
             </Link>
           </Typography>
@@ -326,7 +325,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Affiliates
             </Link>
           </Typography>
@@ -340,7 +339,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Connectivity partners
             </Link>
           </Typography>
@@ -368,7 +367,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               iOS app
             </Link>
           </Typography>
@@ -382,7 +381,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover">
+            <Link href="#" underline="hover" color="#020202">
               Android app
             </Link>
           </Typography>
