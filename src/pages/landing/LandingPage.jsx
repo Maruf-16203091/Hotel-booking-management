@@ -3,7 +3,7 @@ import TopDestination from "../landing/topDestination/TopDestination";
 import PromotionPage from "../landing/promotion/AccomoPromotion";
 import OverHeard from "../landing/overheard/Overheard";
 import Featured from "../landing/featured/Featured";
-import Outside from "../landing/outside/Outside";
+import International from "./international/International";
 
 const LandingPage = () => {
   return (
@@ -11,7 +11,7 @@ const LandingPage = () => {
       <TopDestination />
       <Featured />
       <OverHeard />
-      <Outside />
+      <International />
     </>
   );
 };

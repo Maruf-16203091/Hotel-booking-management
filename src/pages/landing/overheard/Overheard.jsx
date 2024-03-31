@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, Typography, Link } from "@mui/material";
+import { Card, CardContent, Typography, Link, Box } from "@mui/material";
 
 const OverHeard = () => {
   return (
@@ -81,6 +81,15 @@ const OverHeard = () => {
               <Typography variant="body2" color="textSecondary">
                 - Amit from India
               </Typography>
+              <Box
+                sx={{
+                  borderTop: "3px solid #75A8F9",
+                  marginTop: "25px",
+                  paddingTop: "10px",
+                  width: "280px",
+                  marginLeft: "-15px",
+                }}
+              />
             </CardContent>
           </Card>
         ))}

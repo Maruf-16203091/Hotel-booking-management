@@ -72,7 +72,7 @@ const Outside = () => {
                         "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     }}
                   >
-                    Berlin
+                    Kuala Lumpur
                   </Typography>
                   <Typography
                     variant="body2"
@@ -84,7 +84,7 @@ const Outside = () => {
                         "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     }}
                   >
-                    548 accomodations
+                    19,902 accommodations
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -122,7 +122,7 @@ const Outside = () => {
                         "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     }}
                   >
-                    Munich
+                    Las Vegas (NV)
                   </Typography>
                   <Typography
                     variant="body2"
@@ -134,7 +134,7 @@ const Outside = () => {
                         "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     }}
                   >
-                    809 accomodations
+                    8059 accomodations
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -172,7 +172,7 @@ const Outside = () => {
                         "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     }}
                   >
-                    Frankfurt am Main
+                    Manila
                   </Typography>
                   <Typography
                     variant="body2"
@@ -184,7 +184,7 @@ const Outside = () => {
                         "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                     }}
                   >
-                    659 accomodations
+                    5485 accomodations
                   </Typography>
                 </CardContent>
               </CardActionArea>
