@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Rating from "../others/Rating";
 
 const Description = ({ text, amount, location, price, currency, rating }) => {
   return (
@@ -32,7 +33,7 @@ const Description = ({ text, amount, location, price, currency, rating }) => {
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
         }}
       >
-        <LocationOnIcon style={{ marginRight: "2px", marginLeft: "-9px" }} />
+        <LocationOnIcon style={{ marginRight: "2px", marginLeft: "-7px" }} />
         <Typography
           variant="body2"
           color="textSecondary"
@@ -46,24 +47,16 @@ const Description = ({ text, amount, location, price, currency, rating }) => {
           {location}
         </Typography>
       </div>
-      <Typography
-        variant="body2"
-        color="#FF567D"
-        component="p"
-        sx={{
-          fontSize: "30px",
-          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-          marginBottom: "-15px",
-        }}
-      >
-        {rating}
-      </Typography>
+
+      <Rating rating={4} />
+
       <Typography
         variant="body2"
         color="textSecondary"
         component="p"
         sx={{
           fontSize: "12px",
+          marginBottom: "5px",
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
         }}
       >
