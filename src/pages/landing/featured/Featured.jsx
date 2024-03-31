@@ -143,14 +143,14 @@ const Featured = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "40px", marginBottom: "50px" }}>
+    <div style={{ marginLeft: "40px" }}>
       <Typography
         variant="h5"
         gutterBottom
         sx={{
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
           marginBottom: "20px",
-          fontWeight: "700",
+          fontWeight: "500",
           marginBottom: "50px",
           textAlign: "center",
         }}

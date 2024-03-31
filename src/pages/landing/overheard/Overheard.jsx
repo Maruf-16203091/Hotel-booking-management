@@ -18,7 +18,7 @@ const OverHeard = () => {
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             marginBottom: "40px",
             marginLeft: "150px",
-            fontWeight: "700",
+            fontWeight: "500",
             alignItems: "center",
             fontSize: "30px",
           }}
@@ -29,7 +29,6 @@ const OverHeard = () => {
       <div
         style={{
           maxWidth: "900px",
-          marginBottom: "150px",
           marginLeft: "20px",
           position: "relative",
           textAlign: "center",

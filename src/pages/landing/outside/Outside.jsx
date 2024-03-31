@@ -13,15 +13,14 @@ import { Link } from "react-router-dom";
 import CardImage1 from "../../../assets/topDestination/main.jpg";
 import CardImage2 from "../../../assets/topDestination/main1.jpg";
 import CardImage3 from "../../../assets/topDestination/main2.jpg";
-import PromotionPage from "../../landing/promotion/AccomoPromotion";
 
-const TopDestination = () => {
+const Outside = () => {
   return (
     <>
       <Box
         sx={{
           width: "900px",
-          marginTop: "100px",
+          marginTop: "20px",
           marginLeft: "10px",
           marginBottom: "50px",
           padding: "40px",
@@ -38,7 +37,7 @@ const TopDestination = () => {
             fontWeight: "500",
           }}
         >
-          Top Destinations in Germany
+          Popular destinations outside Germany
         </Typography>
         <Grid container spacing={15}>
           <Grid item xs={12} sm={6} md={4}>
@@ -197,4 +196,4 @@ const TopDestination = () => {
   );
 };
 
-export default TopDestination;
+export default Outside;
