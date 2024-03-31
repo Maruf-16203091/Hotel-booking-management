@@ -4,7 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 const Rating = ({ rating }) => {
   // Convert the rating number to an array of stars
   const stars = Array.from({ length: rating }, (_, index) => (
-    <StarIcon key={index} style={{ color: "red" }} />
+    <StarIcon key={index} style={{ color: "#FF567D" }} />
   ));
 
   return (

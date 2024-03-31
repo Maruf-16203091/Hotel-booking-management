@@ -30,7 +30,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Aparthotels Frankfurt Airport",
@@ -38,7 +38,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Staycity Aparthotels",
@@ -46,7 +46,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
       ],
     },
@@ -60,7 +60,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Aparthotels Frankfurt Airport",
@@ -68,7 +68,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Savoy Hotel",
@@ -76,7 +76,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
       ],
     },
@@ -90,7 +90,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Savoy Hotel",
@@ -98,7 +98,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Savoy Hotel",
@@ -106,7 +106,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
       ],
     },
@@ -120,7 +120,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Savoy Hotel",
@@ -128,7 +128,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
         {
           text: "Staycity Aparthotels",
@@ -136,7 +136,7 @@ const Featured = () => {
           price: "Per night after taxes and fees",
           currency: "EUR",
           amount: "151.92",
-          rating: "****",
+          rating: "4.5",
         },
       ],
     },
@@ -196,7 +196,7 @@ const Featured = () => {
         </div>
       </div>
 
-      <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <div style={{ textAlign: "center", marginTop: "120px" }}>
         <Button
           onClick={handleSeeMore}
           sx={{
