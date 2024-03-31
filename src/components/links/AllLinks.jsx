@@ -29,7 +29,7 @@ const AllLinks = () => {
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
-              fontSize: "18px",
+              fontSize: "15px",
               marginLeft: "3px",
             }}
           >
@@ -142,7 +142,7 @@ const AllLinks = () => {
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
-              fontSize: "18px",
+              fontSize: "15px",
             }}
           >
             Company
@@ -226,7 +226,7 @@ const AllLinks = () => {
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
-              fontSize: "18px",
+              fontSize: "15px",
             }}
           >
             Destinations
@@ -268,7 +268,7 @@ const AllLinks = () => {
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
-              fontSize: "18px",
+              fontSize: "15px",
             }}
           >
             Partner with us
@@ -352,7 +352,7 @@ const AllLinks = () => {
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
-              fontSize: "18px",
+              fontSize: "15px",
             }}
           >
             Get the app

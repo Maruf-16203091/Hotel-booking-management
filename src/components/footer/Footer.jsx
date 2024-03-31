@@ -15,7 +15,7 @@ const Footer = () => {
         width: "100vw",
         position: "absolute",
         marginLeft: "-470px",
-        marginTop: "800px",
+        marginTop: "700px",
         paddingTop: "40px",
       }}
     >
@@ -31,7 +31,7 @@ const Footer = () => {
         <Typography
           variant="body1"
           align="center"
-          color="#d7d7db"
+          color="white"
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             fontWeight: "500",
@@ -43,7 +43,7 @@ const Footer = () => {
         <Typography
           variant="body1"
           align="center"
-          color="#d7d7db"
+          color="white"
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             fontWeight: "500",
@@ -116,11 +116,11 @@ const Footer = () => {
         <Typography
           variant="body1"
           align="center"
-          color="#d7d7db"
+          color="white"
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-            fontWeight: "500",
-            fontSize: "10px",
+
+            fontSize: "11px",
             marginTop: "30px",
             marginBottom: "20px",
           }}

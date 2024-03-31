@@ -15,14 +15,10 @@ const AllPlaces = () => {
       <Container
         maxWidth="md"
         style={{
-          paddingTop: "0px",
-          paddingBottom: "50px",
-          paddingTop: "50px",
-          paddingBottom: "50px",
+          paddingTop: "30px",
           display: "flex",
           justifyContent: "space-between",
           justifyContent: "space-between",
-          marginBottom: "70px",
         }}
       >
         <div>
@@ -35,1568 +31,1581 @@ const AllPlaces = () => {
               fontWeight: "700",
               fontSize: "18px",
             }}
+          ></Typography>
+          {/* 
+Countries & Territories */}
+          <div>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "12px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Countries & Territories
+              </Link>
+            </Typography>
+            {/* Add 
+Countries & Territories city hotels */}
+
+            {/* Europe */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Europe
+              </Link>
+            </Typography>
+            {/* Add Europe city hotels */}
+
+            {/* Middle East */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Middle East
+              </Link>
+            </Typography>
+            {/* Add Middle East city hotels */}
+
+            {/* Countries & Territories */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Countries & Territories
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Africa
+              </Link>
+            </Typography>
+            {/* Add Africa city hotels */}
+
+            {/* Add other Countries & Territories city hotels */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Morocco Hotels
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                South Africa Hotels
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Countries & Territories
+              </Link>
+            </Typography>
+            {/* Add 
+Countries & Territories city hotels */}
+
+            {/* Europe */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Europe
+              </Link>
+            </Typography>
+            {/* Add Europe city hotels */}
+
+            {/* Middle East */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Middle East
+              </Link>
+            </Typography>
+            {/* Add Middle East city hotels */}
+
+            {/* Countries & Territories */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Countries & Territories
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Africa
+              </Link>
+            </Typography>
+            {/* Add Africa city hotels */}
+
+            {/* Add other Countries & Territories city hotels */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Morocco Hotels
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                South Africa Hotels
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Countries & Territories
+              </Link>
+            </Typography>
+            {/* Add 
+Countries & Territories city hotels */}
+
+            {/* Europe */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Europe
+              </Link>
+            </Typography>
+            {/* Add Europe city hotels */}
+
+            {/* Middle East */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Middle East
+              </Link>
+            </Typography>
+            {/* Add Middle East city hotels */}
+
+            {/* Countries & Territories */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Countries & Territories
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Africa
+              </Link>
+            </Typography>
+            {/* Add Africa city hotels */}
+
+            {/* Add other Countries & Territories city hotels */}
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                Morocco Hotels
+              </Link>
+            </Typography>
+            <Typography
+              variant="body1"
+              style={{
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "500",
+                fontSize: "10px",
+              }}
+            >
+              <Link href="#" underline="hover" color="#020202">
+                South Africa Hotels
+              </Link>
+            </Typography>
+          </div>
+        </div>
+
+        <div>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
           >
-            Destination Cities
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
           </Typography>
-          {/* Asia */}
-          <div>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "12px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-          </div>
-          </div>
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+        </div>
+        <div>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-          <div>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "12px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+        </div>
+        <div>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "12px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-          </div>
-          <div>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "12px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+        </div>
+        <div>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-          </div>
-          <div>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          {/* Add 
+Countries & Territories city hotels */}
 
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
+          {/* Europe */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "12px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Europe
+            </Link>
+          </Typography>
+          {/* Add Europe city hotels */}
 
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
+          {/* Middle East */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Middle East
+            </Link>
+          </Typography>
+          {/* Add Middle East city hotels */}
 
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
+          {/* Countries & Territories */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Countries & Territories
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Africa
+            </Link>
+          </Typography>
+          {/* Add Africa city hotels */}
 
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
-
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-          </div>
-          <div>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
-
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
-
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
-
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
-
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
-
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
-
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
-
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
-
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Asia
-              </Link>
-            </Typography>
-            {/* Add Asia city hotels */}
-
-            {/* Europe */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Europe
-              </Link>
-            </Typography>
-            {/* Add Europe city hotels */}
-
-            {/* Middle East */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Middle East
-              </Link>
-            </Typography>
-            {/* Add Middle East city hotels */}
-
-            {/* Countries & Territories */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Countries & Territories
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Africa
-              </Link>
-            </Typography>
-            {/* Add Africa city hotels */}
-
-            {/* Add other Countries & Territories city hotels */}
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                Morocco Hotels
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              style={{
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-                fontWeight: "500",
-                fontSize: "10px",
-              }}
-            >
-              <Link href="#" underline="hover" color="#020202">
-                South Africa Hotels
-              </Link>
-            </Typography>
-          </div>
-       
+          {/* Add other Countries & Territories city hotels */}
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Morocco Hotels
+            </Link>
+          </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "10px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              South Africa Hotels
+            </Link>
+          </Typography>
+        </div>
       </Container>
     </div>
   );
