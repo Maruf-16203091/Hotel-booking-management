@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Link } from "@mui/material";
 
 const AllLinks = () => {
   return (
@@ -7,8 +7,8 @@ const AllLinks = () => {
       style={{
         backgroundColor: "#E9EBEE",
         width: "100vw",
-        marginLeft: "-470px",
         position: "absolute",
+        marginLeft: "-470px",
       }}
     >
       <Container
@@ -18,6 +18,7 @@ const AllLinks = () => {
           paddingBottom: "50px",
           display: "flex",
           justifyContent: "space-between",
+          marginBottom: "70px",
         }}
       >
         <div>
@@ -29,6 +30,7 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
               fontSize: "18px",
+              marginLeft: "3px",
             }}
           >
             Help
@@ -40,9 +42,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Help center
+            <Link href="#" underline="hover">
+              Help center
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -51,9 +56,13 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
+              color: "#B87D34",
             }}
           >
-            FAQs
+            <Link href="#" underline="hover">
+              FAQs
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -62,9 +71,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Privacy policy
+            <Link href="#" underline="hover">
+              Privacy policy
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -73,9 +85,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Cookie policy
+            <Link href="#" underline="hover">
+              Cookie policy
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -84,9 +99,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Terms of use
+            <Link href="#" underline="hover">
+              Terms of use
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -95,9 +113,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Manage cookie settings
+            <Link href="#" underline="hover">
+              Manage cookie settings
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -106,15 +127,19 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Digital Services Act (EU)
+            <Link href="#" underline="hover">
+              Digital Services Act (EU)
+            </Link>
           </Typography>
         </div>
         <div>
           <Typography
             variant="h5"
-            gutterBottomstyle={{
+            gutterBottom
+            style={{
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
@@ -130,9 +155,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            About us
+            <Link href="#" underline="hover">
+              About us
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -141,9 +169,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Careers
+            <Link href="#" underline="hover">
+              Careers
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -152,9 +183,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Press
+            <Link href="#" underline="hover">
+              Press
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -163,9 +197,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Blog
+            <Link href="#" underline="hover">
+              Blog
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -174,15 +211,19 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            PointsMAX
+            <Link href="#" underline="hover">
+              PointsMAX
+            </Link>
           </Typography>
         </div>
         <div>
           <Typography
             variant="h5"
-            gutterBottomstyle={{
+            gutterBottom
+            style={{
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
@@ -198,9 +239,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Countries/Territories
+            <Link href="#" underline="hover">
+              Countries/Territories
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -209,15 +253,19 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Cities
+            <Link href="#" underline="hover">
+              Cities
+            </Link>
           </Typography>
         </div>
         <div>
           <Typography
             variant="h5"
-            gutterBottomstyle={{
+            gutterBottom
+            style={{
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
@@ -233,9 +281,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            YCS partner portal
+            <Link href="#" underline="hover">
+              YCS partner portal
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -244,9 +295,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Partner Hub
+            <Link href="#" underline="hover">
+              Partner Hub
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -255,9 +309,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Advertise on Agoda
+            <Link href="#" underline="hover">
+              Advertise on Agoda
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -266,9 +323,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Affiliates
+            <Link href="#" underline="hover">
+              Affiliates
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -277,15 +337,19 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Connectivity partners
+            <Link href="#" underline="hover">
+              Connectivity partners
+            </Link>
           </Typography>
         </div>
         <div>
           <Typography
             variant="h5"
-            gutterBottomstyle={{
+            gutterBottom
+            style={{
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "700",
@@ -301,9 +365,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            iOS app
+            <Link href="#" underline="hover">
+              iOS app
+            </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -312,9 +379,12 @@ const AllLinks = () => {
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "13px",
+              padding: "5px",
             }}
           >
-            Android app
+            <Link href="#" underline="hover">
+              Android app
+            </Link>
           </Typography>
         </div>
       </Container>
