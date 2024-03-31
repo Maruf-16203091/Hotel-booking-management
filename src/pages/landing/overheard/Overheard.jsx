@@ -16,11 +16,11 @@ const OverHeard = () => {
           gutterBottom
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-            marginBottom: "20px",
+            marginBottom: "40px",
             marginLeft: "150px",
             fontWeight: "700",
             alignItems: "center",
-            fontSize: "26px",
+            fontSize: "30px",
           }}
         >
           Overheard from travelers
@@ -40,7 +40,7 @@ const OverHeard = () => {
         {[1, 2, 3].map((index) => (
           <Card
             key={index}
-            style={{ width: "300px", height: "300px", margin: "20px" }}
+            style={{ width: "280px", height: "300px", marginLeft: "40px" }}
           >
             <CardContent>
               <Typography
