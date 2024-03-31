@@ -18,7 +18,7 @@ const AllLinks = () => {
           paddingBottom: "50px",
           display: "flex",
           justifyContent: "space-between",
-          marginBottom: "70px",
+          
         }}
       >
         <div>
@@ -45,7 +45,7 @@ const AllLinks = () => {
               padding: "5px",
             }}
           >
-            <Link href="#" underline="hover" color="#020202" color="#020202">
+            <Link href="#" underline="hover" color="#020202">
               Help center
             </Link>
           </Typography>

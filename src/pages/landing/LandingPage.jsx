@@ -5,6 +5,8 @@ import OverHeard from "../landing/overheard/Overheard";
 import Featured from "../landing/featured/Featured";
 import International from "./international/International";
 import AllLinks from "../../components/links/AllLinks";
+import AllPlaces from "../landing/allPlaces/AllPlaces";
+import Footer from "../../components/footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -14,6 +16,8 @@ const LandingPage = () => {
       <OverHeard />
       <International />
       <AllLinks />
+      <AllPlaces />
+      <Footer />
     </>
   );
 };
