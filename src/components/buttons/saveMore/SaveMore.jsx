@@ -1,47 +1,39 @@
-import React, { useState, useEffect } from "react";
-import { Button, Icon, Modal, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Button, Typography } from "@mui/material";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import CloseIcon from "@mui/icons-material/Close";
 import ScannerImage from "../../../assets/scanner.jpg";
 
 const SaveMoreButton = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [buttonPosition, setButtonPosition] = useState({ top: 0, right: 0 });
-  const [modalWidth, setModalWidth] = useState(300);
-  const [modalHeight, setModalHeight] = useState(500);
+  const [cardOpen, setCardOpen] = useState(false);
+  const [buttonPosition, setButtonPosition] = useState({ top: 0, left: 0 });
 
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [modalOpen]);
-
-  const handleButtonClick = () => {
-    setModalOpen(true);
+  const handleSeeMoreClick = () => {
     const buttonRect = document
       .getElementById("save-more-button")
       .getBoundingClientRect();
+    setButtonPosition({ top: buttonRect.top, left: buttonRect.left });
+    setCardOpen(true);
+  };
+
+  const handleCloseCard = () => {
+    setCardOpen(false);
+  };
+
+  const handleCloseIconClick = () => {
+    const closeIconRect = document
+      .getElementById("close-icon")
+      .getBoundingClientRect();
+    setCardOpen(false);
     setButtonPosition({
-      top: buttonRect.top + buttonRect.height + window.scrollY,
-      right: window.innerWidth - buttonRect.right + window.scrollX,
+      top: closeIconRect.top + 40,
+      left: closeIconRect.left - 200,
     });
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
-
-  // Set modal width and height here
-  const modalStyle = {
-    width: `${modalWidth}px`,
-    height: `${modalHeight}px`,
   };
 
   return (
     <>
-      {!modalOpen ? (
+      {!cardOpen ? (
         <Button
           id="save-more-button"
           variant="contained"
@@ -53,67 +45,70 @@ const SaveMoreButton = () => {
             bottom: "20px",
             right: "20px",
             textTransform: "none",
-            display: "flex",
-            alignItems: "center",
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             transition:
               "background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s",
             padding: "10px 20px",
             fontSize: "16px",
           }}
-          onClick={handleButtonClick}
+          onClick={handleSeeMoreClick}
         >
-          <Icon component={PhoneAndroidIcon} sx={{ marginRight: "6px" }} />
+          <PhoneAndroidIcon sx={{ marginRight: "6px" }} />
           Save more on App!
         </Button>
       ) : (
         <Button
           variant="contained"
           style={{
-            backgroundColor: "#3170E7",
-            color: "white",
-            borderRadius: "100%",
-            position: "fixed",
-            bottom: "60px",
-            right: "60px",
-            textTransform: "none",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            transition:
-              "background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s",
-            padding: "12px",
-            fontSize: "18px",
+            display: "none",
           }}
-          onClick={handleCloseModal}
         >
-          <CloseIcon />
+          See More
         </Button>
       )}
-      <Modal
-        open={modalOpen}
-        onClose={handleCloseModal}
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
-        style={{
-          position: "absolute",
-          top: buttonPosition.top - 460,
-          left: buttonPosition.right + 1500,
-          ...modalStyle,
-        }}
-      >
+      {cardOpen && (
         <div
           style={{
             backgroundColor: "white",
-            padding: "24px",
-            borderRadius: "16px",
+            padding: "18px",
+            borderRadius: "12px",
+            width: "260px",
             textAlign: "center",
-            outline: "none",
+            position: "fixed",
+            border: "1px solid #ddd",
+            marginBottom: "18px",
+            boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+            top: buttonPosition.top - 400 + "px", // Adjusted for positioning
+            left: buttonPosition.left - 110 + "px", // Adjusted for positioning
+            zIndex: 9999,
           }}
         >
+          <Button
+            id="close-icon"
+            variant="contained"
+            style={{
+              backgroundColor: "#3170E7",
+              color: "white",
+              borderRadius: "50%",
+              position: "fixed",
+              width: "44px",
+              height: "44px",
+
+              top: "860px",
+              right: "42px",
+              textTransform: "none",
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              transition:
+                "background-color 0s ease 0s, outline-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s",
+              padding: "px",
+            }}
+            onClick={handleCloseIconClick}
+          >
+            <CloseIcon />
+          </Button>
           <Typography
             variant="h6"
-            id="modal-title"
             sx={{
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
@@ -126,13 +121,12 @@ const SaveMoreButton = () => {
           </Typography>
           <Typography
             variant="body2"
-            id="modal-description"
             sx={{
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
               fontWeight: "500",
               fontSize: "14px",
-              marginBottom: "5px",
+              marginBottom: "25px",
             }}
           >
             Just scan the QR code for instant savings
@@ -146,8 +140,20 @@ const SaveMoreButton = () => {
               objectFit: "cover",
             }}
           />
+          <div
+            style={{
+              position: "absolute",
+              bottom: "-10px", 
+              right: "18px", 
+              width: "0",
+              height: "0",
+              borderTop: "10px solid white", 
+              borderLeft: "10px solid transparent",
+              borderRight: "10px solid transparent",
+            }}
+          />
         </div>
-      </Modal>
+      )}
     </>
   );
 };
