@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./components/header/main/header";
 import Footer from "./components/footer/Footer";
+import SaveMoreButton from "./components/buttons/saveMore/SaveMore";
 import Hero from "./components/hero/Hero";
 import LandingPage from "./pages/landing/LandingPage";
 import About from "./pages/about/About";
@@ -40,7 +41,7 @@ const App = () => {
             <Route path="/attraction" element={<Attraction />} />
           </Routes>
         </div>
-       
+        <SaveMoreButton />
       </div>
     </Router>
   );
