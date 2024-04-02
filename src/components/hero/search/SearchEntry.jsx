@@ -98,10 +98,10 @@ const SearchEntryPage = () => {
       <Box
         sx={{
           position: "relative",
-          width: "900px",
+          width: "1200px",
           height: "65px",
           backgroundColor: "#FFFFFF",
-          marginLeft: "195px",
+          marginLeft: "45px",
           marginRight: "30px",
           borderRadius: "12px",
           marginTop: "15px",
@@ -146,7 +146,7 @@ const SearchEntryPage = () => {
               sx={{
                 position: "absolute",
                 top: "95%",
-                left: cardPosition.left - 590, // Adjust as needed
+                left: cardPosition.left - 450, // Adjust as needed
                 width: 0,
                 height: 0,
                 borderTop: "10px solid transparent",
@@ -160,9 +160,9 @@ const SearchEntryPage = () => {
               ref={cardRef}
               sx={{
                 position: "absolute",
-                top: cardPosition.top - 200, // Adjust as needed
-                left: cardPosition.left - 625,
-                width: "900px",
+                top: cardPosition.top - 228, // Adjust as needed
+                left: cardPosition.left - 475,
+                width: "1200px",
                 maxHeight: "600px",
                 overflowY: "auto",
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",

@@ -10,7 +10,7 @@ import {
   Divider,
 } from "@mui/material";
 
-import BundleBadge from "../../header/badges/BundleBadge";
+import BundleBadge from "../../badges/BundleBadge";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import WorkIcon from "@mui/icons-material/Work";
@@ -40,11 +40,11 @@ const AdvanceSearchPage = () => {
           paddingLeft: "64px",
           paddingRight: "64px",
           marginTop: "-300px",
-          marginLeft: "330px",
+          marginLeft: "250px",
           backgroundColor: "#FFFFFF",
           borderRadius: "8px",
           boxShadow: "0px 1px 6px 2px rgba(0, 0, 0, 0.1)",
-          width: "45%",
+          width: "55%",
           height: "45px",
           zIndex: 998,
         }}
@@ -52,7 +52,7 @@ const AdvanceSearchPage = () => {
         <div
           style={{
             position: "absolute",
-            right: "120px",
+            right: "160px",
             top: "25%",
             transform: "translateY(-50%)",
           }}
