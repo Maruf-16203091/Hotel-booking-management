@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import {
   Box,
   TextField,
+  Card,
+  CardContent,
   Divider,
   InputAdornment,
   Button,
-  Card,
-  CardContent,
+  Modal,
   Typography,
 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
@@ -18,7 +19,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
 const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
-  const [isCardOpen, setIsCardOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [roomCount, setRoomCount] = useState(1);
   const [adultCount, setAdultCount] = useState(1);
   const [childCount, setChildCount] = useState(0);
@@ -39,19 +40,6 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         `${adultCount} adults, ${roomCount} rooms, ${childCount} children`
       );
     }
-
-    const styleInputValue = () => {
-      const inputElement = document.getElementById("inputValue");
-      if (inputElement) {
-        inputElement.style.marginRight = "5px !important";
-        inputElement.style.fontFamily =
-          "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif !important";
-        inputElement.style.fontSize = "16px !important";
-        inputElement.style.fontWeight = "700 !important";
-      }
-    };
-
-    styleInputValue();
   }, [adultCount, roomCount, childCount]);
 
   const handleIncrease = (type) => {
@@ -84,6 +72,14 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
       default:
         break;
     }
+  };
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -127,6 +123,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             onChange={(newValue) => setSelectedDate(newValue)}
             InputProps={{
               startAdornment: <LoginIcon />,
+              sx: { cursor: "pointer" },
             }}
             components={{
               TextField: TextField,
@@ -141,6 +138,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             onChange={(newValue) => setSelectedDate(newValue)}
             InputProps={{
               startAdornment: <LoginIcon />,
+              sx: { cursor: "pointer" },
             }}
             components={{
               TextField: TextField,
@@ -159,7 +157,8 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
               <GroupIcon />
             </InputAdornment>
           ),
-          onClick: () => setIsCardOpen(true),
+          onClick: handleModalOpen,
+          sx: { cursor: "pointer" },
         }}
         sx={{
           marginLeft: "45px",
@@ -185,14 +184,21 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         }}
       />
 
-      {isCardOpen && (
+      <Modal
+        open={isModalOpen}
+        onClose={handleModalClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <Card
           sx={{
             position: "absolute",
-            top: 80,
-            left: 578,
+
+            top: "50%",
+            left: "60%",
+            transform: "translate(-50%, -50%)",
             width: "290px",
-            height: "190px",
+            height: "200px",
             borderRadius: "12px",
             zIndex: "1",
           }}
@@ -398,7 +404,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             </Box>
           </CardContent>
         </Card>
-      )}
+      </Modal>
     </Box>
   );
 };
