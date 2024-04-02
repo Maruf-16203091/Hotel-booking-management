@@ -5,25 +5,22 @@ import {
   InputAdornment,
   Typography,
   Grid,
-  Card,
-  CardContent,
-  CardMedia,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BerlinImage from "../../../assets/topDestination/main.jpg";
-import Munich from "../../../assets/topDestination/main1.jpg";
-import Hamburg from "../../../assets/topDestination/main2.jpg";
+import MunichImage from "../../../assets/topDestination/main1.jpg";
+import HamburgImage from "../../../assets/topDestination/main2.jpg";
 
 const germanyCities = [
   { name: "Berlin", image: BerlinImage },
-  { name: "Munich", image: Munich },
-  { name: "Hamburg", image: Hamburg },
+  { name: "Munich", image: MunichImage },
+  { name: "Hamburg", image: HamburgImage },
   { name: "Berlin", image: BerlinImage },
-  { name: "Munich", image: Munich },
-  { name: "Hamburg", image: Hamburg },
+  { name: "Munich", image: MunichImage },
+  { name: "Hamburg", image: HamburgImage },
   { name: "Berlin", image: BerlinImage },
-  { name: "Munich", image: Munich },
-  { name: "Hamburg", image: Hamburg },
+  { name: "Munich", image: MunichImage },
+  { name: "Hamburg", image: HamburgImage },
 ];
 
 const SearchEntryPage = () => {
@@ -108,7 +105,6 @@ const SearchEntryPage = () => {
           display: "flex",
           alignItems: "center",
           border: "1px solid #d7d7db",
-          borderRadius: "12px",
         }}
       >
         <TextField
@@ -168,7 +164,7 @@ const SearchEntryPage = () => {
                 zIndex: 999,
               }}
             />
-            <Card
+            <Box
               ref={cardRef}
               sx={{
                 position: "absolute",
@@ -176,6 +172,9 @@ const SearchEntryPage = () => {
                 left: cardPosition.left - 505,
                 width: "1105px",
                 maxHeight: "600px",
+                backgroundColor: "white",
+                color: "black",
+
                 overflowY: "auto",
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                 zIndex: 999,
@@ -183,44 +182,63 @@ const SearchEntryPage = () => {
                 borderRadius: "12px",
               }}
             >
-              <CardContent>
-                <Typography variant="h6" mb={2}>
-                  Popular Cities in Germany
-                </Typography>
-                <Grid container spacing={2}>
-                  {filteredCities.map((city, index) => (
-                    <Grid item xs={4} key={index}>
-                      <Box
-                        sx={{
-                          cursor: "pointer",
-                          marginRight: "20px",
+              <Typography variant="h6" mb={2} sx={{ padding: "16px" }}>
+                Popular Cities in Germany
+              </Typography>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  padding: "16px",
+                }}
+              >
+                {filteredCities.map((city, index) => (
+                  <Grid item xs={4} key={index}>
+                    <Box
+                      sx={{
+                        cursor: "pointer",
+                       
+                        display: "flex",
+                      }}
+                      onClick={() => handleCityClick(city.name)}
+                    >
+                      <img
+                        src={city.image}
+                        alt={city.name}
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          borderRadius: "12px",
                         }}
-                        onClick={() => handleCityClick(city.name)}
+                      />
+                      <Typography
+                        variant="body2"
+                        sx={{
+                          marginTop: "-2px",
+                          marginLeft: "25px",
+                          marginBottom: "10px",
+                        }}
+                        component="div"
                       >
-                        <Card
-                          sx={{
-                            height: "100%",
-                            display: "flex",
+                        <div
+                          style={{
+                            marginBottom: "15px",
+                            marginLeft: "-75px",
+                            
                           }}
                         >
-                          <CardMedia
-                            component="img"
-                            width="20"
-                            height="60" // Adjust height as needed
-                            image={city.image || ""}
-                            alt={city.name}
-                            sx={{ width: 60 }} // Set the width here
-                          />
-                          <CardContent>
-                            <Typography variant="body2">{city.name}</Typography>
-                          </CardContent>
-                        </Card>
-                      </Box>
-                    </Grid>
-                  ))}
-                </Grid>
-              </CardContent>
-            </Card>
+                          {city.name}
+                        </div>{" "}
+                        <div>
+                          <span style={{ color: "#5392F9" }}>57% </span>stayed
+                          there
+                        </div>{" "}
+                      </Typography>
+                    </Box>
+                  </Grid>
+                ))}
+              </Grid>
+            </Box>
           </>
         )}
       </Box>
