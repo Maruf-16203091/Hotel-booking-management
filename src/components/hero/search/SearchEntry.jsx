@@ -197,8 +197,17 @@ const SearchEntryPage = () => {
                     <Box
                       sx={{
                         cursor: "pointer",
-                       
                         display: "flex",
+                        alignItems: "center",
+                        marginBottom: "15px",
+                        marginLeft: "10px",
+                        border: "1px solid transparent",
+                        transition: "border-color 0.3s ease-in-out", // Add transition
+                        "&:hover": {
+                         
+                          backgroundColor: "#EFF4FD",
+                          borderRadius: "5px",
+                        },
                       }}
                       onClick={() => handleCityClick(city.name)}
                     >
@@ -214,8 +223,8 @@ const SearchEntryPage = () => {
                       <Typography
                         variant="body2"
                         sx={{
-                          marginTop: "-2px",
-                          marginLeft: "25px",
+                          marginTop: "15px",
+                          marginLeft: "15px", // Adjust as needed
                           marginBottom: "10px",
                         }}
                         component="div"
@@ -223,8 +232,6 @@ const SearchEntryPage = () => {
                         <div
                           style={{
                             marginBottom: "15px",
-                            marginLeft: "-75px",
-                            
                           }}
                         >
                           {city.name}
