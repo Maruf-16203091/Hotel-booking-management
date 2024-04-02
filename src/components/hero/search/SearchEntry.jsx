@@ -10,12 +10,20 @@ import {
   CardMedia,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import BerlinImage from "../../../assets/scanner.jpg"; // Import your city images
+import BerlinImage from "../../../assets/topDestination/main.jpg";
+import Munich from "../../../assets/topDestination/main1.jpg";
+import Hamburg from "../../../assets/topDestination/main2.jpg";
 
 const germanyCities = [
   { name: "Berlin", image: BerlinImage },
-  { name: "Munich", image: "" }, // Add more cities here...
-  { name: "Hamburg", image: "" }, // Add more cities here...
+  { name: "Munich", image: Munich },
+  { name: "Hamburg", image: Hamburg },
+  { name: "Berlin", image: BerlinImage },
+  { name: "Munich", image: Munich },
+  { name: "Hamburg", image: Hamburg },
+  { name: "Berlin", image: BerlinImage },
+  { name: "Munich", image: Munich },
+  { name: "Hamburg", image: Hamburg },
 ];
 
 const SearchEntryPage = () => {
@@ -133,16 +141,27 @@ const SearchEntryPage = () => {
                   {filteredCities.map((city, index) => (
                     <Grid item xs={4} key={index}>
                       <Box
-                        sx={{ cursor: "pointer" }}
+                        sx={{
+                          cursor: "pointer",
+                          marginRight: "20px",
+                        }}
                         onClick={() => handleCityClick(city.name)}
                       >
-                        <Card sx={{ height: "100%" }}>
+                        <Card
+                          sx={{
+                            height: "100%",
+                            display: "flex",
+                          }}
+                        >
                           <CardMedia
                             component="img"
-                            height="140"
+                            width="20"
+                            height="60" // Adjust height as needed
                             image={city.image || ""}
                             alt={city.name}
+                            sx={{ width: 60 }} // Set the width here
                           />
+
                           <CardContent>
                             <Typography variant="body2">{city.name}</Typography>
                           </CardContent>
