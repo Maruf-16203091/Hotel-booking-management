@@ -39,7 +39,7 @@ const AdvanceSearchPage = () => {
           justifyContent: "center",
           paddingLeft: "64px",
           paddingRight: "64px",
-          marginTop: "-300px",
+          marginTop: "-310px",
           marginLeft: "250px",
           backgroundColor: "#FFFFFF",
           borderRadius: "8px",

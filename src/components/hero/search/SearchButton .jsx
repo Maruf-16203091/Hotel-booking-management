@@ -7,14 +7,14 @@ const SearchButton = () => {
       sx={{
         display: "flex",
         justifyContent: "center",
-        marginTop: "55px",
+        marginTop: "70px",
         marginLeft: "90px",
       }}
     >
       <Button
         variant="contained"
         sx={{
-          width: "330px",
+          width: "340px",
           height: "60px",
           position: "relative",
           border: "none",
@@ -25,7 +25,7 @@ const SearchButton = () => {
           color: "#FFFFFF",
           boxShadow: "rgba(0, 0, 0, 0.2) 0px 1px 3px 1px",
           transition: "all 0.15s ease-in-out 0s",
-          fontSize: "25px",
+          fontSize: "22px",
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
         }}
       >

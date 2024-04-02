@@ -128,7 +128,16 @@ const SearchEntryPage = () => {
             },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
-                border: "none",
+                border: "1px solid transparent", // Add a transparent border
+              },
+              "&:hover fieldset": {
+                borderColor: "transparent", // Remove hover border
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "#d7d7db",
+                borderRadius: "12px",
+                height: "65px",
+                top: "-10px",
               },
               "& input::placeholder": {
                 fontSize: "16px",
@@ -139,20 +148,21 @@ const SearchEntryPage = () => {
             },
           }}
         />
+
         {isCardOpen && (
           <>
             {/* Arrow shape indicating the card */}
             <Box
               sx={{
                 position: "absolute",
-                top: "95%",
+                top: "90%",
                 left: cardPosition.left - 450, // Adjust as needed
                 width: 0,
                 height: 0,
-                borderTop: "10px solid transparent",
-                borderRight: "10px solid transparent",
-                borderBottom: "10px solid white",
-                borderLeft: "10px solid transparent",
+                borderTop: "7px solid transparent",
+                borderRight: "15px solid transparent",
+                borderBottom: "14px solid white",
+                borderLeft: "15px solid transparent",
                 zIndex: 999,
               }}
             />
@@ -160,13 +170,15 @@ const SearchEntryPage = () => {
               ref={cardRef}
               sx={{
                 position: "absolute",
-                top: cardPosition.top - 228, // Adjust as needed
+                top: cardPosition.top - 195, // Adjust as needed
                 left: cardPosition.left - 475,
                 width: "1200px",
                 maxHeight: "600px",
                 overflowY: "auto",
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                 zIndex: 999,
+                border: "1px solid #d7d7db",
+                borderRadius: "12px",
               }}
             >
               <CardContent>
