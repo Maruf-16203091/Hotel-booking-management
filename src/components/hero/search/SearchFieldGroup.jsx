@@ -14,6 +14,8 @@ import LoginIcon from "@mui/icons-material/Login";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import GroupIcon from "@mui/icons-material/Group";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   const [isCardOpen, setIsCardOpen] = useState(false);
@@ -155,8 +157,8 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             position: "absolute",
             top: 80,
             left: 578,
-            width: "280px",
-            height: "150px",
+            width: "290px",
+            height: "190px",
             borderRadius: "12px",
             zIndex: "1",
           }}
@@ -167,20 +169,64 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
               justifyContent="space-between"
               alignItems="center"
             >
-              <Typography>Room</Typography>
+              <Typography
+                sx={{
+                  margin: "15px",
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                }}
+              >
+                Room
+              </Typography>
               <Box display="flex" alignItems="center">
                 <Button
                   variant="contained"
+                  sx={{
+                    borderRadius: "50%",
+                    minWidth: "32px",
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "transparent",
+                    border: "1px solid #edf0f9",
+                    color: "#000",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                   onClick={() => handleDecrease("room")}
                 >
-                  -
+                  <RemoveIcon />
                 </Button>
-                <Typography sx={{ margin: "0 10px" }}>{roomCount}</Typography>
+                <Typography
+                  sx={{
+                    margin: "0  10px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                  }}
+                >
+                  {roomCount}
+                </Typography>
                 <Button
                   variant="contained"
+                  sx={{
+                    borderRadius: "50%",
+                    minWidth: "32px",
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "transparent",
+                    border: "1px solid #edf0f9",
+                    color: "#000",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                   onClick={() => handleIncrease("room")}
                 >
-                  +
+                  <AddIcon />
                 </Button>
               </Box>
             </Box>
@@ -189,20 +235,64 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
               justifyContent="space-between"
               alignItems="center"
             >
-              <Typography>Adult</Typography>
+              <Typography
+                sx={{
+                  margin: "15px",
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                }}
+              >
+                Adult
+              </Typography>
               <Box display="flex" alignItems="center">
                 <Button
                   variant="contained"
+                  sx={{
+                    borderRadius: "50%",
+                    minWidth: "32px",
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "transparent",
+                    border: "1px solid #edf0f9",
+                    color: "#000",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                   onClick={() => handleDecrease("adult")}
                 >
-                  -
+                  <RemoveIcon />
                 </Button>
-                <Typography sx={{ margin: "0 10px" }}>{adultCount}</Typography>
+                <Typography
+                  sx={{
+                    margin: "0 10px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                  }}
+                >
+                  {adultCount}
+                </Typography>
                 <Button
                   variant="contained"
+                  sx={{
+                    borderRadius: "50%",
+                    minWidth: "32px",
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "transparent",
+                    border: "1px solid #edf0f9",
+                    color: "#000",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                   onClick={() => handleIncrease("adult")}
                 >
-                  +
+                  <AddIcon />
                 </Button>
               </Box>
             </Box>
@@ -211,20 +301,64 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
               justifyContent="space-between"
               alignItems="center"
             >
-              <Typography>Children</Typography>
+              <Typography
+                sx={{
+                  margin: "15px",
+                  fontFamily:
+                    "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                }}
+              >
+                Children
+              </Typography>
               <Box display="flex" alignItems="center">
                 <Button
                   variant="contained"
+                  sx={{
+                    borderRadius: "50%",
+                    minWidth: "32px",
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "transparent",
+                    border: "1px solid #edf0f9",
+                    color: "#000",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                   onClick={() => handleDecrease("child")}
                 >
-                  -
+                  <RemoveIcon />
                 </Button>
-                <Typography sx={{ margin: "0 10px" }}>{childCount}</Typography>
+                <Typography
+                  sx={{
+                    margin: "0 10px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                  }}
+                >
+                  {childCount}
+                </Typography>
                 <Button
                   variant="contained"
+                  sx={{
+                    borderRadius: "50%",
+                    minWidth: "32px",
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "transparent",
+                    border: "1px solid #edf0f9",
+                    color: "#000",
+                    "&:hover": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                   onClick={() => handleIncrease("child")}
                 >
-                  +
+                  <AddIcon />
                 </Button>
               </Box>
             </Box>
