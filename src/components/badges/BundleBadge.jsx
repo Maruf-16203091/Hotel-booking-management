@@ -11,7 +11,7 @@ const BundleBadge = () => {
           justifyContent: "center",
           textAlign: "center",
           position: "absolute",
-          top: "-350px",
+          top: "-360px",
           right: "50%",
           left: "360px",
           marginTop: "800px",

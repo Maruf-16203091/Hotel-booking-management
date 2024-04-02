@@ -14,8 +14,8 @@ const SearchButton = () => {
       <Button
         variant="contained"
         sx={{
-          width: "350px",
-          height: "66px",
+          width: "330px",
+          height: "60px",
           position: "relative",
           border: "none",
           userSelect: "none",
