@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   Box,
   TextField,
@@ -28,9 +28,40 @@ const germanyCities = [
 
 const SearchEntryPage = () => {
   const [isCardOpen, setIsCardOpen] = useState(false);
-  const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedCity, setSelectedCity] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [cardPosition, setCardPosition] = useState({ top: 0, left: 0 });
+
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        cardRef.current &&
+        !cardRef.current.contains(event.target) &&
+        event.target.getAttribute("class") !== "MuiGrid-root" // Exclude clicks within the card components
+      ) {
+        setIsCardOpen(false);
+      }
+    };
+
+    const handleScroll = () => {
+      if (
+        cardRef.current &&
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 100
+      ) {
+        setIsCardOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleSearchInputClick = (event) => {
     const { top, left, height } = event.target.getBoundingClientRect();
@@ -40,6 +71,7 @@ const SearchEntryPage = () => {
 
   const handleCityClick = (cityName) => {
     setSelectedCity(cityName);
+    setSearchValue(cityName); // Update search input value
     setIsCardOpen(false);
   };
 
@@ -48,7 +80,11 @@ const SearchEntryPage = () => {
   };
 
   const handleInputChange = (event) => {
-    setSearchValue(event.target.value);
+    const value = event.target.value;
+    setSearchValue(value);
+    if (!value) {
+      setSelectedCity(""); // Clear selected city if input is cleared
+    }
   };
 
   // Filter cities based on search input
@@ -84,7 +120,7 @@ const SearchEntryPage = () => {
             ),
           }}
           onClick={handleSearchInputClick}
-          value={selectedCity || ""}
+          value={searchValue} // Use searchValue for input value
           onChange={handleInputChange}
           sx={{
             "& .MuiInputLabel-root": {
@@ -121,9 +157,9 @@ const SearchEntryPage = () => {
               }}
             />
             <Card
+              ref={cardRef}
               sx={{
                 position: "absolute",
-
                 top: cardPosition.top - 200, // Adjust as needed
                 left: cardPosition.left - 625,
                 width: "900px",
@@ -161,7 +197,6 @@ const SearchEntryPage = () => {
                             alt={city.name}
                             sx={{ width: 60 }} // Set the width here
                           />
-
                           <CardContent>
                             <Typography variant="body2">{city.name}</Typography>
                           </CardContent>
