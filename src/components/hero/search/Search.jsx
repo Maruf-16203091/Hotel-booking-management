@@ -9,7 +9,7 @@ import {
   Stack,
   Divider,
 } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+
 import BundleBadge from "../../header/badges/BundleBadge";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
@@ -20,6 +20,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import LoginIcon from "@mui/icons-material/Login";
+import SearchEntryPage from "./SearchEntry";
 
 const AdvanceSearchPage = () => {
   const [selectedProperty, setSelectedProperty] = useState(0);
@@ -167,47 +168,7 @@ const AdvanceSearchPage = () => {
           />
         </Tabs>
       </Box>
-      <Box
-        sx={{
-          width: "900px",
-          height: "65px",
-          backgroundColor: "#FFFFFF",
-          marginLeft: "195px",
-          marginRight: "30px",
-          borderRadius: "12px",
-          marginTop: "15px",
-          display: "flex",
-          alignItems: "center", // Center vertically
-        }}
-      >
-        <TextField
-          fullWidth
-          placeholder="Enter a destination or property"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon sx={{ fontSize: 48 }} />
-              </InputAdornment>
-            ),
-          }}
-          sx={{
-            "& .MuiInputLabel-root": {
-              display: "none",
-            },
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                border: "none",
-              },
-              "& input::placeholder": {
-                fontSize: "16px",
-                color: "black",
-                fontFamily:
-                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              },
-            },
-          }}
-        />
-      </Box>
+      <SearchEntryPage />
       <BundleBadge />
       <Box
         sx={{
