@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   TextField,
@@ -22,6 +22,37 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   const [roomCount, setRoomCount] = useState(1);
   const [adultCount, setAdultCount] = useState(1);
   const [childCount, setChildCount] = useState(0);
+  const [inputValue, setInputValue] = useState("");
+
+  useEffect(() => {
+    // Conditionally set the input value
+    if (childCount === 0 && adultCount === 1 && roomCount === 1) {
+      setInputValue(`${adultCount} adult, ${roomCount} room`);
+    } else if (childCount === 0 && adultCount > 1 && roomCount > 1) {
+      setInputValue(`${adultCount} adults, ${roomCount} rooms`);
+    } else if (childCount === 1 && adultCount >= 1 && roomCount >= 1) {
+      setInputValue(
+        `${adultCount} adults, ${roomCount} rooms, ${childCount} child`
+      );
+    } else {
+      setInputValue(
+        `${adultCount} adults, ${roomCount} rooms, ${childCount} children`
+      );
+    }
+
+    const styleInputValue = () => {
+      const inputElement = document.getElementById("inputValue");
+      if (inputElement) {
+        inputElement.style.marginRight = "5px !important";
+        inputElement.style.fontFamily =
+          "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif !important";
+        inputElement.style.fontSize = "16px !important";
+        inputElement.style.fontWeight = "700 !important";
+      }
+    };
+
+    styleInputValue();
+  }, [adultCount, roomCount, childCount]);
 
   const handleIncrease = (type) => {
     switch (type) {
@@ -54,6 +85,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         break;
     }
   };
+
   return (
     <Box
       sx={{
@@ -119,7 +151,8 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
 
       <TextField
         fullWidth
-        placeholder="1 adult\n1 room"
+        placeholder="1 adult"
+        value={inputValue}
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
@@ -151,6 +184,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
           },
         }}
       />
+
       {isCardOpen && (
         <Card
           sx={{
@@ -178,7 +212,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
                   fontWeight: "600",
                 }}
               >
-                Room
+                Rooms
               </Typography>
               <Box display="flex" alignItems="center">
                 <Button
@@ -244,7 +278,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
                   fontWeight: "600",
                 }}
               >
-                Adult
+                Adults
               </Typography>
               <Box display="flex" alignItems="center">
                 <Button
@@ -310,7 +344,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
                   fontWeight: "600",
                 }}
               >
-                Children
+                Child
               </Typography>
               <Box display="flex" alignItems="center">
                 <Button
