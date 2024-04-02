@@ -16,12 +16,9 @@ import HouseIcon from "@mui/icons-material/House";
 import WorkIcon from "@mui/icons-material/Work";
 import NewBadge from "../../header/badges/NewBadge";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import LoginIcon from "@mui/icons-material/Login";
 import SearchEntryPage from "./SearchEntry";
 import SearchFieldGroup from "./SearchFieldGroup";
+import SearchButton from "./SearchButton ";
 
 const AdvanceSearchPage = () => {
   const [selectedProperty, setSelectedProperty] = useState(0);
@@ -171,37 +168,8 @@ const AdvanceSearchPage = () => {
       </Box>
       <SearchEntryPage />
       <BundleBadge />
-      <SearchFieldGroup/>
-
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "55px",
-          marginLeft: "90px",
-        }}
-      >
-        <Button
-          variant="contained"
-          sx={{
-            width: "350px",
-            height: "66px",
-            position: "relative",
-            border: "none",
-            userSelect: "none",
-            padding: "12px",
-            borderRadius: "10px",
-            backgroundColor: "#5392f9",
-            color: "#FFFFFF",
-            boxShadow: "rgba(0, 0, 0, 0.2) 0px 1px 3px 1px",
-            transition: "all 0.15s ease-in-out 0s",
-            fontSize: "25px",
-            fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-          }}
-        >
-          SEARCH
-        </Button>
-      </Box>
+      <SearchFieldGroup />
+      <SearchButton />
     </>
   );
 };
