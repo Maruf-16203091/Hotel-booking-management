@@ -19,38 +19,18 @@ import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import SearchEntryPage from "./SearchEntry";
 import SearchFieldGroup from "./SearchFieldGroup";
 import SearchButton from "./SearchButton ";
+import "./Search.css";
 
 const AdvanceSearchPage = () => {
   const [selectedProperty, setSelectedProperty] = useState(0);
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [isCalendarOpen, setIsCalendarOpen] = useState(false); // State to manage calendar modal visibility
 
   const handlePropertyChange = (event, newValue) => {
     setSelectedProperty(newValue);
   };
 
-  const handleDateSelect = (date) => {
-    setSelectedDate(date);
-    setIsCalendarOpen(false);
-  };
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "270px",
-          marginLeft: "150px",
-          padding: "32px 48px 48px",
-          backgroundColor: "#F8F7F9",
-          borderRadius: "20px",
-          border: "1px solid #E0E0E0",
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-          width: "75%",
-          height: "190px",
-        }}
-      ></Box>
+      <Box className="customBox"></Box>
 
       <Box
         sx={{
