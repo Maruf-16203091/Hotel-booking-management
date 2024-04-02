@@ -9,10 +9,10 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   return (
     <Box
       sx={{
-        width: "1200px",
+        width: "1100px",
         height: "65px",
         backgroundColor: "#F8F7F9",
-        marginLeft: "45px",
+        marginLeft: "70px",
         marginRight: "30px",
         borderRadius: "12px",
         marginTop: "15px",
@@ -22,10 +22,11 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
     >
       <Box
         sx={{
-          width: "1200px",
+          width: "1100px",
           height: "65px",
           borderRadius: "12px",
           backgroundColor: "white",
+          border: "1px solid #d7d7db",
           "& .MuiInputLabel-root": {
             display: "none",
           },
@@ -75,6 +76,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
           borderRadius: "12px",
           height: "65px",
           backgroundColor: "white",
+          border: "1px solid #d7d7db",
           "& .MuiInputLabel-root": {
             display: "none",
           },

@@ -8,7 +8,7 @@ const SearchButton = () => {
         display: "flex",
         justifyContent: "center",
         marginTop: "70px",
-        marginLeft: "90px",
+        marginLeft: "60px",
       }}
     >
       <Button

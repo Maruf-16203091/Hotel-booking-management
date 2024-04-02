@@ -98,15 +98,17 @@ const SearchEntryPage = () => {
       <Box
         sx={{
           position: "relative",
-          width: "1200px",
+          width: "1100px",
           height: "65px",
           backgroundColor: "#FFFFFF",
-          marginLeft: "45px",
+          marginLeft: "70px",
           marginRight: "30px",
           borderRadius: "12px",
-          marginTop: "15px",
+          marginTop: "20px",
           display: "flex",
-          alignItems: "center", // Center vertically
+          alignItems: "center",
+          border: "1px solid #d7d7db",
+          borderRadius: "12px",
         }}
       >
         <TextField
@@ -134,10 +136,10 @@ const SearchEntryPage = () => {
                 borderColor: "transparent", // Remove hover border
               },
               "&.Mui-focused fieldset": {
-                borderColor: "#d7d7db",
+                borderColor: "#87B3FB",
                 borderRadius: "12px",
                 height: "65px",
-                top: "-10px",
+                top: "-9px",
               },
               "& input::placeholder": {
                 fontSize: "16px",
@@ -170,14 +172,14 @@ const SearchEntryPage = () => {
               ref={cardRef}
               sx={{
                 position: "absolute",
-                top: cardPosition.top - 195, // Adjust as needed
-                left: cardPosition.left - 475,
-                width: "1200px",
+                top: cardPosition.top - 200, // Adjust as needed
+                left: cardPosition.left - 505,
+                width: "1105px",
                 maxHeight: "600px",
                 overflowY: "auto",
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                 zIndex: 999,
-                border: "1px solid #d7d7db",
+                border: "1px solid #87B3FB",
                 borderRadius: "12px",
               }}
             >
