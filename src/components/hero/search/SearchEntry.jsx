@@ -157,7 +157,7 @@ const SearchEntryPage = () => {
             sx={{
               position: "absolute",
               top: cardPosition.top +15,
-              left: cardPosition.left - 78,
+              left: cardPosition.left - 72,
               width: "1105px",
               maxHeight: "600px",
               backgroundColor: "white",
