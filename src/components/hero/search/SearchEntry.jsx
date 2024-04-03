@@ -5,6 +5,7 @@ import {
   InputAdornment,
   Typography,
   Grid,
+  Modal, // Import Modal component
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BerlinImage from "../../../assets/topDestination/main.jpg";
@@ -24,7 +25,7 @@ const germanyCities = [
 ];
 
 const SearchEntryPage = () => {
-  const [isCardOpen, setIsCardOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal open/close
   const [selectedCity, setSelectedCity] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [cardPosition, setCardPosition] = useState({ top: 0, left: 0 });
@@ -36,9 +37,9 @@ const SearchEntryPage = () => {
       if (
         cardRef.current &&
         !cardRef.current.contains(event.target) &&
-        event.target.getAttribute("class") !== "MuiGrid-root" // Exclude clicks within the card components
+        event.target.getAttribute("class") !== "MuiGrid-root"
       ) {
-        setIsCardOpen(false);
+        setIsModalOpen(false);
       }
     };
 
@@ -47,7 +48,7 @@ const SearchEntryPage = () => {
         cardRef.current &&
         window.innerHeight + window.scrollY >= document.body.offsetHeight - 100
       ) {
-        setIsCardOpen(false);
+        setIsModalOpen(false);
       }
     };
 
@@ -62,18 +63,18 @@ const SearchEntryPage = () => {
 
   const handleSearchInputClick = (event) => {
     const { top, left, height } = event.target.getBoundingClientRect();
-    setIsCardOpen(true);
+    setIsModalOpen(true);
     setCardPosition({ top: top + height, left });
   };
 
   const handleCityClick = (cityName) => {
     setSelectedCity(cityName);
     setSearchValue(cityName); // Update search input value
-    setIsCardOpen(false);
+    setIsModalOpen(false);
   };
 
-  const handleCloseCard = () => {
-    setIsCardOpen(false);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   const handleInputChange = (event) => {
@@ -84,14 +85,12 @@ const SearchEntryPage = () => {
     }
   };
 
-  // Filter cities based on search input
   const filteredCities = germanyCities.filter((city) =>
     city.name.toLowerCase().includes(searchValue.toLowerCase())
   );
 
   return (
     <>
-      {/* Search Input */}
       <Box
         sx={{
           position: "relative",
@@ -118,7 +117,7 @@ const SearchEntryPage = () => {
             ),
           }}
           onClick={handleSearchInputClick}
-          value={searchValue} // Use searchValue for input value
+          value={searchValue}
           onChange={handleInputChange}
           sx={{
             "& .MuiInputLabel-root": {
@@ -126,10 +125,10 @@ const SearchEntryPage = () => {
             },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
-                border: "1px solid transparent", // Add a transparent border
+                border: "1px solid transparent",
               },
               "&:hover fieldset": {
-                borderColor: "transparent", // Remove hover border
+                borderColor: "transparent",
               },
               "&.Mui-focused fieldset": {
                 borderColor: "#87B3FB",
@@ -147,107 +146,87 @@ const SearchEntryPage = () => {
           }}
         />
 
-        {isCardOpen && (
-          <>
-            {/* Arrow shape indicating the card */}
-            <Box
+        <Modal
+          open={isModalOpen}
+          onClose={handleCloseModal}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box
+            ref={cardRef}
+            sx={{
+              position: "absolute",
+              top: cardPosition.top +15,
+              left: cardPosition.left - 78,
+              width: "1105px",
+              maxHeight: "600px",
+              backgroundColor: "white",
+              color: "black",
+              overflowY: "auto",
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+              zIndex: 999,
+              border: "1px solid #87B3FB",
+              borderRadius: "12px",
+            }}
+          >
+            <Typography variant="h6" mb={2} sx={{ padding: "16px" }}>
+              Popular Cities in Germany
+            </Typography>
+            <Grid
+              container
+              spacing={2}
               sx={{
-                position: "absolute",
-                top: "90%",
-                left: cardPosition.left - 450, // Adjust as needed
-                width: 0,
-                height: 0,
-                borderTop: "7px solid transparent",
-                borderRight: "15px solid transparent",
-                borderBottom: "14px solid white",
-                borderLeft: "15px solid transparent",
-                zIndex: 999,
-              }}
-            />
-            <Box
-              ref={cardRef}
-              sx={{
-                position: "absolute",
-                top: cardPosition.top - 200, // Adjust as needed
-                left: cardPosition.left - 505,
-                width: "1105px",
-                maxHeight: "600px",
-                backgroundColor: "white",
-                color: "black",
-
-                overflowY: "auto",
-                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                zIndex: 999,
-                border: "1px solid #87B3FB",
-                borderRadius: "12px",
+                padding: "16px",
               }}
             >
-              <Typography variant="h6" mb={2} sx={{ padding: "16px" }}>
-                Popular Cities in Germany
-              </Typography>
-              <Grid
-                container
-                spacing={2}
-                sx={{
-                  padding: "16px",
-                }}
-              >
-                {filteredCities.map((city, index) => (
-                  <Grid item xs={4} key={index}>
-                    <Box
-                      sx={{
-                        cursor: "pointer",
-                        display: "flex",
-                        alignItems: "center",
-                        marginBottom: "15px",
-                        marginLeft: "10px",
-                        border: "1px solid transparent",
-                        transition: "border-color 0.3s ease-in-out", // Add transition
-                        "&:hover": {
-                         
-                          backgroundColor: "#EFF4FD",
-                          borderRadius: "5px",
-                        },
+              {filteredCities.map((city, index) => (
+                <Grid item xs={4} key={index}>
+                  <Box
+                    sx={{
+                      cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "15px",
+                      marginLeft: "10px",
+                      border: "1px solid transparent",
+                      transition: "border-color 0.3s ease-in-out",
+                      "&:hover": {
+                        backgroundColor: "#EFF4FD",
+                        borderRadius: "5px",
+                      },
+                    }}
+                    onClick={() => handleCityClick(city.name)}
+                  >
+                    <img
+                      src={city.image}
+                      alt={city.name}
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        borderRadius: "12px",
                       }}
-                      onClick={() => handleCityClick(city.name)}
+                    />
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        marginTop: "15px",
+                        marginLeft: "15px",
+                        marginBottom: "10px",
+                      }}
+                      component="div"
                     >
-                      <img
-                        src={city.image}
-                        alt={city.name}
-                        style={{
-                          width: "50px",
-                          height: "50px",
-                          borderRadius: "12px",
-                        }}
-                      />
-                      <Typography
-                        variant="body2"
-                        sx={{
-                          marginTop: "15px",
-                          marginLeft: "15px", // Adjust as needed
-                          marginBottom: "10px",
-                        }}
-                        component="div"
-                      >
-                        <div
-                          style={{
-                            marginBottom: "15px",
-                          }}
-                        >
-                          {city.name}
-                        </div>{" "}
-                        <div>
-                          <span style={{ color: "#5392F9" }}>57% </span>stayed
-                          there
-                        </div>{" "}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                ))}
-              </Grid>
-            </Box>
-          </>
-        )}
+                      <div style={{ marginBottom: "15px" }}>{city.name}</div>{" "}
+                      <div>
+                        <span style={{ color: "#5392F9" }}>57% </span>stayed
+                        there
+                      </div>{" "}
+                    </Typography>
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Modal>
       </Box>
     </>
   );
