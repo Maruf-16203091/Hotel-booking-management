@@ -82,6 +82,19 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
     setIsModalOpen(false);
   };
 
+  const modalArrowStyle = {
+    position: "absolute",
+    top: "50%",
+    right: "-15px",
+    transform: "translateY(-50%)",
+    width: 0,
+    height: 0,
+    borderTop: "15px solid transparent",
+    borderBottom: "15px solid transparent",
+    borderRight: "15px solid white", // Adjust the color and size as needed
+    zIndex: "1",
+  };
+
   return (
     <Box
       sx={{
@@ -190,10 +203,10 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
+        
         <Card
           sx={{
             position: "absolute",
-
             top: "50%",
             left: "60%",
             transform: "translate(-50%, -50%)",
@@ -201,6 +214,9 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             height: "200px",
             borderRadius: "12px",
             zIndex: "1",
+            "&::before": {
+              ...modalArrowStyle,
+            },
           }}
         >
           <CardContent>
@@ -390,7 +406,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
                     width: "32px",
                     height: "32px",
                     backgroundColor: "transparent",
-                    border: "1px solid #edf0f9",
+                    border: "px solid #edf0f9",
                     color: "#000",
                     "&:hover": {
                       backgroundColor: "transparent",
