@@ -27,7 +27,7 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
 
   useEffect(() => {
     // Conditionally set the input value
-    if (childCount === 0 && adultCount === 1 && roomCount === 1) {
+    if (childCount === 0 && adultCount >= 1 && roomCount >= 1) {
       setInputValue(`${adultCount} adult, ${roomCount} room`);
     } else if (childCount === 0 && adultCount > 1 && roomCount > 1) {
       setInputValue(`${adultCount} adults, ${roomCount} rooms`);
