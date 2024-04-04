@@ -26,20 +26,67 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
-    // Conditionally set the input value
-    if (childCount === 0 && adultCount >= 1 && roomCount >= 1) {
-      setInputValue(`${adultCount} adult, ${roomCount} room`);
-    } else if (childCount === 0 && adultCount > 1 && roomCount > 1) {
-      setInputValue(`${adultCount} adults, ${roomCount} rooms`);
-    } else if (childCount === 1 && adultCount >= 1 && roomCount >= 1) {
-      setInputValue(
-        `${adultCount} adults, ${roomCount} rooms, ${childCount} child`
-      );
+    if (childCount <= 0) {
+      if (adultCount <= 1) {
+        if (roomCount <= 1) {
+          setInputValue(`${adultCount} adult, ${roomCount} room`);
+        } else {
+          setInputValue(`${adultCount} adult, ${roomCount} rooms`);
+        }
+      } else {
+        if (roomCount <= 1) {
+          setInputValue(`${adultCount} adults, ${roomCount} room`);
+        } else {
+          setInputValue(`${adultCount} adults, ${roomCount} rooms`);
+        }
+      }
+    } else if (childCount === 1) {
+      if (adultCount <= 1) {
+        if (roomCount <= 1) {
+          setInputValue(
+            `${adultCount} adult, ${roomCount} room, ${childCount} child`
+          );
+        } else {
+          setInputValue(
+            `${adultCount} adult, ${roomCount} rooms, ${childCount} child`
+          );
+        }
+      } else {
+        if (roomCount <= 1) {
+          setInputValue(
+            `${adultCount} adults, ${roomCount} room, ${childCount} child`
+          );
+        } else {
+          setInputValue(
+            `${adultCount} adults, ${roomCount} rooms, ${childCount} child`
+          );
+        }
+      }
     } else {
-      setInputValue(
-        `${adultCount} adults, ${roomCount} rooms, ${childCount} children`
-      );
+      if (adultCount <= 1) {
+        if (roomCount <= 1) {
+          setInputValue(
+            `${adultCount} adult, ${roomCount} room, ${childCount} children`
+          );
+        } else {
+          setInputValue(
+            `${adultCount} adult, ${roomCount} rooms, ${childCount} children`
+          );
+        }
+      } else {
+        if (roomCount <= 1) {
+          setInputValue(
+            `${adultCount} adults, ${roomCount} room, ${childCount} children`
+          );
+        } else {
+          setInputValue(
+            `${adultCount} adults, ${roomCount} rooms, ${childCount} children`
+          );
+        }
+      }
     }
+
+    // Conditionally set the input value
   }, [adultCount, roomCount, childCount]);
 
   const handleIncrease = (type) => {
@@ -59,20 +106,27 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   };
 
   const handleDecrease = (type) => {
-    switch (type) {
-      case "room":
-        setRoomCount(roomCount > 1 ? roomCount - 1 : 1);
-        break;
-      case "adult":
-        setAdultCount(adultCount > 0 ? adultCount - 1 : 0);
-        break;
-      case "child":
-        setChildCount(childCount > 0 ? childCount - 1 : 0);
-        break;
-      default:
-        break;
+    if (type === "room") {
+      if (roomCount > 1) {
+        setRoomCount(roomCount - 1);
+      } else {
+        setRoomCount(1);
+      }
+    } else if (type === "adult") {
+      if (adultCount > 1) {
+        setAdultCount(adultCount - 1);
+      } else {
+        setAdultCount(1);
+      }
+    } else if (type === "child") {
+      if (childCount > 0) {
+        setChildCount(childCount - 1);
+      } else {
+        setChildCount(0);
+      }
     }
   };
+  
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
@@ -203,7 +257,6 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        
         <Card
           sx={{
             position: "absolute",
