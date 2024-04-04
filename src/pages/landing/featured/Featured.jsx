@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Typography, Button, Link } from "@mui/material";
+import { Tabs, Tab, Typography, Button, Link, Grid } from "@mui/material";
 import SlideImage1 from "../../../assets/promotion/slide1.jpg";
 import SlideImage2 from "../../../assets/promotion/slide2.jpg";
 import SlideImage3 from "../../../assets/promotion/slide3.jpg";
@@ -22,8 +22,49 @@ const Featured = () => {
   const tabData = [
     {
       label: "Berlin",
-      images: [SlideImage1, SlideImage2, SlideImage3],
+      images: [
+        SlideImage1,
+        SlideImage2,
+        SlideImage3,
+        SlideImage3,
+        SlideImage3,
+        SlideImage3,
+        SlideImage3,
+        SlideImage3,
+      ],
       descriptions: [
+        {
+          text: "JOYN MUNICH Olympic - Serviced Apartments",
+          location: "AMC Apartments, Charlottenburg, Berlin",
+          price: "Per night after taxes and fees",
+          currency: "EUR",
+          amount: "151.92",
+          rating: "4.5",
+        },
+        {
+          text: "JOYN MUNICH Olympic - Serviced Apartments",
+          location: "AMC Apartments, Charlottenburg, Berlin",
+          price: "Per night after taxes and fees",
+          currency: "EUR",
+          amount: "151.92",
+          rating: "4.5",
+        },
+        {
+          text: "Aparthotels Frankfurt Airport",
+          location: "AMC Apartments, Charlottenburg, Berlin",
+          price: "Per night after taxes and fees",
+          currency: "EUR",
+          amount: "151.92",
+          rating: "4.5",
+        },
+        {
+          text: "JOYN MUNICH Olympic - Serviced Apartments",
+          location: "AMC Apartments, Charlottenburg, Berlin",
+          price: "Per night after taxes and fees",
+          currency: "EUR",
+          amount: "151.92",
+          rating: "4.5",
+        },
         {
           text: "JOYN MUNICH Olympic - Serviced Apartments",
           location: "AMC Apartments, Charlottenburg, Berlin",
@@ -42,6 +83,14 @@ const Featured = () => {
         },
         {
           text: "Staycity Aparthotels",
+          location: "AMC Apartments, Charlottenburg, Berlin",
+          price: "Per night after taxes and fees",
+          currency: "EUR",
+          amount: "151.92",
+          rating: "4.5",
+        },
+        {
+          text: "JOYN MUNICH Olympic - Serviced Apartments",
           location: "AMC Apartments, Charlottenburg, Berlin",
           price: "Per night after taxes and fees",
           currency: "EUR",
@@ -163,41 +212,43 @@ const Featured = () => {
           <Tab key={index} label={tab.label} />
         ))}
       </Tabs>
+
       <Link href="#" underline="none">
         <div style={{ padding: "20px" }}>
           <Typography variant="h4" gutterBottom>
-            {tabData[tabValue].label} 
+            {tabData[tabValue].label}
           </Typography>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <Grid container spacing={2}>
             {tabData[tabValue].images.map((image, index) => (
-              <div
-                key={index}
-                style={{
-                  position: "relative",
-                  marginRight: "20px",
-                  marginBottom: "20px",
-                }}
-              >
-                <img
-                  src={image}
-                  alt={`${tabData[tabValue].label} Slide ${index + 1}`}
+              <Grid item xs={3} key={index}>
+                <div
                   style={{
-                    width: "280px",
-                    height: "250px",
-                    marginBottom: "10px",
+                    position: "relative",
+                    marginBottom: "20px",
                   }}
-                />
-                <RatingBadge
-                  rating={tabData[tabValue].descriptions[index].rating}
-                />{" "}
-                {/* Include RatingBadge component */}
-                <Description {...tabData[tabValue].descriptions[index]} />
-              </div>
+                >
+                  <img
+                    src={image}
+                    alt={`${tabData[tabValue].label} Slide ${index + 1}`}
+                    style={{
+                      width: "102%",
+                      height: "250px",
+                      marginBottom: "10px",
+                    }}
+                  />
+                  <RatingBadge
+                    rating={tabData[tabValue].descriptions[index].rating}
+                  />{" "}
+                  {/* Include RatingBadge component */}
+                  <div style={{marginBottom:"155px"}}><Description {...tabData[tabValue].descriptions[index]} /></div>
+                </div>
+              </Grid>
             ))}
-          </div>
+          </Grid>
         </div>
       </Link>
-      <div style={{ textAlign: "center", marginTop: "120px" }}>
+
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
         <Button
           onClick={handleSeeMore}
           sx={{
