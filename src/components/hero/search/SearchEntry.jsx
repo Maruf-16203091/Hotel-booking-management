@@ -231,6 +231,7 @@ const SearchEntryPage = () => {
                         <div
                           style={{
                             marginBottom: "15px",
+                            marginLeft: "-75px",
                           }}
                         >
                           {city.name}

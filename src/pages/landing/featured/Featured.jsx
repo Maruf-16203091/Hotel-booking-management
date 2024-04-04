@@ -143,7 +143,7 @@ const Featured = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "40px" }}>
+    <div style={{ marginLeft: "10px", width: "1100px" }}>
       <Typography
         variant="h5"
         gutterBottom
@@ -166,7 +166,7 @@ const Featured = () => {
       <Link href="#" underline="none">
         <div style={{ padding: "20px" }}>
           <Typography variant="h4" gutterBottom>
-            {tabData[tabValue].label} Images
+            {tabData[tabValue].label} 
           </Typography>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
             {tabData[tabValue].images.map((image, index) => (

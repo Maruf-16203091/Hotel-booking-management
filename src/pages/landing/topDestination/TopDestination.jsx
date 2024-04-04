@@ -20,9 +20,9 @@ const TopDestination = () => {
     <>
       <Box
         sx={{
-          width: "900px",
+          width: "1100px",
           marginTop: "100px",
-          marginLeft: "10px",
+          marginLeft: "-15px",
           marginBottom: "50px",
           padding: "40px",
           textAlign: "center",
@@ -33,7 +33,7 @@ const TopDestination = () => {
           gutterBottom
           sx={{
             marginBottom: "40px",
-            marginLeft: "100px",
+            marginLeft: "80px",
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             fontWeight: "500",
           }}
@@ -46,7 +46,7 @@ const TopDestination = () => {
               sx={{
                 boxShadow: 3,
                 margin: "auto",
-                width: "310px",
+                width: "350px",
                 height: "400px",
               }}
             >
@@ -96,7 +96,7 @@ const TopDestination = () => {
               sx={{
                 boxShadow: 3,
                 margin: "auto",
-                width: "310px",
+                width: "350px",
                 height: "400px",
               }}
             >
@@ -146,7 +146,7 @@ const TopDestination = () => {
               sx={{
                 boxShadow: 3,
                 margin: "auto",
-                width: "310px",
+                width: "350px",
                 height: "400px",
               }}
             >
