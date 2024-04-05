@@ -126,7 +126,6 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
       }
     }
   };
-  
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
