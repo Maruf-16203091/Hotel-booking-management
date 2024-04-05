@@ -18,7 +18,6 @@ const AllPlaces = () => {
           paddingTop: "30px",
           display: "flex",
           justifyContent: "space-between",
-          justifyContent: "space-between",
         }}
       >
         <div>

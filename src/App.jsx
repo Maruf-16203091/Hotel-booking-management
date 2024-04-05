@@ -11,6 +11,7 @@ import Contact from "./pages/contact/contact";
 import Services from "./pages/services/index";
 import Hotel from "./pages/hotels/SingleHotel";
 import Attraction from "./pages/attractions/index";
+import SignUp from "./pages/login/SignUp";
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
         }}
       >
         <Header />
-        <Hero />
+        {/* <Hero /> */}
         <div
           style={{
             flexGrow: 1,
@@ -39,6 +40,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/hotels" element={<Hotel />} />
             <Route path="/attraction" element={<Attraction />} />
+            <Route path="/sign-up" element={<SignUp />} />
           </Routes>
         </div>
         <SaveMoreButton />
