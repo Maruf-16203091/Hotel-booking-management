@@ -19,9 +19,9 @@ const Outside = () => {
     <>
       <Box
         sx={{
-          width: "900px",
+          width: "1100px",
           marginTop: "20px",
-          marginLeft: "10px",
+          marginLeft: "15px",
           marginBottom: "50px",
           padding: "40px",
           textAlign: "center",

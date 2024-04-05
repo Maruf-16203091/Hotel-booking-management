@@ -6,7 +6,7 @@ const OverHeard = () => {
     <>
       <div
         style={{
-          maxWidth: "900px",
+          maxWidth: "1100px",
           position: "relative",
           textAlign: "center",
         }}
@@ -17,7 +17,7 @@ const OverHeard = () => {
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             marginBottom: "40px",
-            marginLeft: "150px",
+            marginLeft: "160px",
             fontWeight: "500",
             alignItems: "center",
             fontSize: "30px",
@@ -28,18 +28,18 @@ const OverHeard = () => {
       </div>
       <div
         style={{
-          maxWidth: "900px",
-          marginLeft: "20px",
+          maxWidth: "1100px",
+          marginLeft: "10px",
           position: "relative",
           textAlign: "center",
           display: "flex",
           justifyContent: "space-between",
         }}
       >
-        {[1, 2, 3].map((index) => (
+        {[1, 2, 3, 4].map((index) => (
           <Card
             key={index}
-            style={{ width: "280px", height: "300px", marginLeft: "40px" }}
+            style={{ width: "300px", height: "330px", marginLeft: "40px" }}
           >
             <CardContent>
               <Typography
