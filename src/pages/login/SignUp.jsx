@@ -50,10 +50,11 @@ const SignUpPage = () => {
         border: "1px solid #ddd",
         borderRadius: "8px",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
       }}
     >
       <Typography variant="h4" gutterBottom>
-        Sign Up
+        Sign up
       </Typography>
       <form onSubmit={handleSignUp}>
         <Grid container spacing={2}>
@@ -144,7 +145,7 @@ const SignUpPage = () => {
           <Grid item xs={12}>
             <Typography variant="body2" align="center">
               Already have an account?{" "}
-              <Link href="/login" underline="always">
+              <Link href="/sign-in" underline="always">
                 Sign in
               </Link>
             </Typography>

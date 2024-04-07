@@ -55,10 +55,24 @@ const SignInPage = () => {
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <Typography variant="h4" gutterBottom sx={{ marginLeft: "19px" }}>
+      <Typography
+        variant="h4"
+        gutterBottom
+        sx={{
+          marginLeft: "19px",
+          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+        }}
+      >
         Sign in
       </Typography>
-      <Typography variant="body2" gutterBottom sx={{ marginLeft: "23px" }}>
+      <Typography
+        variant="body2"
+        gutterBottom
+        sx={{
+          marginLeft: "23px",
+          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+        }}
+      >
         For security, please sign in to access your information
       </Typography>
       <Box>
@@ -80,6 +94,10 @@ const SignInPage = () => {
                   label="Email"
                   variant="outlined"
                   margin="normal"
+                  sx={{
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                  }}
                 />
                 <OutlinedInput
                   fullWidth
@@ -98,7 +116,11 @@ const SignInPage = () => {
                     </InputAdornment>
                   }
                   required
-                  sx={{ marginTop: "15px" }}
+                  sx={{
+                    marginTop: "15px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                  }}
                 />
                 <Button
                   variant="contained"
@@ -110,11 +132,13 @@ const SignInPage = () => {
               </Box>
               <Box display="flex" justifyContent="space-between" mt={2}>
                 <Link
-                  href="/signup"
+                  href="/sign-up"
                   variant="body2"
                   sx={{
                     textDecoration: "none",
                     "&:hover": { textDecoration: "underline" },
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
                   }}
                 >
                   Create account
@@ -125,6 +149,8 @@ const SignInPage = () => {
                   sx={{
                     textDecoration: "none",
                     "&:hover": { textDecoration: "underline" },
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
                   }}
                 >
                   Forgot password?
@@ -132,7 +158,15 @@ const SignInPage = () => {
               </Box>
               <Box>
                 {/* Sign in by email with Google, Facebook, Apple */}
-                <Typography align="center" variant="body2" gutterBottom>
+                <Typography
+                  align="center"
+                  variant="body2"
+                  gutterBottom
+                  sx={{
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                  }}
+                >
                   Or sign in with
                 </Typography>
                 <Box display="flex" justifyContent="center" mt={2}>
@@ -162,7 +196,13 @@ const SignInPage = () => {
                     onChange={handleCountryCodeChange}
                     variant="outlined"
                     fullWidth
-                    sx={{ width: "20%", marginRight: "10px", marginTop: "8px" }}
+                    sx={{
+                      width: "20%",
+                      marginRight: "10px",
+                      marginTop: "8px",
+                      fontFamily:
+                        "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                    }}
                   >
                     <MenuItem value="+1">+1</MenuItem>
                     <MenuItem value="+91">+91</MenuItem>
@@ -173,6 +213,10 @@ const SignInPage = () => {
                     label="Mobile Number"
                     variant="outlined"
                     margin="normal"
+                    sx={{
+                      fontFamily:
+                        "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                    }}
                   />
                 </Box>
                 <OutlinedInput
@@ -192,7 +236,11 @@ const SignInPage = () => {
                     </InputAdornment>
                   }
                   required
-                  sx={{ marginTop: "15px" }}
+                  sx={{
+                    marginTop: "15px",
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                  }}
                 />
                 <Button
                   variant="contained"
@@ -204,11 +252,13 @@ const SignInPage = () => {
               </Box>
               <Box display="flex" justifyContent="space-between" mt={2}>
                 <Link
-                  href="/signup"
+                  href="/sign-up"
                   variant="body2"
                   sx={{
                     textDecoration: "none",
                     "&:hover": { textDecoration: "underline" },
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
                   }}
                 >
                   Create account
@@ -219,6 +269,8 @@ const SignInPage = () => {
                   sx={{
                     textDecoration: "none",
                     "&:hover": { textDecoration: "underline" },
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
                   }}
                 >
                   Forgot password?
@@ -226,7 +278,15 @@ const SignInPage = () => {
               </Box>
               <Box>
                 {/* Sign in by phone number with Google, Facebook, Apple */}
-                <Typography align="center" variant="body2" gutterBottom>
+                <Typography
+                  align="center"
+                  variant="body2"
+                  gutterBottom
+                  sx={{
+                    fontFamily:
+                      "mallory, Helvetica Neue, Helvetica, Arial, sans-serif",
+                  }}
+                >
                   Or sign in with
                 </Typography>
                 <Box display="flex" justifyContent="center" mt={2}>
