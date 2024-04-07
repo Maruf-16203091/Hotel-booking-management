@@ -152,11 +152,12 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
     <>
       <Box
         sx={{
-          width: "400px",
+          width: "432px",
           height: "45px",
           borderRadius: "5px",
           display: "flex",
           alignItems: "center",
+          marginRight: "7px",
           backgroundColor: "white",
           border: "1px solid #d7d7db",
           "& .MuiInputLabel-root": {
@@ -217,10 +218,10 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         }}
         sx={{
           marginLeft: "0px",
-
+          marginRight: "7px",
           borderRadius: "5px",
           height: "45px",
-          width: "250px",
+          width: "288px",
           backgroundColor: "white",
           border: "1px solid #d7d7db",
           "& .MuiInputLabel-root": {
@@ -252,12 +253,12 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         <Card
           sx={{
             position: "absolute",
-            top: "50%",
-            left: "60%",
+            top: "18%",
+            left: "65.8%",
             transform: "translate(-50%, -50%)",
-            width: "290px",
+            width: "286px",
             height: "200px",
-            borderRadius: "12px",
+            borderRadius: "5px",
             zIndex: "1",
             "&::before": {
               ...modalArrowStyle,

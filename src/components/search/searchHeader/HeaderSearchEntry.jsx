@@ -95,16 +95,15 @@ const SearchEntryPage = () => {
       <Box
         sx={{
           position: "relative",
-          width: "250px",
+          width: "286px",
           height: "45px",
           backgroundColor: "#FFFFFF",
-          marginLeft: "0px",
-          marginRight: "0px",
+
+          marginRight: "7px",
           borderRadius: "5px",
-         
+
           display: "flex",
           alignItems: "center",
-          border: "1px solid #d7d7db",
         }}
       >
         <TextField
@@ -118,7 +117,7 @@ const SearchEntryPage = () => {
             ),
           }}
           onClick={handleSearchInputClick}
-          value={searchValue} // Use searchValue for input value
+          value={searchValue}
           onChange={handleInputChange}
           sx={{
             "& .MuiInputLabel-root": {
@@ -134,8 +133,8 @@ const SearchEntryPage = () => {
               "&.Mui-focused fieldset": {
                 borderColor: "#87B3FB",
                 borderRadius: "5px",
-                height: "65px",
-                top: "-9px",
+                height: "45px",
+                top: "1.5px",
               },
               "& input::placeholder": {
                 fontSize: "12px",
@@ -154,7 +153,7 @@ const SearchEntryPage = () => {
               sx={{
                 position: "absolute",
                 top: "90%",
-                left: cardPosition.left - 450, // Adjust as needed
+                left: cardPosition.left - 420, // Adjust as needed
                 width: 0,
                 height: 0,
                 borderTop: "7px solid transparent",
@@ -168,10 +167,10 @@ const SearchEntryPage = () => {
               ref={cardRef}
               sx={{
                 position: "absolute",
-                top: cardPosition.top - 220, // Adjust as needed
-                left: cardPosition.left - 495,
-                width: "1105px",
-                maxHeight: "600px",
+                top: cardPosition.top - 0, // Adjust as needed
+                left: cardPosition.left - 443,
+                width: "735px",
+
                 backgroundColor: "white",
                 color: "black",
 
@@ -182,7 +181,15 @@ const SearchEntryPage = () => {
                 borderRadius: "12px",
               }}
             >
-              <Typography variant="h6" mb={2} sx={{ padding: "16px" }}>
+              <Typography
+                variant="h6"
+                mb={2}
+                sx={{
+                  padding: "16px",
+                  marginBottom: "-25px",
+                  marginLeft: "10px",
+                }}
+              >
                 Popular Cities in Germany
               </Typography>
               <Grid
@@ -199,7 +206,7 @@ const SearchEntryPage = () => {
                         cursor: "pointer",
                         display: "flex",
                         alignItems: "center",
-                        marginBottom: "15px",
+                        marginBottom: "5px",
                         marginLeft: "10px",
                         border: "1px solid transparent",
                         transition: "border-color 0.3s ease-in-out", // Add transition
@@ -222,7 +229,7 @@ const SearchEntryPage = () => {
                       <Typography
                         variant="body2"
                         sx={{
-                          marginTop: "15px",
+                          marginTop: "5px",
                           marginLeft: "15px", // Adjust as needed
                           marginBottom: "10px",
                         }}
@@ -231,7 +238,7 @@ const SearchEntryPage = () => {
                         <div
                           style={{
                             marginBottom: "15px",
-                            marginLeft: "-75px",
+                            marginLeft: "0px",
                           }}
                         >
                           {city.name}
