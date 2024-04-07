@@ -20,6 +20,7 @@ const HeroPage = () => {
         width: "100vw",
         boxSizing: "border-box",
         padding: "0 20px",
+        marginLeft: "-30px",
       }}
     >
       <WelcomeMessage />

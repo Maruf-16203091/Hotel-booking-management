@@ -192,7 +192,7 @@ const Featured = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "20px", width: "1100px" }}>
+    <div style={{  marginLeft: "365px", width: "1100px" }}>
       <Typography
         variant="h5"
         gutterBottom

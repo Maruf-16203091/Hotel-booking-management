@@ -51,7 +51,7 @@ const RightNavBar = () => {
         <LanguageModal />
         <BottomNavigationAction
           component={Link}
-          to="/hotels"
+          to="/sign-in"
           label={
             <Typography className="custom-button-sign-in">Sign in</Typography>
           }
@@ -59,7 +59,7 @@ const RightNavBar = () => {
         />
         <BottomNavigationAction
           component={Link}
-          to="/hotels"
+          to="/sign-up"
           label={
             <Typography className="custom-button-create">
               Create account

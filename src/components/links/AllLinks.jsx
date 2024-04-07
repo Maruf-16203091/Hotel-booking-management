@@ -8,7 +8,7 @@ const AllLinks = () => {
         backgroundColor: "#E9EBEE",
         width: "100vw",
         position: "absolute",
-        marginLeft: "-480px",
+        marginLeft: "0px",
       }}
     >
       <Container
@@ -16,6 +16,7 @@ const AllLinks = () => {
         style={{
           paddingTop: "50px",
           paddingBottom: "50px",
+          marginLeft:"390px",
           display: "flex",
           justifyContent: "space-between",
         }}

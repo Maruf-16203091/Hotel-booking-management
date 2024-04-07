@@ -13,6 +13,8 @@ import Hotel from "./pages/hotels/SingleHotel";
 import Attraction from "./pages/attractions/index";
 import SignUp from "./pages/login/SignUp";
 import SignInPage from "./pages/login/Signin";
+import AllPlaces from "./pages/landing/allPlaces/AllPlaces";
+import AllLinks from "./components/links/AllLinks";
 
 const App = () => {
   return (
@@ -30,8 +32,8 @@ const App = () => {
           style={{
             flexGrow: 1,
             padding: "20px",
-            margin: "0 auto", // Center the content horizontally
-            maxWidth: "1200px", // Limit maximum width
+            margin: "0 auto",
+            maxWidth: "1200px",
           }}
         >
           <Routes>
@@ -45,8 +47,12 @@ const App = () => {
             <Route path="/sign-up" element={<SignUp />} />
           </Routes>
         </div>
-        <SaveMoreButton />
       </div>
+
+      <AllLinks />
+      <AllPlaces />
+      <Footer />
+      <SaveMoreButton />
     </Router>
   );
 };

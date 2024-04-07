@@ -21,7 +21,7 @@ const Outside = () => {
         sx={{
           width: "1100px",
           marginTop: "20px",
-          marginLeft: "15px",
+          marginLeft: "350px",
           marginBottom: "50px",
           padding: "40px",
           textAlign: "center",

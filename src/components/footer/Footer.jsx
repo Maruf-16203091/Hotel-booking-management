@@ -14,7 +14,7 @@ const Footer = () => {
         color: "white",
         width: "100vw",
         position: "absolute",
-        marginLeft: "-380px",
+        marginLeft: "0px",
         marginTop: "700px",
         paddingTop: "40px",
       }}

@@ -4,20 +4,15 @@ import { Card, CardContent, Typography, Link, Box } from "@mui/material";
 const OverHeard = () => {
   return (
     <>
-      <div
-        style={{
-          maxWidth: "1100px",
-          position: "relative",
-          textAlign: "center",
-        }}
-      >
+   
+      
         <Typography
           variant="h5"
           gutterBottom
           sx={{
             fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             marginBottom: "40px",
-            marginLeft: "160px",
+            marginLeft: "760px",
             fontWeight: "500",
             alignItems: "center",
             fontSize: "30px",
@@ -25,21 +20,21 @@ const OverHeard = () => {
         >
           Overheard from travelers
         </Typography>
-      </div>
+     
       <div
         style={{
           maxWidth: "1100px",
-          marginLeft: "10px",
+          marginLeft: "350px",
           position: "relative",
           textAlign: "center",
           display: "flex",
           justifyContent: "space-between",
         }}
       >
-        {[1, 2, 3, 4].map((index) => (
+        {[1, 2, 3].map((index) => (
           <Card
             key={index}
-            style={{ width: "300px", height: "330px", marginLeft: "40px" }}
+            style={{ width: "320px", height: "330px", marginLeft: "40px" }}
           >
             <CardContent>
               <Typography
@@ -94,6 +89,7 @@ const OverHeard = () => {
           </Card>
         ))}
       </div>
+   
     </>
   );
 };

@@ -22,7 +22,7 @@ const TopDestination = () => {
         sx={{
           width: "1100px",
           marginTop: "100px",
-          marginLeft: "-5px",
+          marginLeft: "335px",
           marginBottom: "50px",
           padding: "40px",
           textAlign: "center",
