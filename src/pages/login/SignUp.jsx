@@ -40,7 +40,18 @@ const SignUpPage = () => {
   };
 
   return (
-    <Container maxWidth="sm" sx={{ marginLeft: "700px", marginTop: "200px" }}>
+    <Container
+      maxWidth="sm"
+      sx={{
+        marginLeft: "720px",
+        marginTop: "100px",
+        padding: "15px",
+        width: "500px",
+        border: "1px solid #ddd",
+        borderRadius: "8px",
+        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+      }}
+    >
       <Typography variant="h4" gutterBottom>
         Sign Up
       </Typography>
@@ -134,7 +145,7 @@ const SignUpPage = () => {
             <Typography variant="body2" align="center">
               Already have an account?{" "}
               <Link href="/login" underline="always">
-                Log in
+                Sign in
               </Link>
             </Typography>
           </Grid>

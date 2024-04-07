@@ -12,6 +12,7 @@ import Services from "./pages/services/index";
 import Hotel from "./pages/hotels/SingleHotel";
 import Attraction from "./pages/attractions/index";
 import SignUp from "./pages/login/SignUp";
+import SignInPage from "./pages/login/Signin";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/hotels" element={<Hotel />} />
             <Route path="/attraction" element={<Attraction />} />
+            <Route path="/sign-in" element={<SignInPage />} />
             <Route path="/sign-up" element={<SignUp />} />
           </Routes>
         </div>
