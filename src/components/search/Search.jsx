@@ -10,11 +10,11 @@ import {
   Divider,
 } from "@mui/material";
 
-import BundleBadge from "../../badges/BundleBadge";
+import BundleBadge from "../badges/BundleBadge";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import WorkIcon from "@mui/icons-material/Work";
-import NewBadge from "../../header/badges/NewBadge";
+import NewBadge from "../header/badges/NewBadge";
 import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import SearchEntryPage from "./SearchEntry";
 import SearchFieldGroup from "./SearchFieldGroup";

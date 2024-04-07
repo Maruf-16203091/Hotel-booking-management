@@ -7,9 +7,9 @@ import {
   Grid,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import BerlinImage from "../../../assets/topDestination/main.jpg";
-import MunichImage from "../../../assets/topDestination/main1.jpg";
-import HamburgImage from "../../../assets/topDestination/main2.jpg";
+import BerlinImage from "../../assets/topDestination/main.jpg";
+import MunichImage from "../../assets/topDestination/main1.jpg";
+import HamburgImage from "../../assets/topDestination/main2.jpg";
 
 const germanyCities = [
   { name: "Berlin", image: BerlinImage },
@@ -168,8 +168,8 @@ const SearchEntryPage = () => {
               ref={cardRef}
               sx={{
                 position: "absolute",
-                top: cardPosition.top - 200, // Adjust as needed
-                left: cardPosition.left - 505,
+                top: cardPosition.top - 220, // Adjust as needed
+                left: cardPosition.left - 495,
                 width: "1105px",
                 maxHeight: "600px",
                 backgroundColor: "white",

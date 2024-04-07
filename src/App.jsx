@@ -17,6 +17,7 @@ import AllPlaces from "./pages/landing/allPlaces/AllPlaces";
 import AllLinks from "./components/links/AllLinks";
 import ForgotPasswordEmailPage from "./pages/login/ForgotPasswordEmail";
 import ForgotPasswordMobilePage from "./pages/login/ForgetPasswordMobileNumber";
+import HeaderSearch from "./components/header/headerSearch/HeaderSearch";
 
 const App = () => {
   return (
@@ -28,8 +29,8 @@ const App = () => {
           minHeight: "100vh",
         }}
       >
-        <Header />
-        {/* <Hero /> */}
+        <HeaderSearch />
+
         <div
           style={{
             flexGrow: 1,

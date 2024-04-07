@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import AdvanceSearch from "../hero/search/Search";
+import AdvanceSearch from "../search/Search";
 import WelcomeMessage from "./welcomeMessage/WelcomeMessage";
 
 const HeroPage = () => {
