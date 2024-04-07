@@ -82,8 +82,8 @@ const SignInPage = () => {
           centered
           sx={{ "& .MuiTabs-indicator": { height: 3 } }}
         >
-          <Tab label="Email" sx={{ width: "50%" }} />
-          <Tab label="Mobile" sx={{ width: "50%" }} />
+          <Tab label="Email" sx={{ width: "44%" }} />
+          <Tab label="Mobile" sx={{ width: "44%" }} />
         </Tabs>
         <Box p={3}>
           {tabValue === 0 && (
@@ -144,7 +144,7 @@ const SignInPage = () => {
                   Create account
                 </Link>
                 <Link
-                  href="/forgot-password"
+                  href="/forgot-password-email"
                   variant="body2"
                   sx={{
                     textDecoration: "none",
@@ -264,7 +264,7 @@ const SignInPage = () => {
                   Create account
                 </Link>
                 <Link
-                  href="/forgot-password"
+                  href="/forgot-password-mobile"
                   variant="body2"
                   sx={{
                     textDecoration: "none",
