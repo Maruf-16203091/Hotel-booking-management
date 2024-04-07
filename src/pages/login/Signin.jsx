@@ -11,6 +11,8 @@ import {
   OutlinedInput,
   InputAdornment,
   IconButton,
+  MenuItem,
+  Select,
 } from "@mui/material";
 import {
   Google,
@@ -26,6 +28,7 @@ const SignInPage = () => {
   const [tabValue, setTabValue] = React.useState(0);
   const [password, setPassword] = React.useState("");
   const [showPassword, setShowPassword] = React.useState(false);
+  const [countryCode, setCountryCode] = React.useState("");
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
@@ -33,6 +36,10 @@ const SignInPage = () => {
 
   const handleTogglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleCountryCodeChange = (event) => {
+    setCountryCode(event.target.value);
   };
 
   return (
@@ -62,7 +69,7 @@ const SignInPage = () => {
           sx={{ "& .MuiTabs-indicator": { height: 3 } }}
         >
           <Tab label="Email" sx={{ width: "50%" }} />
-          <Tab label="Mobile"  sx={{ width: "50%" }} />
+          <Tab label="Mobile" sx={{ width: "50%" }} />
         </Tabs>
         <Box p={3}>
           {tabValue === 0 && (
@@ -91,6 +98,7 @@ const SignInPage = () => {
                     </InputAdornment>
                   }
                   required
+                  sx={{ marginTop: "15px" }}
                 />
                 <Button
                   variant="contained"
@@ -119,7 +127,7 @@ const SignInPage = () => {
                     "&:hover": { textDecoration: "underline" },
                   }}
                 >
-                  <Lock /> Forgot password?
+                  Forgot password?
                 </Link>
               </Box>
               <Box>
@@ -148,12 +156,25 @@ const SignInPage = () => {
           {tabValue === 1 && (
             <>
               <Box>
-                <TextField
-                  fullWidth
-                  label="Mobile Number"
-                  variant="outlined"
-                  margin="normal"
-                />
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Select
+                    value={countryCode}
+                    onChange={handleCountryCodeChange}
+                    variant="outlined"
+                    fullWidth
+                    sx={{ width: "20%", marginRight: "10px", marginTop: "8px" }}
+                  >
+                    <MenuItem value="+1">+1</MenuItem>
+                    <MenuItem value="+91">+91</MenuItem>
+                    {/* Add more country codes as needed */}
+                  </Select>
+                  <TextField
+                    fullWidth
+                    label="Mobile Number"
+                    variant="outlined"
+                    margin="normal"
+                  />
+                </Box>
                 <OutlinedInput
                   fullWidth
                   type={showPassword ? "text" : "password"}
@@ -171,6 +192,7 @@ const SignInPage = () => {
                     </InputAdornment>
                   }
                   required
+                  sx={{ marginTop: "15px" }}
                 />
                 <Button
                   variant="contained"
@@ -199,7 +221,7 @@ const SignInPage = () => {
                     "&:hover": { textDecoration: "underline" },
                   }}
                 >
-                  <Lock /> Forgot password?
+                  Forgot password?
                 </Link>
               </Box>
               <Box>
