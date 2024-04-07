@@ -8,7 +8,7 @@ const WelcomeMessage = () => {
       sx={{
         position: "absolute",
         fontWeight: "bold",
-        marginLeft: "130px",
+        marginLeft: "90px",
         marginTop: "-150px",
         color: "white",
         fontSize: "1.5em",

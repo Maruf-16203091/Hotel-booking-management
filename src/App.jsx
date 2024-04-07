@@ -29,7 +29,7 @@ const App = () => {
           minHeight: "100vh",
         }}
       >
-        <HeaderSearch />
+        <Header />
 
         <div
           style={{

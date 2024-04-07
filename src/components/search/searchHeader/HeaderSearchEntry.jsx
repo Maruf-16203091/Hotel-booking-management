@@ -95,7 +95,7 @@ const SearchEntryPage = () => {
       <Box
         sx={{
           position: "relative",
-          width: "286px",
+          width: "290px",
           height: "45px",
           backgroundColor: "#FFFFFF",
 
@@ -168,7 +168,7 @@ const SearchEntryPage = () => {
               sx={{
                 position: "absolute",
                 top: cardPosition.top - 0, // Adjust as needed
-                left: cardPosition.left - 443,
+                left: cardPosition.left - 448,
                 width: "735px",
 
                 backgroundColor: "white",

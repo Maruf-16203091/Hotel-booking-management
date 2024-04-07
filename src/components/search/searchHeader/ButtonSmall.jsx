@@ -14,7 +14,7 @@ const ButtonSmall = () => {
       <Button
         variant="contained"
         sx={{
-          width: "150px",
+          width: "120px",
           height: "47px",
           position: "relative",
           border: "none",

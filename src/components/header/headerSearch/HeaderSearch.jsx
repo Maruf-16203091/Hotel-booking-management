@@ -20,7 +20,7 @@ const HeaderSeaech = () => {
           backgroundColor: "#20274D",
           display: "flex",
           justifyContent: "center",
-          marginLeft: "-10px",
+          marginLeft: "-8px",
         }}
       >
         <SearchEntryPage />
