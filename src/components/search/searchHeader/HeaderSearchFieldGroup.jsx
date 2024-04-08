@@ -17,6 +17,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import GroupIcon from "@mui/icons-material/Group";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -135,19 +136,6 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
     setIsModalOpen(false);
   };
 
-  const modalArrowStyle = {
-    position: "absolute",
-    top: "50%",
-    right: "-15px",
-    transform: "translateY(-50%)",
-    width: 0,
-    height: 0,
-    borderTop: "15px solid transparent",
-    borderBottom: "15px solid transparent",
-    borderRight: "15px solid white", // Adjust the color and size as needed
-    zIndex: "1",
-  };
-
   return (
     <>
       <Box
@@ -213,6 +201,11 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
               <GroupIcon />
             </InputAdornment>
           ),
+          endAdornment: (
+            <InputAdornment position="end">
+              <KeyboardArrowDown />
+            </InputAdornment>
+          ),
           onClick: handleModalOpen,
           sx: { cursor: "pointer" },
         }}
@@ -231,14 +224,11 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             "& fieldset": {
               border: "none",
             },
-            "& input::placeholder": {
-              fontSize: "16px",
+            "& input.MuiInputBase-input::placeholder": {
+              fontSize: "22px",
               color: "black",
               fontFamily:
                 "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-              whiteSpace: "pre-line",
-              display: "flex",
-              alignItems: "center",
             },
           },
         }}
@@ -260,9 +250,6 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
             height: "200px",
             borderRadius: "5px",
             zIndex: "1",
-            "&::before": {
-              ...modalArrowStyle,
-            },
           }}
         >
           <CardContent>

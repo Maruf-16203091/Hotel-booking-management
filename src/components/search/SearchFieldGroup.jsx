@@ -17,6 +17,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import GroupIcon from "@mui/icons-material/Group";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import { KeyboardArrowDown } from "@mui/icons-material";
 
 const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -223,6 +224,11 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
               <GroupIcon />
             </InputAdornment>
           ),
+          endAdornment: (
+            <InputAdornment position="end">
+              <KeyboardArrowDown />
+            </InputAdornment>
+          ),
           onClick: handleModalOpen,
           sx: { cursor: "pointer" },
         }}
@@ -259,8 +265,8 @@ const SearchFieldGroup = ({ selectedDate, setSelectedDate }) => {
         <Card
           sx={{
             position: "absolute",
-            top: "50%",
-            left: "60%",
+            top: "52%",
+            left: "59.5%",
             transform: "translate(-50%, -50%)",
             width: "290px",
             height: "200px",
