@@ -137,7 +137,7 @@ const SearchEntryPage = () => {
             border: "1px solid #87B3FB",
             borderRadius: "12px",
             position: "absolute",
-            top: cardPosition.top - 26, 
+            top: cardPosition.top - 26,
             left: cardPosition.left - 105,
             maxWidth: "none",
           },
@@ -187,10 +187,29 @@ const SearchEntryPage = () => {
                       width: "50px",
                       height: "50px",
                       borderRadius: "12px",
-                      marginRight: "10px",
                     }}
                   />
-                  <Typography variant="body1">{city.name}</Typography>
+                  <Typography
+                    variant="body2"
+                    sx={{
+                      marginTop: "15px",
+                      marginLeft: "15px", // Adjust as needed
+                      marginBottom: "10px",
+                    }}
+                    component="div"
+                  >
+                    <div
+                      style={{
+                        marginBottom: "15px",
+                        marginLeft: "0px",
+                      }}
+                    >
+                      {city.name}
+                    </div>{" "}
+                    <div>
+                      <span style={{ color: "#5392F9" }}>57% </span>stayed there
+                    </div>{" "}
+                  </Typography>
                 </Box>
               </Grid>
             ))}
