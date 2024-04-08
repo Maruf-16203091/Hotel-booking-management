@@ -5,6 +5,9 @@ import {
   InputAdornment,
   Typography,
   Grid,
+  Dialog,
+  DialogTitle,
+  DialogContent,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import BerlinImage from "../../assets/topDestination/main.jpg";
@@ -24,56 +27,27 @@ const germanyCities = [
 ];
 
 const SearchEntryPage = () => {
-  const [isCardOpen, setIsCardOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [cardPosition, setCardPosition] = useState({ top: 0, left: 0 });
 
   const cardRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        cardRef.current &&
-        !cardRef.current.contains(event.target) &&
-        event.target.getAttribute("class") !== "MuiGrid-root" // Exclude clicks within the card components
-      ) {
-        setIsCardOpen(false);
-      }
-    };
-
-    const handleScroll = () => {
-      if (
-        cardRef.current &&
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 100
-      ) {
-        setIsCardOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const handleSearchInputClick = (event) => {
     const { top, left, height } = event.target.getBoundingClientRect();
-    setIsCardOpen(true);
     setCardPosition({ top: top + height, left });
+    setIsModalOpen(true);
   };
 
   const handleCityClick = (cityName) => {
     setSelectedCity(cityName);
     setSearchValue(cityName); // Update search input value
-    setIsCardOpen(false);
+    setIsModalOpen(false);
   };
 
-  const handleCloseCard = () => {
-    setIsCardOpen(false);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   const handleInputChange = (event) => {
@@ -146,109 +120,83 @@ const SearchEntryPage = () => {
             },
           }}
         />
-
-        {isCardOpen && (
-          <>
-            {/* Arrow shape indicating the card */}
-            <Box
-              sx={{
-                position: "absolute",
-                top: "90%",
-                left: cardPosition.left - 450, // Adjust as needed
-                width: 0,
-                height: 0,
-                borderTop: "7px solid transparent",
-                borderRight: "15px solid transparent",
-                borderBottom: "14px solid white",
-                borderLeft: "15px solid transparent",
-                zIndex: 999,
-              }}
-            />
-            <Box
-              ref={cardRef}
-              sx={{
-                position: "absolute",
-                top: cardPosition.top - 220, // Adjust as needed
-                left: cardPosition.left - 495,
-                width: "1105px",
-                maxHeight: "600px",
-                backgroundColor: "white",
-                color: "black",
-
-                overflowY: "auto",
-                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                zIndex: 999,
-                border: "1px solid #87B3FB",
-                borderRadius: "12px",
-              }}
-            >
-              <Typography variant="h6" mb={2} sx={{ padding: "16px" }}>
-                Popular Cities in Germany
-              </Typography>
-              <Grid
-                container
-                spacing={2}
-                sx={{
-                  padding: "16px",
-                }}
-              >
-                {filteredCities.map((city, index) => (
-                  <Grid item xs={4} key={index}>
-                    <Box
-                      sx={{
-                        cursor: "pointer",
-                        display: "flex",
-                        alignItems: "center",
-                        marginBottom: "15px",
-                        marginLeft: "10px",
-                        border: "1px solid transparent",
-                        transition: "border-color 0.3s ease-in-out", // Add transition
-                        "&:hover": {
-                          backgroundColor: "#EFF4FD",
-                          borderRadius: "5px",
-                        },
-                      }}
-                      onClick={() => handleCityClick(city.name)}
-                    >
-                      <img
-                        src={city.image}
-                        alt={city.name}
-                        style={{
-                          width: "50px",
-                          height: "50px",
-                          borderRadius: "12px",
-                        }}
-                      />
-                      <Typography
-                        variant="body2"
-                        sx={{
-                          marginTop: "15px",
-                          marginLeft: "15px", // Adjust as needed
-                          marginBottom: "10px",
-                        }}
-                        component="div"
-                      >
-                        <div
-                          style={{
-                            marginBottom: "15px",
-                            marginLeft: "-75px",
-                          }}
-                        >
-                          {city.name}
-                        </div>{" "}
-                        <div>
-                          <span style={{ color: "#5392F9" }}>57% </span>stayed
-                          there
-                        </div>{" "}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                ))}
-              </Grid>
-            </Box>
-          </>
-        )}
       </Box>
+
+      {/* Modal */}
+      <Dialog
+        open={isModalOpen}
+        onClose={handleCloseModal}
+        PaperProps={{
+          style: {
+            width: "1100px", // Adjust the width as needed
+            maxHeight: "600px",
+            backgroundColor: "white",
+            color: "black",
+            overflowY: "auto",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #87B3FB",
+            borderRadius: "12px",
+            position: "absolute",
+            top: cardPosition.top - 26, 
+            left: cardPosition.left - 105,
+            maxWidth: "none",
+          },
+        }}
+      >
+        <DialogTitle>
+          <Typography variant="h6">Popular Cities in Germany</Typography>
+        </DialogTitle>
+        <DialogContent sx={{ padding: "16px" }}>
+          <Box
+            sx={{
+              position: "absolute",
+              top: "90%",
+              left: cardPosition.left - 620, // Adjust as needed
+              width: 0,
+              height: 0,
+              borderTop: "7px solid transparent",
+              borderRight: "15px solid transparent",
+              borderBottom: "14px solid white",
+              borderLeft: "15px solid transparent",
+              zIndex: 999,
+            }}
+          />
+          <Grid container spacing={2}>
+            {filteredCities.map((city, index) => (
+              <Grid item xs={4} key={index}>
+                <Box
+                  sx={{
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "15px",
+                    marginLeft: "10px",
+                    border: "1px solid transparent",
+                    transition: "border-color 0.3s ease-in-out", // Add transition
+                    "&:hover": {
+                      backgroundColor: "#EFF4FD",
+                      borderRadius: "5px",
+                    },
+                  }}
+                  onClick={() => handleCityClick(city.name)}
+                >
+                  <img
+                    src={city.image}
+                    alt={city.name}
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "12px",
+                      marginRight: "10px",
+                    }}
+                  />
+                  <Typography variant="body1">{city.name}</Typography>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </DialogContent>
+      </Dialog>
     </>
   );
 };

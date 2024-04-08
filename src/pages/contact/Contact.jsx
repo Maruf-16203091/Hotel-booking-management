@@ -12,6 +12,7 @@ const Contact = () => {
       <Typography variant="body1">
         Address: 123 Main St, City, Country
       </Typography>
+
     </Container>
   );
 };
