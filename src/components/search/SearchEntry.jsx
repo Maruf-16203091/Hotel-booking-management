@@ -144,7 +144,7 @@ const SearchEntryPage = () => {
         }}
       >
         <DialogTitle>
-          <Typography variant="h6">Popular Cities in Germany</Typography>
+          <Typography variant="h5">Popular Cities in Germany</Typography>
         </DialogTitle>
         <DialogContent sx={{ padding: "16px" }}>
           <Box
