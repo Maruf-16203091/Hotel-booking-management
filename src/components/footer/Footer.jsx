@@ -6,6 +6,8 @@ import Logo3 from "../../assets/footer/logo3.png";
 import Logo4 from "../../assets/footer/logo4.png";
 import Logo5 from "../../assets/footer/logo5.png";
 
+import Logo from "../../assets/logo/logo.png";
+
 const Footer = () => {
   return (
     <footer
@@ -62,6 +64,16 @@ const Footer = () => {
             marginTop: "20px",
           }}
         >
+          <img
+            src={Logo}
+            alt="Logo 1"
+            style={{
+              margin: "0 10px",
+              height: "60px",
+              width: "100px",
+              marginRight: "40px",
+            }}
+          />
           <img
             src={Logo1}
             alt="Logo 1"
