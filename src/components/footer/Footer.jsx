@@ -69,7 +69,7 @@ const Footer = () => {
             alt="Logo 1"
             style={{
               margin: "0 10px",
-              height: "60px",
+              height: "70px",
               width: "100px",
               marginRight: "40px",
             }}
