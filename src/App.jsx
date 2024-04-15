@@ -18,6 +18,7 @@ import AllLinks from "./components/links/AllLinks";
 import ForgotPasswordEmailPage from "./pages/login/ForgotPasswordEmail";
 import ForgotPasswordMobilePage from "./pages/login/ForgetPasswordMobileNumber";
 import HeaderSearch from "./components/header/headerSearch/HeaderSearch";
+import SearchResultPage from "./pages/searchResult/SearchResultPage";
 
 const App = () => {
   return (
@@ -47,7 +48,7 @@ const App = () => {
             <Route path="/hotels" element={<Hotel />} />
             <Route path="/attraction" element={<Attraction />} />
             <Route path="/sign-in" element={<SignInPage />} />
-            <Route path="/sign-up" element={<SignUp />} />
+            SearchResultPage
             <Route
               path="/forgot-password-email"
               element={<ForgotPasswordEmailPage />}
@@ -56,6 +57,7 @@ const App = () => {
               path="/forgot-password-mobile"
               element={<ForgotPasswordMobilePage />}
             />
+            <Route path="/search-result" element={<SearchResultPage />} />
           </Routes>
         </div>
       </div>
