@@ -13,7 +13,14 @@ const hotelResults = [
     id: 2,
     name: "Schlosshotel Berlin by Patrick Hellmann",
     image: "https://via.placeholder.com/300",
-    description: "A cozy retreat for a peaceful stay.",
+    description: "A grand hotel located at Sophienstrasse.",
+    price: "$500 per night",
+  },
+  {
+    id: 3,
+    name: "Hotel Adlon Kempinski Berlin",
+    image: "https://via.placeholder.com/300",
+    description: "The architecture has won several awards.",
     price: "$500 per night",
   },
 ];
