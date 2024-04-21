@@ -8,11 +8,10 @@ import RatingBadge from "../../components/badges/RatingBadges";
 import BreakfastBadge from "../../components/badges/BreakfastBadge";
 
 const SearchResultPage = () => {
-  const [tabValue, setTabValue] = useState(0);
+  const [hoveredImage, setHoveredImage] = useState(null);
 
   const tabData = [
     {
-      label: "JOYN MUNICH Olympic - Serviced Apartments",
       images: [SlideImage1, SlideImage2, SlideImage3], // Add additional images to the array
       descriptions: [
         {
@@ -33,7 +32,7 @@ const SearchResultPage = () => {
       <Link href="#" underline="none">
         <div style={{ padding: "20px" }}>
           <Typography variant="h4" gutterBottom>
-            {tabData[tabValue].label}
+            {tabData[0].descriptions[0].text}
           </Typography>
           <Grid container spacing={2}>
             <Grid item xs={6}>
@@ -45,10 +44,11 @@ const SearchResultPage = () => {
                 boxShadow={2}
                 p={2}
                 height="100%"
+                style={{ position: "relative" }}
               >
                 <img
-                  src={tabData[tabValue].images[0]} // Display the first image in the array
-                  alt={`${tabData[tabValue].label} Slide 1`}
+                  src={tabData[0].images[0]} // Display the main image
+                  alt={tabData[0].descriptions[0].text}
                   style={{
                     width: "100%",
                     height: "auto",
@@ -56,32 +56,56 @@ const SearchResultPage = () => {
                     marginBottom: "10px",
                   }}
                 />
-                <div style={{ display: "flex", gap: "5px" }}>
-                  {tabData[tabValue].images.map((image, index) => (
+                {hoveredImage && (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      zIndex: 1,
+                    }}
+                  >
+                    <img
+                      src={hoveredImage} // Display the hovered image over the main image
+                      alt="hovered image"
+                      style={{ width: "400px", height: "250px" }}
+                    />
+                  </div>
+                )}
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    width: "100%",
+                    overflowX: "auto",
+                  }}
+                >
+                  {tabData[0].images.map((image, index) => (
                     <img
                       key={index}
                       src={image}
-                      alt={`${tabData[tabValue].label} Slide ${index + 1}`}
+                      alt={`${tabData[0].descriptions[0].text} Slide ${
+                        index + 1
+                      }`}
                       style={{
                         width: "60px",
-                        height: "auto",
+                        height: "60px",
                         borderRadius: "5px",
                         cursor: "pointer",
                       }}
+                      onMouseEnter={() => setHoveredImage(image)}
+                      onMouseLeave={() => setHoveredImage(null)}
                     />
                   ))}
                 </div>
-                <RatingBadge
-                  rating={tabData[tabValue].descriptions[0].rating}
-                />
-                {tabData[tabValue].descriptions[0].breakfastIncluded && (
-                  <BreakfastBadge />
-                )}
+
+                <BreakfastBadge />
               </Box>
             </Grid>
             <Grid item xs={6}>
               <Box p={2} boxShadow={2}>
-                <Description {...tabData[tabValue].descriptions[0]} />
+                <Description {...tabData[0].descriptions[0]} />
               </Box>
             </Grid>
           </Grid>
