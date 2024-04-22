@@ -20,9 +20,9 @@ const BudgetFilter = ({ options = [], onChange }) => {
           marginTop: "-3px",
           marginLeft: "-5px",
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-          color: "#686e6e",
-          fontWeight: "400",
-          fontSize: "16px",
+          color: "#5A5B5B",
+          fontWeight: "600",
+          fontSize: "14px",
         }}
       >
         your budget (per night)

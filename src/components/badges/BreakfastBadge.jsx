@@ -11,7 +11,7 @@ const BreakfastBadge = () => {
           justifyContent: "center",
           textAlign: "center",
           position: "absolute",
-          top: "-730px",
+          top: "-765px",
           right: "50%",
           left: "-50px",
           marginTop: "800px",
