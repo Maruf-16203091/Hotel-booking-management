@@ -12,7 +12,7 @@ const SearchResultPage = () => {
 
   const tabData = [
     {
-      images: [SlideImage1, SlideImage2, SlideImage3], // Add additional images to the array
+      images: [SlideImage1, SlideImage2, SlideImage3], 
       descriptions: [
         {
           text: "JOYN MUNICH Olympic - Serviced Apartments",
@@ -28,12 +28,10 @@ const SearchResultPage = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "365px", marginTop: "50px", width: "1100px" }}>
+    <div style={{ marginLeft: "365px", marginTop: "50px", width: "800px" }}>
       <Link href="#" underline="none">
         <div style={{ padding: "20px" }}>
-          <Typography variant="h4" gutterBottom>
-            {tabData[0].descriptions[0].text}
-          </Typography>
+         
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <Box
@@ -43,7 +41,7 @@ const SearchResultPage = () => {
                 justifyContent="center"
                 boxShadow={2}
                 p={2}
-                height="100%"
+                height="300px"
                 style={{ position: "relative" }}
               >
                 <img
@@ -69,7 +67,7 @@ const SearchResultPage = () => {
                     <img
                       src={hoveredImage} // Display the hovered image over the main image
                       alt="hovered image"
-                      style={{ width: "400px", height: "250px" }}
+                      style={{ width: "200px", height: "150px" }}
                     />
                   </div>
                 )}
@@ -101,10 +99,11 @@ const SearchResultPage = () => {
                 </div>
 
                 <BreakfastBadge />
+                
               </Box>
             </Grid>
             <Grid item xs={6}>
-              <Box p={2} boxShadow={2}>
+              <Box p={2} >
                 <Description {...tabData[0].descriptions[0]} />
               </Box>
             </Grid>
