@@ -29,7 +29,7 @@ const SearchResultPage = () => {
   ];
 
   return (
-    <div style={{ marginLeft: "376px", marginTop: "80px", width: "1100px" }}>
+    <Box style={{ marginLeft: "376px", marginTop: "80px", width: "1150px" }}>
       <Grid container spacing={2}>
         <Grid item xs={4}>
           <Box>
@@ -37,28 +37,43 @@ const SearchResultPage = () => {
           </Box>
         </Grid>
         <Grid item xs={8}>
-          <Link href="#" underline="none">
-            <div style={{ padding: "20px" }}>
-              <Grid container spacing={2}>
-                <Grid item xs={6}>
+          <Link
+            href="#"
+            underline="none"
+            style={{ background: "none", textDecoration: "none" }}
+            sx={{
+              "&:hover": {
+                backgroundColor: "#E3F2FD",
+                transition: "background-color 0.3s ease",
+              },
+            }}
+          >
+            <Box
+              boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)" // Add box shadow to this Box component
+              p={2}
+              borderRadius="2px"
+              marginLeft="-160px"
+            >
+              <Grid container spacing={3}>
+                <Grid item xs={4}>
                   <Box
                     display="flex"
                     flexDirection="column"
                     alignItems="center"
                     justifyContent="center"
-                    boxShadow={2}
                     p={2}
-                    height="300px"
+                    height="200px"
                     style={{ position: "relative" }}
                   >
                     <img
                       src={tabData[0].images[0]}
                       alt={tabData[0].descriptions[0].text}
                       style={{
-                        width: "100%",
-                        height: "auto",
+                        width: "250px",
+                        height: "250px",
                         borderRadius: "5px",
                         marginBottom: "10px",
+                        cursor: "pointer",
                       }}
                     />
                     {hoveredImage && (
@@ -81,9 +96,9 @@ const SearchResultPage = () => {
                     <div
                       style={{
                         display: "flex",
-                        gap: "5px",
+                        gap: "8px",
                         width: "100%",
-                        overflowX: "auto",
+                        overflowX: "visible",
                       }}
                     >
                       {tabData[0].images.map((image, index) => (
@@ -95,7 +110,7 @@ const SearchResultPage = () => {
                           }`}
                           style={{
                             width: "60px",
-                            height: "60px",
+                            height: "50px",
                             borderRadius: "5px",
                             cursor: "pointer",
                           }}
@@ -104,7 +119,6 @@ const SearchResultPage = () => {
                         />
                       ))}
                     </div>
-
                     <BreakfastBadge />
                   </Box>
                 </Grid>
@@ -114,11 +128,11 @@ const SearchResultPage = () => {
                   </Box>
                 </Grid>
               </Grid>
-            </div>
+            </Box>
           </Link>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 };
 

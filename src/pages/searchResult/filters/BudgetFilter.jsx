@@ -17,14 +17,15 @@ const BudgetFilter = ({ options = [], onChange }) => {
     <FormGroup>
       <legend
         style={{
-          marginTop: "22px",
+          marginTop: "-3px",
           marginLeft: "-5px",
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
-          fontWeight: "600",
+          color: "#686e6e",
+          fontWeight: "400",
           fontSize: "16px",
         }}
       >
-        Your budget (per night)
+        your budget (per night)
       </legend>
       {options.map((option) => (
         <FormControlLabel
