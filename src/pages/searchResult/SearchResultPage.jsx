@@ -33,7 +33,7 @@ const SearchResultPage = () => {
   ];
 
   return (
-    <Box style={{ marginLeft: "376px", marginTop: "80px", width: "1150px" }}>
+    <Box style={{ marginLeft: "385px", marginTop: "80px", width: "1150px" }}>
       <Grid container spacing={2}>
         <Grid item xs={4}>
           <Box>
@@ -62,10 +62,10 @@ const SearchResultPage = () => {
               display: "block",
               padding: "10px",
 
-              marginLeft: "-200px",
+              marginLeft: "-150px",
             }}
           >
-            <Grid container spacing={6}>
+            <Grid container spacing={4}>
               <Grid item xs={4}>
                 <Box
                   display="flex"

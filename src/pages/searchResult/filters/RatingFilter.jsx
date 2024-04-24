@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
+import { Checkbox, FormControlLabel, FormGroup, Divider } from "@mui/material";
 
 const RatingFilter = ({ options = [], onChange }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -14,18 +14,20 @@ const RatingFilter = ({ options = [], onChange }) => {
   };
 
   return (
+    <div>
     <FormGroup>
-      <legend
+    <legend
         style={{
           marginTop: "-3px",
-          marginLeft: "-5px",
+          marginLeft: "-3px",
+          marginBottom:"10px",
           fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
           color: "#5A5B5B",
           fontWeight: "600",
           fontSize: "14px",
         }}
       >
-        your budget (per night)
+        Star rating
       </legend>
       {options.map((option) => (
         <FormControlLabel
@@ -45,7 +47,7 @@ const RatingFilter = ({ options = [], onChange }) => {
                 fontFamily:
                   "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
                 fontWeight: "400",
-                fontSize: "14px",
+                fontSize: "11px",
                 padding: "6px",
                 cursor: "pointer",
                 borderRadius: "4px",
@@ -64,16 +66,26 @@ const RatingFilter = ({ options = [], onChange }) => {
         />
       ))}
     </FormGroup>
+    <Divider
+        style={{
+          width: "215px",
+          marginBottom: "15px",
+          marginTop: "15px",
+          marginLeft: "-5px",
+          borderBottom: "2px solid #cacbcc",
+        }}
+      />
+    </div>
   );
 };
 
 // Dummy data for testing purposes
 const dummyData = [
-  "Less than $50",
-  "$50 - $100",
-  "$100 - $200",
-  "$200 - $300",
-  "More than $300",
+  "***** (128)",
+  "**** (542)",
+  "*** (55)",
+  "** (85)",
+  "* (8)",
 ];
 
 export default () => <RatingFilter options={dummyData} />;
