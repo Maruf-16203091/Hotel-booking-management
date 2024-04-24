@@ -44,8 +44,8 @@ const SearchResultPage = () => {
     sx={{
       "&:hover": {
         backgroundColor: "#E3F2FD",
-        transition: "background-color 0.3s ease",
-        boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.5)",
+        transition: "background-color 0.1s ease",
+        boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)",
         borderRadius: "2px",
       },
       boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.1)",
