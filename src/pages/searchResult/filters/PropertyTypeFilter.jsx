@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 
-const PropertyTypeFilter = ({ options, onChange }) => {
+const PropertyTypeFilter = ({ options = [], onChange }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
   const handleOptionChange = (option) => {
@@ -15,7 +15,18 @@ const PropertyTypeFilter = ({ options, onChange }) => {
 
   return (
     <FormGroup>
-      <legend>Property Type Filter</legend>
+      <legend
+        style={{
+          marginTop: "-3px",
+          marginLeft: "-5px",
+          fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+          color: "#5A5B5B",
+          fontWeight: "600",
+          fontSize: "14px",
+        }}
+      >
+        your budget (per night)
+      </legend>
       {options.map((option) => (
         <FormControlLabel
           key={option}
@@ -23,13 +34,46 @@ const PropertyTypeFilter = ({ options, onChange }) => {
             <Checkbox
               checked={selectedOptions.includes(option)}
               onChange={() => handleOptionChange(option)}
+              sx={{ "& .MuiSvgIcon-root": { fontSize: "16px" } }} // Adjust checkbox size
             />
           }
-          label={option}
+          label={
+            <span
+              style={{
+                display: "flex",
+                alignItems: "center",
+                fontFamily:
+                  "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+                fontWeight: "400",
+                fontSize: "14px",
+                padding: "6px",
+                cursor: "pointer",
+                borderRadius: "4px",
+                transition: "color 0.3s ease", // Add transition for color change
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#5392F9"; // Change text color to bluish on hover
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "initial"; // Reset text color on mouse leave
+              }}
+            >
+              {option}
+            </span>
+          }
         />
       ))}
     </FormGroup>
   );
 };
 
-export default PropertyTypeFilter;
+// Dummy data for testing purposes
+const dummyData = [
+  "Less than $50",
+  "$50 - $100",
+  "$100 - $200",
+  "$200 - $300",
+  "More than $300",
+];
+
+export default () => <PropertyTypeFilter options={dummyData} />;
