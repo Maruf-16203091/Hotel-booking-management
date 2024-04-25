@@ -33,7 +33,7 @@ const SearchResultPage = () => {
   ];
 
   return (
-    <Box style={{ marginLeft: "385px", marginTop: "80px", width: "1150px" }}>
+    <Box style={{ marginLeft: "377px", marginTop: "80px", width: "1150px" }}>
       <Grid container spacing={2}>
         <Grid item xs={4}>
           <Box>
