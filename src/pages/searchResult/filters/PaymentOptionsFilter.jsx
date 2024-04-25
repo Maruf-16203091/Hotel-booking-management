@@ -66,15 +66,7 @@ const PaymentOptionsFilter = ({ options = [], onChange }) => {
         />
       ))}
     </FormGroup>
-    <Divider
-        style={{
-          width: "215px",
-          marginBottom: "15px",
-          marginTop: "15px",
-          marginLeft: "-5px",
-          borderBottom: "2px solid #cacbcc",
-        }}
-      /> 
+    
     </div>
   );
 };

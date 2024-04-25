@@ -22,8 +22,7 @@ const RatingFilter = ({ options = [], onChange }) => {
             marginTop: "-3px",
             marginLeft: "-3px",
             marginBottom: "10px",
-            fontFamily:
-              "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+            fontFamily: "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
             color: "#5A5B5B",
             fontWeight: "600",
             fontSize: "14px",
@@ -63,7 +62,10 @@ const RatingFilter = ({ options = [], onChange }) => {
                 }}
               >
                 {[...Array(5 - index)].map((_, i) => (
-                  <StarIcon key={i} style={{ color: "#FF567D", fontSize: "14px" }} /> // Adjust the fontSize here
+                  <StarIcon
+                    key={i}
+                    style={{ color: "#FF567D", fontSize: "14px" }}
+                  /> // Adjust the fontSize here
                 ))}
                 {option}
               </span>
