@@ -8,7 +8,7 @@ const AllPlaces = () => {
         backgroundColor: "white",
         width: "100vw",
         position: "absolute",
-        marginLeft: "00px",
+        marginLeft: "-13px",
         marginTop: "300px",
       }}
     >
