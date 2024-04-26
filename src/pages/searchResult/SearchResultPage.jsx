@@ -91,7 +91,7 @@ const SearchResultPage = () => {
                 display: "block",
                 padding: "10px",
                 marginLeft: "-150px",
-                marginBottom: "20px", 
+                marginBottom: "20px",
               }}
             >
               <Grid container spacing={4}>
@@ -109,8 +109,8 @@ const SearchResultPage = () => {
                       src={data.images[0]}
                       alt={data.descriptions[0].text}
                       style={{
-                        width: "250px",
-                        height: "250px",
+                        width: "240px",
+                        height: "240px",
                         borderRadius: "5px",
                         marginBottom: "10px",
                         cursor: "pointer",
