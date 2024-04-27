@@ -3,6 +3,7 @@ import { Typography, Link, Grid, Box } from "@mui/material";
 import SlideImage1 from "../../assets/promotion/slide1.jpg";
 import SlideImage2 from "../../assets/promotion/slide2.jpg";
 import SlideImage3 from "../../assets/promotion/slide3.jpg";
+import SlideImage4 from "../../assets/promotion/slide4.jpg"; // Add more slide images as needed
 import Description from "../../components/others/Description";
 import RatingBadge from "../../components/badges/RatingBadges";
 import BreakfastBadge from "../../components/badges/BreakfastBadge";
@@ -31,7 +32,7 @@ const SearchResultPage = () => {
       ],
     },
     {
-      images: [SlideImage1, SlideImage1, SlideImage3],
+      images: [SlideImage4, SlideImage3, SlideImage2], // Unique images for the second item
       descriptions: [
         {
           text: "Hotel Little Paris",
@@ -45,7 +46,7 @@ const SearchResultPage = () => {
       ],
     },
     {
-      images: [SlideImage1, SlideImage2, SlideImage1],
+      images: [SlideImage1, SlideImage2, SlideImage1], // Unique images for the third item
       descriptions: [
         {
           text: "Aparthotels Frankfurt Airport",
