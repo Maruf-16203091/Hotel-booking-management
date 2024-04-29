@@ -137,7 +137,7 @@ const SearchResultPage = () => {
                     <div
                       style={{
                         display: "flex",
-                        gap: "8px",
+                        gap: "7px",
                         width: "100%",
                         overflowX: "visible",
                       }}
@@ -150,7 +150,7 @@ const SearchResultPage = () => {
                             index + 1
                           }`}
                           style={{
-                            width: "60px",
+                            width: "50px",
                             height: "50px",
                             borderRadius: "5px",
                             cursor: "pointer",
