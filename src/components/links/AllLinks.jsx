@@ -385,6 +385,20 @@ const AllLinks = () => {
               Android app
             </Link>
           </Typography>
+          <Typography
+            variant="body1"
+            style={{
+              fontFamily:
+                "mallory, Helvetica Neue, Helvetica, Arial, sans-sarif",
+              fontWeight: "500",
+              fontSize: "13px",
+              padding: "5px",
+            }}
+          >
+            <Link href="#" underline="hover" color="#020202">
+              Others
+            </Link>
+          </Typography>
         </div>
       </Container>
     </div>
