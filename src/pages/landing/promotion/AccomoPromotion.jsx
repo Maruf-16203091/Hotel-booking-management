@@ -22,7 +22,7 @@ const PromotionPage = () => {
   const slideStyles = {
     margin: "0 10px",
     width: "280px", // Custom width for the images
-    height: "230px", // Custom height for the images
+    height: "231px", // Custom height for the images
   };
 
   return (
