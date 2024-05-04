@@ -12,6 +12,7 @@ import PropertyTypeFilter from "./filters/PropertyTypeFilter";
 import RatingFilter from "./filters/RatingFilter";
 import NeighborhoodFilter from "./filters/NeighborhoodFilter";
 import PaymentOptionsFilter from "./filters/PaymentOptionsFilter";
+import ResultHeader from "./resultHeader/ResultHeader";
 
 const SearchResultPage = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -61,119 +62,122 @@ const SearchResultPage = () => {
   ];
 
   return (
-    <Box style={{ marginLeft: "384px", marginTop: "80px", width: "1148px" }}>
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <Box>
-            <BudgetFilter />
-            <PropertyTypeFilter />
-            <RatingFilter />
-            <NeighborhoodFilter />
-            <PaymentOptionsFilter />
-          </Box>
-        </Grid>
-        <Grid item xs={8}>
-          {tabData.map((data, dataIndex) => (
-            <Link
-              key={dataIndex}
-              href="#"
-              underline="none"
-              style={{ background: "#f7faff", textDecoration: "none" }}
-              sx={{
-                "&:hover": {
-                  backgroundColor: "#E3F2FD",
-                  transition: "background-color 0.1s ease",
-                  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)",
+    <>
+      <ResultHeader />
+      <Box style={{ marginLeft: "384px", marginTop: "80px", width: "1148px" }}>
+        <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <Box>
+              <BudgetFilter />
+              <PropertyTypeFilter />
+              <RatingFilter />
+              <NeighborhoodFilter />
+              <PaymentOptionsFilter />
+            </Box>
+          </Grid>
+          <Grid item xs={8}>
+            {tabData.map((data, dataIndex) => (
+              <Link
+                key={dataIndex}
+                href="#"
+                underline="none"
+                style={{ background: "#f7faff", textDecoration: "none" }}
+                sx={{
+                  "&:hover": {
+                    backgroundColor: "#E3F2FD",
+                    transition: "background-color 0.1s ease",
+                    boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)",
+                    borderRadius: "2px",
+                  },
+                  boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.1)",
                   borderRadius: "2px",
-                },
-                boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.1)",
-                borderRadius: "2px",
-                transition: "box-shadow 0.3s ease",
-                display: "block",
-                padding: "10px",
-                marginLeft: "-150px",
-                marginBottom: "20px",
-              }}
-            >
-              <Grid container spacing={4}>
-                <Grid item xs={4}>
-                  <Box
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    justifyContent="center"
-                    p={2}
-                    height="200px"
-                    style={{ position: "relative" }}
-                  >
-                    <img
-                      src={data.images[0]}
-                      alt={data.descriptions[0].text}
-                      style={{
-                        width: "240px",
-                        height: "240px",
-                        borderRadius: "5px",
-                        marginBottom: "10px",
-                        cursor: "pointer",
-                      }}
-                    />
-                    {hoveredImage && (
+                  transition: "box-shadow 0.3s ease",
+                  display: "block",
+                  padding: "10px",
+                  marginLeft: "-150px",
+                  marginBottom: "20px",
+                }}
+              >
+                <Grid container spacing={4}>
+                  <Grid item xs={4}>
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      alignItems="center"
+                      justifyContent="center"
+                      p={2}
+                      height="200px"
+                      style={{ position: "relative" }}
+                    >
+                      <img
+                        src={data.images[0]}
+                        alt={data.descriptions[0].text}
+                        style={{
+                          width: "240px",
+                          height: "240px",
+                          borderRadius: "5px",
+                          marginBottom: "10px",
+                          cursor: "pointer",
+                        }}
+                      />
+                      {hoveredImage && (
+                        <div
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            zIndex: 1,
+                          }}
+                        >
+                          <img
+                            src={hoveredImage}
+                            alt="hovered image"
+                            style={{ width: "200px", height: "150px" }}
+                          />
+                        </div>
+                      )}
                       <div
                         style={{
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                          zIndex: 1,
+                          display: "flex",
+                          gap: "7px",
+                          width: "100%",
+                          overflowX: "visible",
                         }}
                       >
-                        <img
-                          src={hoveredImage}
-                          alt="hovered image"
-                          style={{ width: "200px", height: "150px" }}
-                        />
+                        {data.images.map((image, index) => (
+                          <img
+                            key={index}
+                            src={image}
+                            alt={`${data.descriptions[0].text} Slide ${
+                              index + 1
+                            }`}
+                            style={{
+                              width: "50px",
+                              height: "50px",
+                              borderRadius: "5px",
+                              cursor: "pointer",
+                            }}
+                            onMouseEnter={() => setHoveredImage(image)}
+                            onMouseLeave={() => setHoveredImage(null)}
+                          />
+                        ))}
                       </div>
-                    )}
-                    <div
-                      style={{
-                        display: "flex",
-                        gap: "7px",
-                        width: "100%",
-                        overflowX: "visible",
-                      }}
-                    >
-                      {data.images.map((image, index) => (
-                        <img
-                          key={index}
-                          src={image}
-                          alt={`${data.descriptions[0].text} Slide ${
-                            index + 1
-                          }`}
-                          style={{
-                            width: "50px",
-                            height: "50px",
-                            borderRadius: "5px",
-                            cursor: "pointer",
-                          }}
-                          onMouseEnter={() => setHoveredImage(image)}
-                          onMouseLeave={() => setHoveredImage(null)}
-                        />
-                      ))}
-                    </div>
-                    <BreakfastBadge />
-                  </Box>
+                      <BreakfastBadge />
+                    </Box>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <Box p={2}>
+                      <Description {...data.descriptions[0]} />
+                    </Box>
+                  </Grid>
                 </Grid>
-                <Grid item xs={6}>
-                  <Box p={2}>
-                    <Description {...data.descriptions[0]} />
-                  </Box>
-                </Grid>
-              </Grid>
-            </Link>
-          ))}
+              </Link>
+            ))}
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
+      </Box>
+    </>
   );
 };
 
