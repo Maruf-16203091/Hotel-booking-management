@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography, Link, Grid, Box } from "@mui/material";
+import { Divider, Link, Grid, Box } from "@mui/material";
 import SlideImage1 from "../../assets/promotion/slide1.jpg";
 import SlideImage2 from "../../assets/promotion/slide2.jpg";
 import SlideImage3 from "../../assets/promotion/slide3.jpg";
@@ -13,6 +13,7 @@ import RatingFilter from "./filters/RatingFilter";
 import NeighborhoodFilter from "./filters/NeighborhoodFilter";
 import PaymentOptionsFilter from "./filters/PaymentOptionsFilter";
 import ResultHeader from "./resultHeader/ResultHeader";
+ import CustomDivider from "./resultHeader/CustomDivider"
 
 const SearchResultPage = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -64,6 +65,7 @@ const SearchResultPage = () => {
   return (
     <>
       <ResultHeader />
+      <CustomDivider/>
       <Box style={{ marginLeft: "384px", marginTop: "80px", width: "1148px" }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
