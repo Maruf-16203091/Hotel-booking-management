@@ -11,9 +11,10 @@ import BudgetFilter from "./filters/BudgetFilter";
 import PropertyTypeFilter from "./filters/PropertyTypeFilter";
 import RatingFilter from "./filters/RatingFilter";
 import NeighborhoodFilter from "./filters/NeighborhoodFilter";
+import GoogleMapPage from "./filters/GoogleMap";
 import PaymentOptionsFilter from "./filters/PaymentOptionsFilter";
 import ResultHeader from "./resultHeader/ResultHeader";
- import CustomDivider from "./resultHeader/CustomDivider"
+import CustomDivider from "./resultHeader/CustomDivider";
 
 const SearchResultPage = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -65,11 +66,12 @@ const SearchResultPage = () => {
   return (
     <>
       <ResultHeader />
-      <CustomDivider/>
+      <CustomDivider />
       <Box style={{ marginLeft: "384px", marginTop: "80px", width: "1148px" }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <Box>
+              <GoogleMapPage />
               <BudgetFilter />
               <PropertyTypeFilter />
               <RatingFilter />
