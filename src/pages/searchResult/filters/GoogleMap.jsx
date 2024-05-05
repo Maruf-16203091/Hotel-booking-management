@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import map from "../../../assets/map.png";
+import map from "../../../assets/map1.png";
 const MapPage = () => {
   return (
     <Box
       sx={{
-        marginTop: "-145px",
+        marginTop: "-137px",
         marginBottom: "5px",
         marginLeft: "-5px",
       }}
@@ -14,7 +14,6 @@ const MapPage = () => {
         sx={{
           width: "150px",
           height: "150px",
-          borderRadius: "8px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -22,10 +21,10 @@ const MapPage = () => {
         }}
       >
         <img
-              src={map}
-              alt="Promotion Slide 1"
-              style={{ width: "100%", height: "80%" }}
-            />
+          src={map}
+          alt="google map"
+          style={{ width: "100%", height: "80%" }}
+        />
       </Box>
     </Box>
   );
