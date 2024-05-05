@@ -1,39 +1,34 @@
-import React, { useEffect, useRef } from "react";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
-
-const containerStyle = {
-  width: "800px",
-  height: "600px",
-};
-
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
-
-const GoogleMapPage = () => {
-  const mapRef = useRef(null);
-
-  useEffect(() => {
-    // Example of map manipulation
-    if (mapRef.current) {
-      const map = mapRef.current.getMap();
-      map.setZoom(10);
-    }
-  }, []);
-
+import React from "react";
+import { Box, Typography } from "@mui/material";
+import map from "../../../assets/map.png";
+const MapPage = () => {
   return (
-    <LoadScript googleMapsApiKey="YOUR_API_KEY">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        ref={mapRef}
+    <Box
+      sx={{
+        marginTop: "-145px",
+        marginBottom: "5px",
+        marginLeft: "-5px",
+      }}
+    >
+      <Box
+        sx={{
+          width: "150px",
+          height: "150px",
+          borderRadius: "8px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+        }}
       >
-        {/* Child components, markers, etc. */}
-      </GoogleMap>
-    </LoadScript>
+        <img
+              src={map}
+              alt="Promotion Slide 1"
+              style={{ width: "100%", height: "80%" }}
+            />
+      </Box>
+    </Box>
   );
 };
 
-export default GoogleMapPage;
+export default MapPage;
