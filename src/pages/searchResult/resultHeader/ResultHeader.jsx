@@ -48,8 +48,8 @@ const ResultHeader = () => {
         <Tab
           label={<span style={{ textTransform: "none" }}>Sort</span>}
           sx={{
-            backgroundColor: "#A8A8A8",
-            fontWeight: "1000",
+            backgroundColor: "#b5b3b3",
+            fontWeight: "600",
           }}
           disabled
         />
