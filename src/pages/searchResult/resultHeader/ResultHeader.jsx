@@ -4,8 +4,6 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   tab: {
-   
-    marginRight: "5px",
     "&.Mui-selected": {
       backgroundColor: "#5392F9", // Background color on tab click
       color: "#fff", // Text color on tab click
@@ -34,24 +32,46 @@ const ResultHeader = () => {
         backgroundColor: "#FFFFFF",
       }}
     >
-      <Toolbar>
+      
         <Tabs
           value={selectedTab}
           onChange={handleChangeTab}
           aria-label="tabs options"
           textColor="inherit"
-          fontWeight="600"
-        textTransform= "none" 
-
+          textTransform="none"
+          style={{ flexGrow: 1 }} // Make tabs grow evenly
         >
-          <Tab label="Sort" sx={{ backgroundColor: "#F8F7F9" }} disabled />
-          <Tab label="Our Picks" className={classes.tab} />
-          <Tab label="Top Reviewed" className={classes.tab} />
-          <Tab label="Lowest Price First" className={classes.tab} />
-          <Tab label="Distance" className={classes.tab} />
-          <Tab label="Hot Deals" className={classes.tab} />
+          <Tab
+            label={<span style={{ textTransform: "none" }}>Sort</span>}
+            sx={{
+              backgroundColor: "#A8A8A8",
+              fontWeight: "1000",
+            }}
+            disabled
+          />
+          <Tab
+            label={<span style={{ textTransform: "none" }}>Our Picks</span>}
+            className={classes.tab}
+          />
+          <Tab
+            label={<span style={{ textTransform: "none" }}>Top Reviewed</span>}
+            className={classes.tab}
+          />
+          <Tab
+            label={
+              <span style={{ textTransform: "none" }}>Lowest Price First</span>
+            }
+            className={classes.tab}
+          />
+          <Tab
+            label={<span style={{ textTransform: "none" }}>Distance</span>}
+            className={classes.tab}
+          />
+          <Tab
+            label={<span style={{ textTransform: "none" }}>Hot Deals</span>}
+            className={classes.tab}
+          />
         </Tabs>
-      </Toolbar>
     </AppBar>
   );
 };
