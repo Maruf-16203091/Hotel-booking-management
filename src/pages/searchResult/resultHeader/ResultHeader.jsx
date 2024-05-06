@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, Tabs, Tab } from "@mui/material";
+import { AppBar, Tabs, Tab, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const useStyles = makeStyles({
   tab: {
@@ -8,6 +9,10 @@ const useStyles = makeStyles({
       backgroundColor: "#5392F9", // Background color on tab click
       color: "#fff", // Text color on tab click
     },
+  },
+  arrowIcon: {
+    fontSize: 20,
+    marginLeft: 5,
   },
 });
 
@@ -32,46 +37,64 @@ const ResultHeader = () => {
         backgroundColor: "#FFFFFF",
       }}
     >
-      
-        <Tabs
-          value={selectedTab}
-          onChange={handleChangeTab}
-          aria-label="tabs options"
-          textColor="inherit"
-          textTransform="none"
-          style={{ flexGrow: 1 }} // Make tabs grow evenly
-        >
-          <Tab
-            label={<span style={{ textTransform: "none" }}>Sort</span>}
-            sx={{
-              backgroundColor: "#A8A8A8",
-              fontWeight: "1000",
-            }}
-            disabled
-          />
-          <Tab
-            label={<span style={{ textTransform: "none" }}>Our Picks</span>}
-            className={classes.tab}
-          />
-          <Tab
-            label={<span style={{ textTransform: "none" }}>Top Reviewed</span>}
-            className={classes.tab}
-          />
-          <Tab
-            label={
-              <span style={{ textTransform: "none" }}>Lowest Price First</span>
-            }
-            className={classes.tab}
-          />
-          <Tab
-            label={<span style={{ textTransform: "none" }}>Distance</span>}
-            className={classes.tab}
-          />
-          <Tab
-            label={<span style={{ textTransform: "none" }}>Hot Deals</span>}
-            className={classes.tab}
-          />
-        </Tabs>
+      <Tabs
+        value={selectedTab}
+        onChange={handleChangeTab}
+        aria-label="tabs options"
+        textColor="inherit"
+        textTransform="none"
+        style={{ flexGrow: 1 }} // Make tabs grow evenly
+      >
+        <Tab
+          label={<span style={{ textTransform: "none" }}>Sort</span>}
+          sx={{
+            backgroundColor: "#A8A8A8",
+            fontWeight: "1000",
+          }}
+          disabled
+        />
+        <Tab
+          label={<span style={{ textTransform: "none" }}>Our Picks</span>}
+          className={classes.tab}
+          style={{ flexGrow: 1 }} // Make this tab grow to fill remaining space
+        />
+        <Tab
+          label={
+            <>
+              <Box display="flex" alignItems="center">
+                <span style={{ textTransform: "none" }}>Top Reviewed</span>
+                <ArrowDropDownIcon className={classes.arrowIcon} />
+              </Box>
+            </>
+          }
+          className={classes.tab}
+          style={{ flexGrow: 1 }} // Make this tab grow to fill remaining space
+        />
+        <Tab
+          label={
+            <span style={{ textTransform: "none" }}>Lowest Price First</span>
+          }
+          className={classes.tab}
+          style={{ flexGrow: 1 }} // Make this tab grow to fill remaining space
+        />
+        <Tab
+          label={
+            <>
+              <Box display="flex" alignItems="center">
+                <span style={{ textTransform: "none" }}>Distance</span>
+                <ArrowDropDownIcon className={classes.arrowIcon} />
+              </Box>
+            </>
+          }
+          className={classes.tab}
+          style={{ flexGrow: 1 }}
+        />
+        <Tab
+          label={<span style={{ textTransform: "none" }}>Hot Deals</span>}
+          className={classes.tab}
+          style={{ flexGrow: 1 }} // Make this tab grow to fill remaining space
+        />
+      </Tabs>
     </AppBar>
   );
 };
