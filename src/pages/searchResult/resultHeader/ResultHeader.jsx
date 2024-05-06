@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  IconButton,
-  Menu,
-  MenuItem,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Tab, Tabs } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const ResultHeader = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -18,6 +12,10 @@ const ResultHeader = () => {
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleChangeTab = (event, newValue) => {
+    setSelectedTab(newValue);
   };
 
   return (
@@ -35,32 +33,21 @@ const ResultHeader = () => {
         }}
       >
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={handleMenuOpen}
-            sx={{ mr: 2 }}
+          
+          <Tabs
+            value={selectedTab}
+            onChange={handleChangeTab}
+            aria-label="tabs options"
+            textColor="inherit"
+            indicatorColor="secondary"
           >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Sort
-          </Typography>
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-            onClick={handleMenuClose}
-          >
-            <MenuItem>Sort</MenuItem>
-            <MenuItem>Our Picks</MenuItem>
-            <MenuItem>Top Reviewed</MenuItem>
-            <MenuItem>Lowest Price First</MenuItem>
-            <MenuItem>Distance</MenuItem>
-            <MenuItem>Hot Deals</MenuItem>
-          </Menu>
+            <Tab label="Sort" disabled />
+            <Tab label="Our Picks" />
+            <Tab label="Top Reviewed" />
+            <Tab label="Lowest Price First" />
+            <Tab label="Distance" />
+            <Tab label="Hot Deals" />
+          </Tabs>
         </Toolbar>
       </AppBar>
     </>
