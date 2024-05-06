@@ -43,7 +43,7 @@ const ResultHeader = () => {
         aria-label="tabs options"
         textColor="inherit"
         textTransform="none"
-        style={{ flexGrow: 1 }} // Make tabs grow evenly
+        style={{ flexGrow: 1,  borderRadius: "4px", }} 
       >
         <Tab
           label={<span style={{ textTransform: "none" }}>Sort</span>}
