@@ -5,7 +5,7 @@ const MapPage = () => {
   return (
     <Box
       sx={{
-        marginTop: "-137px",
+        marginTop: "-120px",
         marginBottom: "5px",
         marginLeft: "-5px",
       }}
