@@ -17,7 +17,7 @@ import ResultHeader from "./resultHeader/ResultHeader";
 import CustomDivider from "./resultHeader/CustomDivider";
 
 const SearchResultPage = () => {
-  const [hoveredImage, setHoveredImage] = useState(null);
+  const [hoveredImage, setHoveredImage] = useState();
 
   const tabData = [
     {
