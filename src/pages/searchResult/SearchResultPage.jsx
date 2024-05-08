@@ -144,7 +144,7 @@ const SearchResultPage = () => {
                       <div
                         style={{
                           display: "flex",
-                          gap: "7px",
+                          gap: "8px",
                           width: "100%",
                           overflowX: "visible",
                         }}
