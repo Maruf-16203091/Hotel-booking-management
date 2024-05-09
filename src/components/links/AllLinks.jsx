@@ -33,7 +33,7 @@ const AllLinks = () => {
               marginLeft: "3px",
             }}
           >
-            Help
+            Help me
           </Typography>
           <Typography
             variant="body1"
