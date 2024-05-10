@@ -88,7 +88,7 @@ const AllLinks = () => {
             }}
           >
             <Link href="#" underline="hover" color="#020202">
-              Cookie policy
+              Cookies policy
             </Link>
           </Typography>
           <Typography
