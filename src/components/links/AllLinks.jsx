@@ -116,7 +116,7 @@ const AllLinks = () => {
             }}
           >
             <Link href="#" underline="hover" color="#020202">
-              Manage cookie settings
+              Manage cookies settings
             </Link>
           </Typography>
           <Typography
