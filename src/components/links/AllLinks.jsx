@@ -130,7 +130,7 @@ const AllLinks = () => {
             }}
           >
             <Link href="#" underline="hover" color="#020202">
-              Digital Services Act (EU)
+              Digital Services Act 
             </Link>
           </Typography>
         </div>
