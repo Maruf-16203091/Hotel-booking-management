@@ -368,7 +368,7 @@ const AllLinks = () => {
             }}
           >
             <Link href="#" underline="hover" color="#020202">
-              iOS app
+              Get the iOS app
             </Link>
           </Typography>
           <Typography
