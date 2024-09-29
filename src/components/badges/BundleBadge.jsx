@@ -14,7 +14,7 @@ const BundleBadge = () => {
           top: "-380px",
           right: "50%",
           left: "385px",
-          marginTop: "800px",
+          marginTop: "801px",
           transform: "translate(50%, -50%)",
           padding: "5px",
           paddingTop: "5px",
